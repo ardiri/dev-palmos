@@ -1,5 +1,9 @@
 # Palm OS Developer Archive
 
+<p align="center">
+  <img src="images/palmos-logo.png" alt="Palm OS Logo" width="240">
+</p>
+
 **Preserving the tools, knowledge, and history of Palm OS development.**
 
 A historical collection of Palm OS development resources, including SDKs, technical documentation, developer conference presentations, source code, utilities, examples, and other materials accumulated during the early years of mobile computing.
@@ -125,6 +129,16 @@ The history of computing is not only written by the companies that created the h
 Palm OS represents an era when a small amount of memory, a modest processor, and a clever piece of code could produce something remarkable. Much of that knowledge now exists only in aging backups, forgotten websites, archived mailing lists, and personal collections. If even a small part of this archive helps someone understand the platform, recover a forgotten technique, restore an old application, or build something new, then preserving it will have been worthwhile.
 
 **Keep the history alive.**
+
+## About the Author
+
+This archive is maintained by **Aaron Ardiri**, a software engineer, technology entrepreneur, and author whose work spans early handheld computing, mobile platforms, embedded systems, and software architecture.
+
+Having previously released source code from his Palm OS and VTOS development projects, this archive represents a further effort to preserve the tools, knowledge, and technical history of that era.
+
+Aaron is also the author of **Technology, Entrepreneurship and the Reality of Building Systems** and a few titles that explores the history of computing, the engineering behind modern technology, and the practical realities of building software and hardware systems.
+
+**Books, publications, and more:** [www.ardiri.com](https://www.ardiri.com)
 
 ---
 
