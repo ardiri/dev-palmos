@@ -1,7 +1,7 @@
 # Palm OS Developer Archive
 
 <p align="center">
-  <img src="images/palmos-logo.png" alt="Palm OS Logo" width="240">
+  <img src="images/palmos-logo.png" alt="Palm OS Logo" width="480">
 </p>
 
 **Preserving the tools, knowledge, and history of Palm OS development.**
