@@ -1,0 +1,42 @@
+
+A:link { color: #369; font-weight: bold }
+A { text-decoration: none }
+#formbox { font-size: 10px; font-family: verdana }
+A:alink { color: #f90; text-decoration: underline }
+A:vlink { color: #369; text-decoration: none }
+A:hover { color: #f90; text-decoration: underline }
+BODY   { font-size: 11px; font-family: verdana, arial, helvetica; background: white url(/images/shared/bkgrnd_orb_1600.gif) no-repeat }
+STRONG { font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+TD { color: #333; font-size: 11px; font-family: verdana, arial, helvetica }
+.subnav { color: #69c; font-weight: bold; font-size: 10px; font-family: verdana, arial, helvetica; text-decoration: none }
+.smalltext { font-size: 10px; font-family: verdana, arial, helvetica }
+.default { font-size: 11px; font-family: verdana, arial, helvetica; text-align: left }
+.140ldg { line-height: 140% }
+.tablehdg { color: #036; font-weight: bold; font-size: 10px; font-family: verdana, arial, helvetica }
+.tablehdgred { color: #900; font-weight: bold; font-size: 10px; font-family: verdana, arial, helvetica }
+.stdhdg  { color: #036; font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+.stdhdglink { font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+.stdhdggrey { font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+.stdhdgwhite { color: #fff; font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+.stdhdgred { color: #900; font-weight: bold; font-size: 12px; font-family: verdana, arial, helvetica }
+.subhdg { font-weight: bold; font-size: 11px; font-family: verdana, arial, helvetica }
+.subhdglink { font-weight: bold; font-size: 11px; font-family: verdana, arial, helvetica }
+.subhdgblue { color: #036; font-weight: bold; font-size: 11px; font-family: verdana, arial, helvetica }
+.subhdgred { color: #900; font-weight: bold; font-size: 11px; font-family: verdana, arial, helvetica }
+.largehdg { font-weight: bold; font-size: 14px; font-family: verdana, arial, helvetica }
+.largehdglink { font-weight: bold; font-size: 14px; font-family: verdana, arial, helvetica }
+.largehdgblue { color: #036; font-weight: bold; font-size: 14px; font-family: verdana, arial, helvetica }
+.largehdgred { color: #900; font-weight: bold; font-size: 14px; font-family: verdana, arial, helvetica }
+.footer { font-size: 10px; line-height: 175%; font-family: arial, helvetica }
+.footerhidden { color: #fff; font-size: 10px; line-height: 175%; font-family: arial, helvetica }
+.smallprint { font-size: 10px; font-family: arial, helvetica }
+.ltblue { color: #69c }
+.dkblue { color: #036 }
+.mdblue { color: #369 }
+#underline { text-decoration: underline }
+#noline { text-decoration: none }
+.white { color: white }
+.red { color: #900 }
+.yellow { color: #f90 }
+.green { color: #063 }
+.grey { color: #333 }

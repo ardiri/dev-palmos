@@ -1,0 +1,243 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Color and Graphics</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:24:29">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="970424"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">8  Color and Graphics</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Scrolling.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="Top10.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_GraphicsColor.html">8  Color and Graphics</a></p>
+
+<p class="SideTOC2">
+<a href="#970426">Palm OS Color Support
+</a></p>
+
+<p class="SideTOC2">
+<a href="#970477">Colors of User Interface Elements
+</a></p>
+
+<p class="SideTOC2">
+<a href="#970540">Graphics
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="970425"> </a>This chapter provides guidelines for the use of color in a Palm OS<span style="font-size: 8px; vertical-align: super">®</span> application.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="970426"> </a>Palm OS Color Support
+<a href="#970424"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970429"> </a>Palm OS supports handhelds with the system palettes shown in <a href="UI_GraphicsColor.html#970436">Table 8.1</a>.
+</p>
+
+<h5 class="TgTable">
+  <a name="970474"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="970436"> </a><div class="TableTitle">Table 8.1	 Supported system palettes</div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="970440"> </a><div class="CellHeading">Palette</div></th>
+    <th><a name="970442"> </a><div class="CellHeading">Colors</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="970444"> </a><div class="CellBody">Monochrome</div></td>
+    <td><a name="970449"> </a><div class="CellBody"><div align="left"><img src="images/PaletteMonochrome.gif" height="24" width="45" border="0" hspace="20" vspace="0">
+</div></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970451"> </a><div class="CellBody">2-bit grayscale</div></td>
+    <td><a name="970456"> </a><div class="CellBody"><div align="left"><img src="images/Palette4gray.gif" height="27" width="90" border="0" hspace="20" vspace="0">
+</div></div><a name="970457"> </a><div class="CellBody"><br></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970459"> </a><div class="CellBody">4-bit grayscale</div></td>
+    <td><a name="970464"> </a><div class="CellBody"><div align="left"><img src="images/Palette16.gif" height="44" width="157" border="0" hspace="20" vspace="0">
+</div></div><a name="970465"> </a><div class="CellBody"><br></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970467"> </a><div class="CellBody">8-bit color</div></td>
+    <td><a name="970472"> </a><div class="CellBody"><div align="left"><img src="images/Palette8bitColor.gif" height="161" width="161" border="0" hspace="20" vspace="0">
+</div></div><a name="970473"> </a><div class="CellBody"><br></div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="970476"> </a>In addition, some handhelds can display application icons and other graphics with 16-bit color. On these devices, 16-bit color is used for graphics only; buttons and other user interface elements continue to be displayed with 8-bit color.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="970477"> </a>Colors of User Interface Elements
+<a href="#970424"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970479"> </a>Palm OS uses the same color scheme for user interface elements on monochrome and grayscale screens. The scheme for color screens is different.
+</p>
+<p class="Body">
+  <a name="970480"> </a>In general, monochrome and grayscale screens use black text on a white background. Highlighted or selected text or objects show white text on a black background. (see <a href="UI_GraphicsColor.html#970485">Figure 8.1</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="970485"> </a>Figure 8.1	 User interface colors on monochrome/grayscale
+</p>
+<p class="FgFigure">
+  <a name="970506"> </a><div align="left"><img src="images/UI_GraphicsColor5.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970507"> </a>On color screens, selected objects show white text on a blue background. Selected text is black with a yellow background (see <a href="UI_GraphicsColor.html#970513">Figure 8.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="970513"> </a>Figure 8.2	 User interface colors on color screen
+</p>
+<p class="FgFigure">
+  <a name="970534"> </a><div align="left"><img src="images/UI_GraphicsColor6.gif" height="176" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970535"> </a>Respect the system color scheme. Do not change it arbitrarily. Consider that there may be a third party application that allows users to select their own color schemes. If you set your application to use a custom color scheme, you violate those users' preferences.
+</p>
+<p class="Body">
+  <a name="970536"> </a>If you do change the colors for user interface elements for your application, the system will change them back when the user switches applications. You'll need to set the colors again when control returns to your application.
+</p>
+<p class="Body">
+  <a name="970538"> </a>Do not rely solely on color to convey a meaning in your application. Many Palm Powered<span style="font-size: 8px; vertical-align: super">TM</span> handheld users have monochrome or grayscale devices and won't see your color changes. Even on color devices, realize that some users have color-vision deficiencies and will miss your visual cue. Always use color in conjunction with some other visual cue so that those with color-vision problems also understand the meaning.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="970540"> </a>Graphics
+<a href="#970424"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970542"> </a>When designing graphics, use color and grayscale prudently to help the graphic convey its meaning.
+</p>
+<p class="Body">
+  <a name="970544"> </a>For the best possible appearance, you should provide a version of your graphic for each of the supported palettes: monochrome, 2-bit gray, 4-bit gray, 8-bit color, and 16-bit color. This means for the application icon, you'll provide up to ten different versions of the icon: one large icon and one small icon for each palette.
+</p>
+<p class="Body">
+  <a name="970546"> </a>If you don't provide a graphic for all supported palettes, Palm OS uses the bit depth representation closest to the bit depth of the screen. For example, if you provide only a monochrome graphic and an 8-bit color graphic, handhelds that run in 2-bit grayscale and 4-bit grayscale will choose the 1-bit graphic. All color handhelds will use the 8-bit graphic.
+</p>
+<p class="Body">
+  <a name="970549"> </a>Keep in mind that screens with different resolutions are available, and your graphic may look quite different at the different resolutions. A 160 dpi high-resolution screen is capable of displaying a much finer granularity than an 80 dpi screen. If you have previously designed a low-resolution 8-bit color icon, you may find you need to add detail to its high-resolution counterpart.
+</p>
+<p class="Body">
+  <a name="970554"> </a>For example, <a href="UI_GraphicsColor.html#970556">Figure 8.3</a> shows different variations of the icon for the Mail application. The icon on the left is the 80 dpi 8-bit color version of the icon. If this icon were simply translated into high-resolution color by smoothing the rough edges, it would look like that shown in the middle. This icon design is somewhat flat. The icon on the right shows more detail. It adds some depth to the envelope and includes a postmark and more detail in the stamp.
+</p>
+
+<p class="FFigureCaption">
+  <a name="970556"> </a>Figure 8.3	 Mail application icon at different resolutions
+</p>
+<p class="FgFigure">
+  <a name="970569"> </a><div align="left"><img src="images/UI_GraphicsColor7.gif" height="139" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970570"> </a>At the time of this writing, the high-resolution version of the Mail icon has not yet been decided. <a href="UI_GraphicsColor.html#970556">Figure 8.3</a> shows only a possible design for the Mail icon to give you some ideas of the types of changes you might need to make to your own icons.
+</p>
+<p class="Body">
+  <a name="968045"> </a>
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

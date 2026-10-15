@@ -1,0 +1,50 @@
+- Get the addresses of 2 special functions by using FtrGet().
+  the functions are:
+  sndStateOn()  indicate ON state of the sound(MIDI/ADPCM) to system
+                and set/update the Speaker/Headphone volume of it.
+  sndStateOff() indicate OFF state of the sound(MIDI/ADPCM) to system.
+- Call sndStateOn() when the application sets/updates the sound volume.
+  *call twice anytime for both Speaker and Headphone.
+- Call sndStateOff() when the application exits.
+  *call twice anytime for both Speaker and Headphone.
+
+
+=======================================
+for getting addresses of the functions
+=======================================
+#define sonySysFileCSystem      'SsYs'  /* Sony overall System */
+#define sonySysFtrCreatorSystem     sonySysFileCSystem
+
+#define sonySysFtrNumSystemBase         10000
+#define sonySysFtrNumSystemAOutSndStateOnHandlerP   (sonySysFtrNumSystemBase + 4)
+#define sonySysFtrNumSystemAOutSndStateOffHandlerP  (sonySysFtrNumSystemBase + 5)
+
+/*
+[Example]
+void *sndStateOnFuncP, *sndStateOffFuncP;
+FtrGet(sonySysFtrCreatorSystem, sonySysFtrNumSystemAOutSndStateOnHandlerP, (UInt32*) &sndStateOnFuncP);
+FtrGet(sonySysFtrCreatorSystem, sonySysFtrNumSystemAOutSndStateOffHandlerP, (UInt32*) &sndStateOffFuncP);
+*/
+
+
+==========================
+for calling the functions
+==========================
+/*
+void sndStateOn(UInt8 kind, UInt8 LVol, UInt8 RVol);
+void sndStateOff(UInt8 kind);
+*/
+typedef void (*sndStateOnType)(UInt8 /* kind */, UInt8 /* L volume 0-31 */, UInt8 /* R volume 0-31 */);
+typedef void (*sndStateOffType)(UInt8 /* kind */);
+
+/* kind */
+#define aOutSndKindSp       (0) /* Speaker volume */
+#define aOutSndKindHp       (2) /* HeadPhone volume */
+
+/*
+[Example]
+((sndStateOnType)(sndStateOnFuncP))(aOutSndKindSp, 31, 31);
+((sndStateOnType)(sndStateOnFuncP))(aOutSndKindHp, 31, 31);
+((sndStateOffType)(sndStateOffFuncP))(aOutSndKindSp);
+((sndStateOffType)(sndStateOffFuncP))(aOutSndKindHp);
+*/

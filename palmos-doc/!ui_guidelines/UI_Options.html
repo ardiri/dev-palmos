@@ -1,0 +1,1111 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Presenting Options</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:24:04">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="968153"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">5  Presenting Options</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Actions.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_Data.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Options.html">5  Presenting Options</a></p>
+
+<p class="SideTOC2">
+<a href="#968177">Choosing Which Element to Use
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968246">Choosing Several of Many Options
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968262">Choosing One from Many Options
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968374">Implementing a Combo Box
+</a></p>
+
+<p class="SideTOC2">
+<a href="#968433">Check Boxes
+</a></p>
+
+<p class="SideTOC2">
+<a href="#968537">Pop-Up Lists
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968680">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968688">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968709">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#968812">Push Buttons
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968878">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968881">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#968904">Selector Triggers
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968978">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968981">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968992">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#969040">Sliders
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969106">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969131">Look and Feel
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="968155"> </a>This chapter describes user interface elements that allow the user to select discrete options or values. These elements are:
+</p>
+
+  <a name="968159"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Options.html#968433">Check Boxes</a></p>
+
+  <a name="968163"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Options.html#968537">Pop-Up Lists</a></p>
+
+  <a name="968167"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Options.html#968812">Push Buttons</a></p>
+
+  <a name="968171"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Options.html#968904">Selector Triggers</a></p>
+
+  <a name="968175"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Options.html#969040">Sliders</a></p>
+<p class="Body">
+  <a name="968176"> </a>The first section tells you how to choose which of the elements listed above is best for your application. The rest of the chapter describes behavior and appearance guidelines for each element.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="968177"> </a>Choosing Which Element to Use
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968181"> </a><a href="UI_Options.html#968188">Table 5.1</a> provides some general tips on user interface element selection. More details are provided after the table.
+</p>
+
+<h5 class="TgTable">
+  <a name="968245"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="968188"> </a><div class="TableTitle">Table 5.1	 Choosing an element to present options </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="968192"> </a><div class="CellHeading">Desired Action</div></th>
+    <th><a name="968194"> </a><div class="CellHeading">UI Choices</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="968196"> </a><div class="CellBody">Choose several from many </div></td>
+    <td><a name="968201"> </a><div class="CellBody"><a href="UI_Options.html#968433">Check Boxes</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968203"> </a><div class="CellBody">Choose one from small number of options</div></td>
+    <td><a name="968208"> </a><div class="CellBody"><a href="UI_Options.html#968812">Push Buttons</a></div><a name="968212"> </a><div class="CellBody"><a href="UI_Options.html#968537">Pop-Up Lists</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968214"> </a><div class="CellBody">Choose one from moderate number of options</div></td>
+    <td><a name="968219"> </a><div class="CellBody"><a href="UI_Options.html#968537">Pop-Up Lists</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968221"> </a><div class="CellBody">Choose one from large number of options</div></td>
+    <td><a name="968226"> </a><div class="CellBody"><a href="UI_Options.html#968904">Selector Triggers</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968228"> </a><div class="CellBody">Choose from a range</div></td>
+    <td><a name="968233"> </a><div class="CellBody"><a href="UI_Options.html#969040">Sliders</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968235"> </a><div class="CellBody">Toggle state</div></td>
+    <td><a name="968240"> </a><div class="CellBody"><a href="UI_Options.html#968433">Check Boxes</a></div><a name="968243"> </a><div class="CellBody">Can be simulated with <a href="UI_Actions.html#967196">Command Buttons</a> if desired</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="968246"> </a>Choosing Several of Many Options
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968252"> </a>Check boxes (see <a href="UI_Options.html#968254">Figure 5.1</a>) are the only user interface element that allow the user to select several options at the same time. The other elements allow only one of the options to be selected. Therefore, if you have several options that are not mutually exclusive, check boxes are the element to use.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968254"> </a>Figure 5.1	 Check boxes
+</p>
+<p class="FgFigure">
+  <a name="968261"> </a><div align="left"><img src="images/UI_Optionsa.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968262"> </a>Choosing One from Many Options
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968264"> </a>If you want the user to choose only one from a set of options, there are several user interface elements you can use: push buttons, pop-up lists, selector triggers, or sliders (see <a href="UI_Options.html#968270">Figure 5.2</a>). Pop-up lists and sliders are very similar to their counterparts in desktop computers. Push buttons are analogous to radio buttons on a desktop computer, but they have a different look. Selector triggers are unique to Palm OS. A <i>selector trigger</i> looks like text surrounded by a dotted rectangle. The text displays the current selection. When the user taps the selector trigger, it displays a modal form that allows the user to change the selection.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968270"> </a>Figure 5.2	 Controls to choose one of many
+</p>
+<p class="FgFigure">
+  <a name="968291"> </a><div align="left"><img src="images/UI_Options2.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968292"> </a>The following sections discuss the pros and cons of each element.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968293"> </a>Push Buttons
+</h4>
+
+  <a name="968295"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> In general, push buttons are the easiest of these elements to understand because they present all options on the screen at one time. Sliders can be equally easy to understand, but the use of sliders is limited to a few specific instances. </p>
+<p class="Indented1"> <a name="968297"> </a>Push buttons are <b>not</b> easy to understand when there are only two choices (see <a href="UI_Options.html#968302">Figure 5.3</a>). Some users think that the highlighted (dark) button is the option that is not selected. They only realize which is the selected button when there are at least two deselected buttons to compare it with. </p>
+
+<p class="FFigureCaption">
+  <a name="968302"> </a>Figure 5.3	 Two-choice push button
+</p>
+<p class="FgFigure">
+  <a name="968309"> </a><div align="left"><img src="images/UI_Options5.gif" height="31" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+  <a name="968311"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> In general, push buttons are the easiest element for a user to use when compared to pop-up lists and selector triggers. </p>
+
+  <a name="968312"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use push buttons if there are between three and seven options that have short names. If there are more options or the names become long, push buttons become hard to read. </p>
+
+  <a name="968314"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Don't use push buttons if your application is going to be localized or if there's a possibility you'll add another push button in a future version of the application. </p>
+<p class="Indented1"> <a name="968315"> </a>Because of the severe space limitations, push buttons don't scale well. If you can't leave room for button growth due to localization or a new feature, then it is best to use a pop-up list. </p>
+
+  <a name="968317"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use push buttons to select among application views. See <a href="UI_Options.html#968323">Figure 5.4</a>.</p>
+
+<p class="FFigureCaption">
+  <a name="968323"> </a>Figure 5.4	 Push buttons that select view
+</p>
+<p class="FgFigure">
+  <a name="968331"> </a><div align="left"><img src="images/UI_Options6.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968332"> </a>Pop-Up Lists
+</h4>
+
+  <a name="968335"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use pop-up lists when there are too many choices to display in a series of push buttons or you simply don't have room for push buttons. </p>
+
+  <a name="968337"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use pop-up lists if the application is going to be localized or if there might be more options added in future versions.</p>
+
+  <a name="968339"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The more options a pop-up list presents, the more difficult and confusing it becomes to navigate. Try to limit yourself to one screenful of items in the pop-up list. Avoid creating pop-up lists that require the user to scroll more than one or two times. When users must scroll more than a couple of times, they tend to forget where they are in the list. </p>
+
+<h4 class="HCHeadC">
+  <a name="968341"> </a>Sliders
+</h4>
+
+  <a name="968343"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use a slider to select one value from a continuous range of possible values. Sliders are best used when the setting is non-specific. For example, when setting the brightness or contrast on a screen, users do not know the specific value they want. They only know that they want the screen brighter or darker. Volume settings are also a good fit for sliders. Users do not know the numeric value of the decibel level they want; they only know that they want the sound louder or quieter. </p>
+
+  <a name="968345"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Sliders are only supported on Palm OS<span style="font-size: 8px; vertical-align: super">®</span> 3.5 and later. If you want to support older versions of Palm OS, do not use sliders. An alternative if you're using a slider for numeric data is to create a spin box style of interface element. Use repeating buttons to increment or decrement the numeric value. The Date Book Preferences dialog uses such an element (see <a href="UI_Options.html#968352">Figure 5.5</a>). </p>
+
+<p class="FFigureCaption">
+  <a name="968352"> </a>Figure 5.5	 An alternative to sliders
+</p>
+<p class="FgFigure">
+  <a name="968359"> </a><div align="left"><img src="images/UI_Options7.gif" height="46" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968360"> </a>Selector Triggers
+</h4>
+
+  <a name="968364"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use a selector trigger and a modal form when you have so many options that a pop-up list would be too cumbersome. </p>
+<p class="Indented1"> <a name="968365"> </a>For example, there are well over fifty possible time zones, which would make a very large pop-up list, so the Preferences application uses a selector trigger for the time zone setting. Tapping the trigger displays a modal form containing a list of time zones. Tapping OK on the form changes the time zone shown in the selector trigger to the time zone selected in the form's list. </p>
+
+  <a name="968367"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use selector triggers when you want to limit user input to a particular format. Setting a date or a time of day, for example, requires a set format. </p>
+
+  <a name="968368"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Use selector triggers when the data has multiple elements that must be set at the same time. A date has a month, a day, and a year. A time has the hours, minutes, and an AM or PM designation. </p>
+
+<h4 class="HCHeadC">
+  <a name="968370"> </a>Check Boxes
+</h4>
+
+  <a name="968372"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Don't use check boxes to choose one of many items. Constructor for Palm OS allows you to create a group of check boxes that behave like push buttons, where selecting one check box deselects another, but such an interface is strongly discouraged. Users expect to be able to select more than one check box in a series. </p>
+
+<h2 class="HBHeadB">
+  <a name="968374"> </a>Implementing a Combo Box
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968376"> </a>Desktop interfaces often support combo box elements, where the user can either select from an existing list of options or type in a new one. Combo boxes on the desktop often look like a pop-up list combined with a text field. Palm OS does not have a combo box element, but it supports several ways of implementing similar behavior.
+</p>
+<p class="Body">
+  <a name="968377"> </a>It's usually best to use a selector trigger where you might use a combo box on a desktop application. Tapping the selector trigger displays a modal form that presents both the list and a text field. To fill in the text field, the user can either select from the list or write Graffiti<span style="font-size: 8px; vertical-align: super">®</span> characters (see <a href="UI_Options.html#968382">Figure 5.6</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="968382"> </a>Figure 5.6	 Selector trigger as combo box
+</p>
+<p class="FgFigure">
+  <a name="968392"> </a><div align="left"><img src="images/UI_Options8.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968394"> </a>The selector trigger is a good choice when the following are true:
+</p>
+
+  <a name="968395"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users do not access the form containing the selector trigger often. </p>
+
+  <a name="968396"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users are more likely or just as likely to choose an option from the list of available choices than to write in a new one. </p>
+<p class="Body">
+  <a name="968397"> </a>If you expect the form to be used frequently and you believe users will want to write in a new choice often, the selector trigger is not the best solution. The selector trigger implementation makes writing a new choice less convenient than a simple text field would. For example, consider implementing the expense type in the Expense application with a selector trigger and modal dialog. When users enter expenses, they often enter several in a row. If they have to tap a selector trigger, navigate a list, and tap OK to enter each expense, using the application can become tedious.
+</p>
+<p class="Body">
+  <a name="968399"> </a>Another option is to use a command button in combination with a text field as shown in <a href="UI_Options.html#968404">Figure 5.7</a>. This style of user interface allows the user to enter text in the text field just as easily as selecting from the list.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968404"> </a>Figure 5.7	 Command button as combo box
+</p>
+<p class="FgFigure">
+  <a name="968413"> </a><div align="left"><img src="images/UI_Options9.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968414"> </a>The command button implementation of a combo box is a good choice when the list of available options is potentially quite large. In <a href="UI_Options.html#968404">Figure 5.7</a>, the To command button does phone lookup, and there may be hundreds of phone numbers from which to choose.
+</p>
+<p class="Body">
+  <a name="968419"> </a>A third choice for implementing a combo box element is to use a pop-up list. Using a pop-up list element is a good idea when the following are true:
+</p>
+
+  <a name="968420"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The form is used so frequently that the extra taps required by the selector trigger make its use tedious.</p>
+
+  <a name="968421"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The available choices are far fewer than with the phone lookup example shown in <a href="UI_Options.html#968404">Figure 5.7</a>. </p>
+<p class="Body">
+  <a name="968426"> </a>To allow the user to enter new items for the list, include an Edit command in the list, in the same way that the Categories pop-up list includes an Edit Categories command. See the section <a href="UI_Options.html#968537">"Pop-Up Lists"</a> for more information on implementing pop-up lists.
+</p>
+<p class="Body">
+  <a name="968430"> </a>A pop-up list allows the user to select from the list more conveniently than a selector trigger does. Entering text is still slightly inconvenient. If you anticipate that users will want to add new items to the list often, you also may want to add a command to your interface that would display a modal dialog in which the user could add several items to the list at once.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="968433"> </a>Check Boxes
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968438"> </a>Check boxes (see <a href="UI_Options.html#968442">Figure 5.8</a>) display an on/off setting. Tapping a check box or its text content toggles the setting.
+</p>
+<p class="Body">
+  <a name="968439"> </a>Use check boxes for two-state data or options, that is, for values that are either on or off, enabled or disabled.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968442"> </a>Figure 5.8	 Check box dimensions
+</p>
+<p class="FgFigure">
+  <a name="968477"> </a><div align="left"><img src="images/UI_Options10.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="968516"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="968483"> </a><div class="TableTitle">Table 5.2	 Check box details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="968487"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="968489"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="968491"> </a><div class="CellBody">Width</div></td>
+    <td><a name="968493"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968495"> </a><div class="CellBody">Height</div></td>
+    <td><a name="968497"> </a><div class="CellBody">12 pixels minimum</div><a name="968498"> </a><div class="CellBody">Height determines tappable area</div><a name="968499"> </a><div class="CellBody">Height does not affect size of box or text</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968501"> </a><div class="CellBody">Top</div></td>
+    <td><a name="968503"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968505"> </a><div class="CellBody">Left</div></td>
+    <td><a name="968507"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968509"> </a><div class="CellBody">Border</div></td>
+    <td><a name="968511"> </a><div class="CellBody">None</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968513"> </a><div class="CellBody">Content</div></td>
+    <td><a name="968515"> </a><div class="CellBody">Text describing option. Can be lengthy. Use title capitalization and bold font. </div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="968518"> </a>Most check boxes have bold text to the right that describes the option. (This book refers to this text as the check box's <i>text</i> or <i>text content</i>.) The text should describe the "positive" state of the check box, that is, what happens when the check box is checked. The text content is part of the active area of the check box. The user can tap the text to toggle the check box.
+</p>
+<p class="Body">
+  <a name="968519"> </a>Check boxes are not required to have text content. For example, the check boxes in each To Do List record do not.
+</p>
+<p class="Body">
+  <a name="968520"> </a>Notice that some check boxes omit the text content to the right of the check box in favor of a label to the left. For example, the Memo Pad Details form in <a href="UI_Options.html#968527">Figure 5.9</a> has a checkbox that sets whether the record is private. The label for this check box is to the left of the box to make it match the only other user interface element on this form. Placing the check box on the left is done at a cost: the check box's label is no longer part of the check box's tappable area. For this reason, it's unwise to arbitrarily choose to place check box labels to the left. Do so only if there is good reason.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968527"> </a>Figure 5.9	 A check box with a label to the left
+</p>
+<p class="FgFigure">
+  <a name="968535"> </a><div align="left"><img src="images/UI_Options11.gif" height="87" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HaHeadA">
+  <a name="968537"> </a>Pop-Up Lists
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968539"> </a>A pop-up list allows a user to select one item from a series of items. It displays the currently selected item. A pop-up list is actually made of two user interface elements: a pop-up trigger (see <a href="UI_Options.html#968549">Figure 5.10</a>) and a list (see <a href="UI_Options.html#968616">Figure 5.11</a>).
+</p>
+<p class="Body">
+  <a name="968546"> </a>Both push buttons and pop-up lists allow a user to select one item from a series of items. Pop-up lists are a little more difficult for users to navigate than push buttons, but they are often ideal for situations where there are several possible options from which the user can choose.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968549"> </a>Figure 5.10	 Pop-up triggers
+</p>
+<p class="FgFigure">
+  <a name="968575"> </a><div align="left"><img src="images/UI_Options12.gif" height="173" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="968614"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="968581"> </a><div class="TableTitle">Table 5.3	 Pop-up trigger details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="968585"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="968587"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="968589"> </a><div class="CellBody">Width</div></td>
+    <td><a name="968591"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968593"> </a><div class="CellBody">Height</div></td>
+    <td><a name="968595"> </a><div class="CellBody">12 </div><a name="968596"> </a><div class="CellBody">or <i>font height</i> + 3</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968598"> </a><div class="CellBody">Top</div></td>
+    <td><a name="968600"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968602"> </a><div class="CellBody">Left</div></td>
+    <td><a name="968604"> </a><div class="CellBody">Varies</div><a name="968605"> </a><div class="CellBody">Use 160 to align trigger with right edge of screen if it resizes to the left </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968607"> </a><div class="CellBody">Border</div></td>
+    <td><a name="968609"> </a><div class="CellBody">None</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968611"> </a><div class="CellBody">Content</div></td>
+    <td><a name="968613"> </a><div class="CellBody">Current list selection</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<p class="FFigureCaption">
+  <a name="968616"> </a>Figure 5.11	 List dimensions
+</p>
+<p class="FgFigure">
+  <a name="968641"> </a><div align="left"><img src="images/UI_Options13.gif" height="190" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="968679"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="968647"> </a><div class="TableTitle">Table 5.4	 Pop-up list details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="968651"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="968653"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="968655"> </a><div class="CellBody">Width</div></td>
+    <td><a name="968657"> </a><div class="CellBody">5 + width of longest item </div><a name="968658"> </a><div class="CellBody">12 + width of longest item if list is scrollable</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968660"> </a><div class="CellBody">Height</div></td>
+    <td><a name="968662"> </a><div class="CellBody">13 items</div><a name="968663"> </a><div class="CellBody">or number of items in the list if &lt; 13 items</div><a name="968665"> </a><div class="CellBody">Use 0 for the Categories list. Its height is determined at run time.</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968667"> </a><div class="CellBody">Left</div></td>
+    <td><a name="968669"> </a><div class="CellBody"><i>trigger left</i> if trigger is left-aligned</div><a name="968670"> </a><div class="CellBody"><i>trigger left</i> - <i>list width</i> if trigger is right-aligned</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968672"> </a><div class="CellBody">Top</div></td>
+    <td><a name="968674"> </a><div class="CellBody"><i>trigger top</i> (Palm OS repositions if necessary)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968676"> </a><div class="CellBody">Border</div></td>
+    <td><a name="968678"> </a><div class="CellBody">1 pixel square rectangle</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="968680"> </a>System Supplied Behavior
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968682"> </a>The pop-up list displays the current selection. If the user taps a pop-up list's arrow or its content, the list is displayed.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968683"> </a>Pen Interaction
+</h4>
+<p class="Body">
+  <a name="968684"> </a>Tapping a list item unhighlights the current selection and highlights the item under the pen. Dragging the pen through the list highlights the item under the pen. Dragging the pen above or below the list causes the list to scroll if it contains more choices than are visible. If the pen is otherwise dragged outside the list, the selection is unchanged.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968685"> </a>Scrollable Pop-Up Lists
+</h4>
+<p class="Body">
+  <a name="968687"> </a>If there are more choices than can be displayed, the system draws small arrows (scroll indicators) in the right margin next to the first and last visible choice. When the pen comes down and up on a scroll indicator, the list is scrolled. When the user scrolls down, the last visible item becomes the first visible item if there are enough items to fill the list. If not, the list is scrolled so that the last item of the list appears at the bottom of the list. The reverse is true for scrolling up. The scrolling hard keys on the handheld perform the same behavior. Scrolling doesn't change the current selection.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968688"> </a>Look and Feel
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968689"> </a>Follow these guidelines for the behavior and appearance of a pop-up list.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968690"> </a>Show Selection When List Pops Up
+</h4>
+<p class="Body">
+  <a name="968691"> </a>When the user taps the pop-up trigger, the list should display in such a way that the current selection is visible. If the list is large, try to adjust the scrolling so that the selection is in the center of the display. This way, the user has to do a minimum amount of scrolling to change the selection.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968692"> </a>Present Items in a Logical Order
+</h4>
+<p class="Body">
+  <a name="968693"> </a>Position list items so that the most useful items are near the top. For example, if you are presenting a list of times of day, start the list with the most active part of the day, such as 8:00 AM. Do not start with midnight. If you enable incremental searching, as described below, present list items in alphabetical order.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968694"> </a>Lists Do Not Execute Commands
+</h4>
+<p class="Body">
+  <a name="968696"> </a>On some desktop systems, pop-up lists can present a list of commands to the user. Such an interface is not allowed on Palm OS. Use command buttons or menus to execute commands.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968697"> </a>Lists Are Not Hierarchical
+</h4>
+<p class="Body">
+  <a name="968699"> </a>Do not create a hierarchical pop-up list. Palm OS has no concept of a hierarchical structure for pop-up lists or menus because of the lack of screen space.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968701"> </a>Use Incremental Search for Large Lists
+</h4>
+<p class="Body">
+  <a name="968703"> </a>Pop-up lists have an incremental search feature that the programmer can enable. This feature allows the user to select an item by writing Graffiti characters matching the first few characters in that item. Particularly if your list is large, consider enabling this feature; however, it is not widely known, so you should not rely on your users knowing about it. Enabling this feature requires the list to be presented in alphabetical order.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968704"> </a>First List Item Is Default Selection
+</h4>
+<p class="Body">
+  <a name="968705"> </a>The initial selection for the list by default is the first item in the list. You can display a non-selection in the trigger, if applicable. For example, the Expense application defines no default expense type. Before an expense type is selected, the words "-Expense Type-" appear in the pop-up trigger. Use dashes in the default trigger to show that the item is a pop-up list. For example, the default trigger content might be "-Select-".
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968706"> </a>Provide a Label if Necessary
+</h4>
+<p class="Body">
+  <a name="968708"> </a>You can provide a label for the pop-up list if necessary, but doing so is not required. The content of the list trigger usually provides enough context for the user to understand the list's purpose.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968709"> </a>Breaking the Rules
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968710"> </a>This section points out a few of the applications that break pop-up list guidelines and tells you if doing so is appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968711"> </a>Commands in a Pop-Up List
+</h4>
+<p class="Body">
+  <a name="968715"> </a>In general, a list should not execute commands, but this rule can be broken if you want the user to edit the list (see <a href="UI_Options.html#968720">Figure 5.12</a>). For example, the Categories pop-up list often includes an Edit Categories item to allow the user to delete or add categories. If you want to present a series of command choices to the user, use command buttons or a menu.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968720"> </a>Figure 5.12	 Command in a pop-up list
+</p>
+<p class="FgFigure">
+  <a name="968729"> </a><div align="left"><img src="images/UI_Options14.gif" height="166" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968730"> </a>Pop-Up Lists with No Trigger Arrow
+</h4>
+<p class="Body">
+  <a name="968732"> </a>In some cases, you may wish to forgo drawing the pop-up trigger's arrow. The Expense application does not display a pop-up trigger for its pop-up list (see <a href="UI_Options.html#968746">Figure 5.13</a>), and the To Do List application does not display a trigger for its priority list. They do not use the pop-up trigger arrow for the following reasons:
+</p>
+
+  <a name="968738"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The list sets a data field in the record, as opposed to setting a display option. </p>
+
+  <a name="968739"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The data field is set once for each record and rarely changed. </p>
+
+  <a name="968740"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The trigger detracts from the display of data. </p>
+
+  <a name="968741"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The pop-up list is a power-user feature. Each application uses the Details dialog as an alternate, more obvious way to set the field so that new users can find it. </p>
+<p class="Body">
+  <a name="968744"> </a>If you want to omit the trigger arrow because it detracts from your data display, you may do so. You must provide an obvious method of setting the field for new users.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968746"> </a>Figure 5.13	 Pop-up trigger without arrow
+</p>
+<p class="FgFigure">
+  <a name="968755"> </a><div align="left"><img src="images/UI_Options15.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968756"> </a>Nonstandard Pop-Up Triggers
+</h4>
+<p class="Body">
+  <a name="968761"> </a>The section <a href="UI_Options.html#968374">"Implementing a Combo Box"</a> described three possible choices for implementing a combo box style element: a selector trigger with a modal form, a command button with a text field, and a pop-up list containing an Edit command.
+</p>
+<p class="Body">
+  <a name="968762"> </a>To make it easy to add items to a pop-up list used as a combo box style element, some application designers have combined text fields with pop-up triggers that have nonstandard content. There are two competing styles of pop-up trigger used in this manner. Each style has its champions, but both have such deep design flaws that they are best avoided entirely.
+</p>
+<p class="Body">
+  <a name="968765"> </a>Some designers use a pop-up trigger with no content (see <a href="UI_Options.html#968768">Figure 5.14</a>). If the user selects from the list that the trigger displays, the selection is copied into the text field appearing immediately to the right. If the user enters text in the field that does not match an item in the list, a new item is added to the list.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968768"> </a>Figure 5.14	 Pop-up list with no label
+</p>
+<p class="FgFigure">
+  <a name="968778"> </a><div align="left"><img src="images/UI_Options16.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968779"> </a>The advantage to this implementation is that it looks like a desktop combo box and it makes it easy to add a new item to the list. However, this design has two problems:
+</p>
+
+  <a name="968780"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Only the trigger is tappable. In a standard pop-up list, the user can tap either the trigger or its contents to see the list. Many users find the trigger alone too small to tap accurately. </p>
+
+  <a name="968781"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The only visual difference to indicate that the combo box element's usage differs from the standard pop-up list is the use of the dotted underline in the editable text field. Some users may find this difference too subtle and may wonder why tapping the text field does not display the pop-up list. </p>
+<p class="Body">
+  <a name="968782"> </a>Other application designers use the text field's label as part of the pop-up list. For example, in <a href="UI_Options.html#968787">Figure 5.15</a>, the user can tap either the trigger to the left of the "Service" label or the "Service" label itself to select the network service displayed in the text field.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968787"> </a>Figure 5.15	 Pop-up list with static label
+</p>
+<p class="FgFigure">
+  <a name="968797"> </a><div align="left"><img src="images/UI_Options17.gif" height="175" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968798"> </a>This implementation is not a good choice because many users expect the pop-up list to behave the same way the pop-up lists in the Address Book Edit form do; they expect the list to modify the word "Service," not the text field next to it.
+</p>
+<p class="Body">
+  <a name="968800"> </a>Because both of these styles of combo box have usability problems, they are best avoided. For the particular form shown in <a href="UI_Options.html#968768">Figure 5.14</a> and <a href="UI_Options.html#968787">Figure 5.15</a>, the selector trigger is the best fit because this form is used infrequently. If you have a form where the element is going to be used so frequently that you'd like to use a pop-up list instead, follow the recommendations in <a href="UI_Options.html#968374">"Implementing a Combo Box"</a>: use a standard pop-up list. Include an Edit command in the pop-up list to allow the user to add items. To make it easy for users to add several items at once, include an extra command in your interface that displays a modal form where the user can freely edit the list items.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="968812"> </a>Push Buttons
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968817"> </a>Push buttons (see <a href="UI_Options.html#968821">Figure 5.16</a>) are analogous to radio buttons in a desktop application. They are designed to take less space than radio buttons-they do not need room for both the round button and the label next to it.
+</p>
+<p class="Body">
+  <a name="968818"> </a>Both push buttons and pop-up lists allow a user to select one item from a series of items. Push buttons are easier to understand because they present all options on the screen at one time. A pop-up list hides all but the current selection. It is also easier to tap a push button than it is to navigate through a pop-up list.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968821"> </a>Figure 5.16	 Example push buttons
+</p>
+<p class="FgFigure">
+  <a name="968829"> </a><div align="left"><img src="images/UI_Options18.gif" height="102" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="968877"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="971829"> </a><div class="TableTitle">Table 5.5	 Push button details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="971833"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="971835"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="971837"> </a><div class="CellBody">Width</div></td>
+    <td><a name="971839"> </a><div class="CellBody"> <i>content width</i> + 2 minimum</div><a name="971840"> </a><div class="CellBody">All push buttons in group should have same width</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971842"> </a><div class="CellBody">Height</div></td>
+    <td><a name="971844"> </a><div class="CellBody">12</div><a name="971845"> </a><div class="CellBody">All push button in group should have same height</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971847"> </a><div class="CellBody">Top</div></td>
+    <td><a name="971849"> </a><div class="CellBody">Varies</div><a name="971850"> </a><div class="CellBody">All push buttons in group should have same top (if horizontal row)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971852"> </a><div class="CellBody">First Button Left</div></td>
+    <td><a name="971854"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971856"> </a><div class="CellBody">Button(<i>n</i>) Left</div></td>
+    <td><a name="971858"> </a><div class="CellBody"><i>button</i>(<i>n</i>-1) <i>left</i> + <i>button</i>(<i>n</i>-1) <i>width</i> + 1</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971860"> </a><div class="CellBody">Border</div></td>
+    <td><a name="971862"> </a><div class="CellBody">1 pixel square rectangle</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971864"> </a><div class="CellBody">Content</div></td>
+    <td><a name="971866"> </a><div class="CellBody">Text label or graphic. As small as possible. </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="971868"> </a><div class="CellBody">Label</div></td>
+    <td><a name="971870"> </a><div class="CellBody">Provide label if purpose of buttons not immediately apparent</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="968878"> </a>System Supplied Behavior
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968880"> </a>As long as you assign all of the push buttons the same group ID, the system ensures that the user can select only one button. If the user taps one button in the group, that button is highlighted, and the previously selected button is unhighlighted. Unlike a command button, a push button is not unhighlighted when the user releases the pen; a push button remains highlighted until another button in its group is selected.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968881"> </a>Breaking the Rules
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968883"> </a>It's possible to create push buttons that aren't mutually exclusive by leaving the group ID unassigned. In fact, it's a common programming mistake. Because it is such a common mistake, such an interface is likely to look more like a bug than a feature to your users.
+</p>
+<p class="Body">
+  <a name="968885"> </a>The Week view in Date Book's Change Repeat dialog uses non-exclusive push buttons to present the days of the week (see <a href="UI_Options.html#968894">Figure 5.17</a>). It's easy to see why this user interface element was chosen: it takes up far less screen space than a list of check boxes would. However, users expect items that look like push buttons to behave like push buttons. Many users will look at the dialog shown in <a href="UI_Options.html#968894">Figure 5.17</a> with no days selected and believe that they cannot choose more than one day.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968894"> </a>Figure 5.17	 Non-exclusive push buttons
+</p>
+<p class="FgFigure">
+  <a name="968902"> </a><div align="left"><img src="images/UI_Options19.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HaHeadA">
+  <a name="968904"> </a>Selector Triggers
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968909"> </a>A selector trigger (see <a href="UI_Options.html#968912">Figure 5.18</a>) provides a value for a single field or option. Tapping it displays a modal form in which the user can change the value. When the form is dismissed, the selector trigger updates to show the newly selected value.
+</p>
+
+<p class="FFigureCaption">
+  <a name="968912"> </a>Figure 5.18	 Selector triggers
+</p>
+<p class="FgFigure">
+  <a name="968935"> </a><div align="left"><img src="images/UI_Options20.gif" height="172" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="968977"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="968941"> </a><div class="TableTitle">Table 5.6	 Selector trigger details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="968945"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="968947"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="968949"> </a><div class="CellBody">Width</div></td>
+    <td><a name="968951"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968953"> </a><div class="CellBody">Height</div></td>
+    <td><a name="968955"> </a><div class="CellBody">13 pixels</div><a name="968956"> </a><div class="CellBody">or odd number so that the corner pixels are black</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968958"> </a><div class="CellBody">Top</div></td>
+    <td><a name="968960"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968962"> </a><div class="CellBody">Left</div></td>
+    <td><a name="968964"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968966"> </a><div class="CellBody">Border</div></td>
+    <td><a name="968968"> </a><div class="CellBody">1 pixel square dotted rectangle</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968970"> </a><div class="CellBody">Content</div></td>
+    <td><a name="968972"> </a><div class="CellBody">Text providing current value</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="968974"> </a><div class="CellBody">Label</div></td>
+    <td><a name="968976"> </a><div class="CellBody">Usually requires separate bold label to describe the value</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="968978"> </a>System Supplied Behavior
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968980"> </a>The user taps the trigger once with the pen. When the user does so, Palm OS highlights the trigger momentarily while it is being pressed. Palm OS ensures that the trigger is not selected if the user drags the pen outside of the bounds of the trigger before releasing it.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968981"> </a>Look and Feel
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968982"> </a>Follow these guidelines for the behavior and appearance of selector triggers.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968983"> </a>Selector Triggers Display a Modal Form
+</h4>
+<p class="Body">
+  <a name="968986"> </a>Your application must ensure that the selector trigger displays a modal form and that upon return, the trigger's content changes to the value set using that modal form.
+</p>
+<p class="Body">
+  <a name="968988"> </a>Do not use a selector trigger as a toggle button that toggles between states. Depending on the situation, a command button or a check box is more appropriate for this purpose.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968989"> </a>Include a Label if Appropriate
+</h4>
+<p class="Body">
+  <a name="968991"> </a>It's usually appropriate to include a bold label that indicates what value the selector trigger sets. This label can be omitted if the selector trigger's placement or its setting make the trigger's purpose clear. The selector trigger in the Address Edit form's title bar is not labeled, for example, because its position and setting make it clear that it displays the category.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="968992"> </a>Breaking the Rules
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968993"> </a>This section points out a few of the applications that break selector trigger guidelines and tells you if doing so is appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968994"> </a>Selector Triggers That Don't Update
+</h4>
+<p class="Body">
+  <a name="968997"> </a>The only triggers that are allowed not to update when the user has selected a value are triggers for password fields (see <a href="UI_Options.html#969002">Figure 5.19</a>). Password fields update from "Unassigned" to "Assigned" when the password is set the first time. From that point on, the selector trigger remains "Assigned" when the user changes the password.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969002"> </a>Figure 5.19	 Selector trigger for passwords
+</p>
+<p class="FgFigure">
+  <a name="969013"> </a><div align="left"><img src="images/UI_Options21.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969014"> </a>All other selector triggers must update to show the current selection or give some indication that the selection has changed. You can consider the password selector trigger's changing from "Unassigned" to "Assigned" as updating to show the current value at a much lower resolution than a normal selector trigger would. This is acceptable if you want the selector trigger to change some value that should remain hidden from view. If you want to create a trigger that doesn't update at all, consider using a command button instead.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969015"> </a>Selector Triggers with No Modal Form
+</h4>
+<p class="Body">
+  <a name="969018"> </a>Some selector triggers do not display a modal form when tapped. The Address Edit and Memo Edit forms each use a selector trigger to display that record's category (see <a href="UI_Options.html#969023">Figure 5.20</a>). If you tap the selector trigger, the Category list is displayed rather than a modal form.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969023"> </a>Figure 5.20	 Selector trigger displaying a list
+</p>
+<p class="FgFigure">
+  <a name="969031"> </a><div align="left"><img src="images/UI_Options22.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969033"> </a>These two forms use a selector trigger for the category rather than a pop-up list to convey that the control performs a different function than the Category pop-up list the user sees on other forms. On other forms, the Category pop-up list simply filters the display of records. In contrast, the Category selector trigger on these forms changes the category in which the current record is filed, but does not change which record is displayed.
+</p>
+<p class="Body">
+  <a name="969035"> </a>Why doesn't this Category selector trigger display a modal form that changes the record's category? Doing so would allow it to conform to the selector trigger interface guidelines, but it would increase the number of taps for this task from two taps to four. The application designers believe that minimizing the number of taps outweighs conforming to the guidelines in this instance. Keep in mind that novice users are more likely to set the record's category using the Details dialog.
+</p>
+<p class="Body">
+  <a name="969037"> </a>That being said, the Category selector trigger on these two forms is widely considered to be an imperfect solution at best. Some users expect this control to be placed where it is and immediately understand its purpose. Other users confuse it with the Category pop-up list that controls the display on the main form.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="969040"> </a>Sliders
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969045"> </a>A slider (see <a href="UI_Options.html#969048">Figure 5.21</a>) represents a value that falls within a particular range. For example, a slider might represent a value that can be between zero and ten.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969048"> </a>Figure 5.21	 Slider
+</p>
+<p class="FgFigure">
+  <a name="969066"> </a><div align="left"><img src="images/UI_Options23.gif" height="91" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="969105"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969072"> </a><div class="TableTitle">Table 5.7	 Slider details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969076"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="969078"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969080"> </a><div class="CellBody">Width</div></td>
+    <td><a name="969082"> </a><div class="CellBody">Varies</div><a name="969083"> </a><div class="CellBody">The default background bitmap looks best at these widths: 72, 93, 114, 135, or 156</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969085"> </a><div class="CellBody">Height</div></td>
+    <td><a name="969087"> </a><div class="CellBody">15 </div><a name="969088"> </a><div class="CellBody">or height of thumb bitmap</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969090"> </a><div class="CellBody">Top</div></td>
+    <td><a name="969092"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969094"> </a><div class="CellBody">Left</div></td>
+    <td><a name="969096"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969098"> </a><div class="CellBody">Border</div></td>
+    <td><a name="969100"> </a><div class="CellBody">None</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969102"> </a><div class="CellBody">Content</div></td>
+    <td><a name="969104"> </a><div class="CellBody">N/A</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="969106"> </a>System Supplied Behavior
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969108"> </a>The slider has four attributes that determine its behavior. You set these when you create the slider:
+</p>
+
+  <a name="969109"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The minimum value the slider can represent</p>
+
+  <a name="969110"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The maximum value the slider can represent </p>
+
+  <a name="969111"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The initial value </p>
+
+  <a name="969112"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The page jump value, or the amount by which the value is increased or decreased when the user clicks to the left or right of the slider thumb </p>
+<p class="Body">
+  <a name="969113"> </a>Palm OS updates both the slider appearance and slider value. When the user drags the thumb, the slider value updates accordingly. When the user taps the slider background to the left of the thumb, the slider value decreases by the page jump value and the thumb moves to the left the same amount. When the user taps to the right of the thumb, the slider value increases by the page jump value and the thumb moves to the right.
+</p>
+<p class="Body">
+  <a name="969116"> </a>Palm OS supports two types of sliders: regular and feedback sliders. The difference between the two is entirely behavioral. If the user drags the thumb or holds down the pen within the slider bounds, the feedback slider continually updates the slider value and sends events as this happens. The regular slider waits until the user lifts the pen and then updates the slider value.
+</p>
+<p class="Body">
+  <a name="969117"> </a>In most cases, a regular slider suffices. You only need a feedback slider if you want to provide further visual feedback to the user apart from the slider thumb moving. For example, if you have a field that shows the current value of the slider, you probably want to use a feedback slider (see <a href="UI_Options.html#969122">Figure 5.22</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969122"> </a>Figure 5.22	 Feedback slider
+</p>
+<p class="FgFigure">
+  <a name="969130"> </a><div align="left"><img src="images/UI_Options3.gif" height="95" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969131"> </a>Look and Feel
+<a href="#968153"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969135"> </a>Sliders are drawn using two bitmaps: one for the slider background, and the other for the thumb. If you use the default bitmaps, you should make the slider 15 pixels tall to allow room for the thumb, and you can make it as wide as you want.
+</p>
+<p class="Body">
+  <a name="969136"> </a>The default bitmaps work well if the slider sets a numeric value. If your slider sets a more visual value, use a different background bitmap to show the user what dragging the thumb does. The brightness and contrast adjust forms each use a non-default bitmap (see <a href="UI_Options.html#969142">Figure 5.23</a>). If possible, make the bitmap as wide as it will display on the screen.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969142"> </a>Figure 5.23	 Non-default slider bitmap
+</p>
+<p class="FgFigure">
+  <a name="969149"> </a><div align="left"><img src="images/UI_Options4.gif" height="69" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969150"> </a>
+</p>
+<p class="Body">
+  <a name="968045"> </a>
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

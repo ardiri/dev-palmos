@@ -1,0 +1,820 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Displaying Data</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:24:15">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="969235"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">6  Displaying Data</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Options.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_Scrolling.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Data.html">6  Displaying Data</a></p>
+
+<p class="SideTOC2">
+<a href="#969250">Choosing Which Element to Use
+</a></p>
+
+<p class="SideTOC2">
+<a href="#969352">Fields
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969417">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969437">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969657">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#969676">Lists
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969740">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969747">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969773">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#969832">Tables
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969889">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#969893">Look and Feel
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="969236"> </a>This chapter describes user interface elements that display data. They often comprise the bulk of a user interface. These elements are:
+</p>
+
+  <a name="969240"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969352">Fields</a></p>
+
+  <a name="969244"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969676">Lists</a></p>
+
+  <a name="969248"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969832">Tables</a></p>
+<p class="Body">
+  <a name="969249"> </a>The first section tells you how to choose which of the elements listed above is best for your application. The rest of the chapter describes behavior and appearance guidelines for each element.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="969250"> </a>Choosing Which Element to Use
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969253"> </a>To display data, you can use fields, tables, or lists. Fields are good for allowing free-form entry of text and for displaying large documents. Tables and lists display columnar lists of data.
+</p>
+<p class="Body">
+  <a name="969254"> </a>Text fields can display long documents or a single line of text. The Memo Pad Edit form shown in <a href="UI_Data.html#969260">Figure 6.1</a> is a good example of using a field to display and edit a document.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969260"> </a>Figure 6.1	 Multi-line text field
+</p>
+<p class="FgFigure">
+  <a name="969275"> </a><div align="left"><img src="images/UI_Dataa.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969277"> </a>The Address Book Edit form uses single-line fields for each part of a contact' s information (see <a href="UI_Data.html#969282">Figure 6.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969282"> </a>Figure 6.2	 Single line text fields
+</p>
+<p class="FgFigure">
+  <a name="969294"> </a><div align="left"><img src="images/UI_Data2.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969298"> </a>Use a table to display a list of items if those items represent the primary data of your application. Tables can show either a single column of text or multiple columns containing text and other user interface elements (see <a href="UI_Data.html#969303">Figure 6.3</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969303"> </a>Figure 6.3	 Table
+</p>
+<p class="FgFigure">
+  <a name="969317"> </a><div align="left"><img src="images/UI_Data3.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969318"> </a>A list user interface element is a box that generally displays a textual single-column list (see <a href="UI_Data.html#969323">Figure 6.4</a>) although it can be modified to display multiple columns or graphics. The user cannot directly edit the items presented in the list.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969323"> </a>Figure 6.4	 List
+</p>
+<p class="FgFigure">
+  <a name="969336"> </a><div align="left"><img src="images/UI_Data4.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969340"> </a>Use a list for information that is secondary in nature and that is primarily static. Some examples of places where a list element is appropriate are:
+</p>
+
+  <a name="969342"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The Edit Categories dialog uses a list to display categories because they are a secondary form of information. </p>
+
+  <a name="969343"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> An application that shows the time of day in various cities could show the possible cities in a list element because the primary data of the application are the times of day. </p>
+
+  <a name="969345"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> A document reader application could show the titles of available documents in a list element because the primary data are the contents of the documents themselves, not the list of titles. </p>
+<p class="Body">
+  <a name="969346"> </a>For more information on choosing between a table and a list, see <a href="UI_Data.html#969776">"Choosing Lists Over Tables"</a>.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="969352"> </a>Fields
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969357"> </a>Fields (see <a href="UI_Data.html#969360">Figure 6.5</a>) can display one or more lines of text. Fields can be either editable or non-editable.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969360"> </a>Figure 6.5	 Multi-line text field
+</p>
+<p class="FgFigure">
+  <a name="969376"> </a><div align="left"><img src="images/UI_Data5.gif" height="176" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="969416"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969382"> </a><div class="TableTitle">Table 6.1	 Field details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969386"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="969388"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969390"> </a><div class="CellBody">Width</div></td>
+    <td><a name="969392"> </a><div class="CellBody">Varies</div><a name="969393"> </a><div class="CellBody">Make as wide as possible</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969395"> </a><div class="CellBody">Height</div></td>
+    <td><a name="969397"> </a><div class="CellBody">11 </div><a name="969398"> </a><div class="CellBody">or <i>font height</i> + 2 (single line)</div><a name="969399"> </a><div class="CellBody">Make multi-line fields as tall as possible. Use a multiple of the line height (<i>font height</i> + 2).</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969401"> </a><div class="CellBody">Top</div></td>
+    <td><a name="969403"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969405"> </a><div class="CellBody">Left</div></td>
+    <td><a name="969407"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969409"> </a><div class="CellBody">Border</div></td>
+    <td><a name="969411"> </a><div class="CellBody">None. Dotted underline denotes editable field.</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969413"> </a><div class="CellBody">Label</div></td>
+    <td><a name="969415"> </a><div class="CellBody">Usually requires label to tell user what to write in the field</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="969417"> </a>System Supplied Behavior
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969419"> </a>Palm OS<span style="font-size: 8px; vertical-align: super">®</span> provides the following support for fields:
+</p>
+
+  <a name="969422"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Insertion point positioning. When the user taps in an editable text field, Palm OS displays a blinking cursor at that location. </p>
+
+  <a name="969424"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Text selection. The user can drag the stylus to select a range of text. On Palm OS 3.5 and later, the user can also double-tap a word to select that word or triple-tap to select the entire line. </p>
+<p class="Indented1"> <a name="969427"> </a>If the field is scrollable, the user can drag the stylus past the edge of the field, and the system scrolls the field in direction indicated. </p>
+
+  <a name="969429"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Display of text using a single font. You cannot, for example, display three words of text and have the second word be bold. </p>
+
+  <a name="969431"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Word wrapping for multi-line text fields. </p>
+
+  <a name="969433"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Maximum character limit. You can set a maximum number of characters for an editable text field. If the user enters more than the maximum number of characters, the field stops accepting input. </p>
+<div class="NINoteImportant"><hr>
+  <a name="969434"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">NOTE:  </span> The maximum characters attribute is actually the maximum number of bytes that the user can enter. In some encodings, characters are larger than one byte. Consider this when setting your field's maximum characters.
+<hr>
+</div>
+<p class="Body">
+  <a name="969436"> </a>Palm OS does <b>not</b> support overstrike input mode (that is, overwriting text to the right of the cursor), horizontal scrolling, or numeric formatting for text fields.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969437"> </a>Look and Feel
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969438"> </a>Follow these guidelines for the behavior and appearance of fields.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969439"> </a>Editable Fields Have Dotted Underline, Are Left Justified
+</h4>
+<p class="Body">
+  <a name="969441"> </a>Fields that are editable should use a dotted underline to indicate that the field can be edited. Do not use a solid underline.
+</p>
+<p class="Body">
+  <a name="969442"> </a>Virtually all editable fields should left-justify the text contained in them. Constructor for Palm OS allows right-justified fields, but you should only use right justification for numeric fields or for non-editable text fields that you use as labels.
+</p>
+<p class="Body">
+  <a name="969444"> </a>You can place an editable field anywhere on a form except in the title bar area.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969446"> </a>Edit Menu Required
+</h4>
+<p class="Body">
+  <a name="969447"> </a>Any form containing an editable text field must contain an Edit menu. See the section <a href="UI_Actions.html#967740">"Edit Menu Required for Text Fields"</a> for more information.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969452"> </a>Graffiti Shift Indicator Required
+</h4>
+<p class="Body">
+  <a name="969454"> </a>Any form containing an editable text field must contain a Graffiti Shift Indicator. Most modeless forms have the Graffiti Shift Indicator positioned as shown in <a href="UI_Data.html#969459">Figure 6.6</a>.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969459"> </a>Figure 6.6	 Graffiti Shift Indicator placement (modeless form)
+</p>
+<p class="FgFigure">
+  <a name="969479"> </a><div align="left"><img src="images/UI_Data6.gif" height="92" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969480"> </a>This placement leaves space for the scroll buttons if the form uses them. Even modeless forms that use a scroll bar instead of scroll buttons place the Graffiti Shift Indicator at this location. If you have so many controls at the bottom of the form that the Graffiti Shift Indicator cannot be placed 17 pixels in from the right, leave 4 pixels of white space between the Graffiti Shift Indicator and the control to its left.
+</p>
+<p class="Body">
+  <a name="969481"> </a>On modal forms, place the Graffiti Shift Indicator as shown in <a href="UI_Data.html#969486">Figure 6.7</a>. It's rare for modal forms to have both a Graffiti Shift Indicator and scroll buttons, but if yours does, place the Graffiti Shift Indicator 4 pixels to the left of the scroll buttons.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969486"> </a>Figure 6.7	 Graffiti Shift Indicator placement (modal form)
+</p>
+<p class="FgFigure">
+  <a name="969502"> </a><div align="left"><img src="images/UI_Data7.gif" height="85" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="969534"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969509"> </a><div class="TableTitle">Table 6.2	 Graffiti Shift Indicator details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969513"> </a><div class="CellHeading">Dimension</div></th>
+    <th><a name="969515"> </a><div class="CellHeading">Value</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969517"> </a><div class="CellBody">Width</div></td>
+    <td><a name="969519"> </a><div class="CellBody">9 pixels</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969521"> </a><div class="CellBody">Height</div></td>
+    <td><a name="969523"> </a><div class="CellBody">9 pixels</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969525"> </a><div class="CellBody">Left </div></td>
+    <td><a name="969527"> </a><div class="CellBody">135 (modeless form)</div><a name="969528"> </a><div class="CellBody">142 (modal form)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969530"> </a><div class="CellBody">Top</div></td>
+    <td><a name="969532"> </a><div class="CellBody">150 (modeless form)</div><a name="969533"> </a><div class="CellBody"><i>form height</i> - 13 (modal form)</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="969535"> </a>If you place a Graffiti Shift Indicator on your form, Palm OS correctly displays all of the Graffiti shift states (punctuation, symbol, uppercase shift, and uppercase lock). For Japanese systems, the Graffiti Shift Indicator also indicates whether the front end processor is on or off and whether it converts to Hiragana or Katakana characters.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969537"> </a>Enable Auto-Shifting for Most Text Fields
+</h4>
+<p class="Body">
+  <a name="969539"> </a>Turn on the auto-shift attribute for all editable text fields unless the field should not accept any uppercase letters. The auto-shift attribute is a convenience for your users that automatically capitalizes the first word in the field and the first word after a sentence. Do not enable auto-shifting if the field contains information that is not routinely capitalized, such as an email address.
+</p>
+<p class="Body">
+  <a name="969540"> </a>Note that the auto-shifting rules are language-specific, since capitalization differs depending on the region. These rules depend on the Palm OS version, the market into which the device is being sold, and so on.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969543"> </a>Set the Focus When the Form Is Displayed
+</h4>
+<p class="Body">
+  <a name="969545"> </a>When a form containing a text field is displayed, set the focus in the text field so that it shows the blinking cursor. Users can then start writing immediately without having to tap the text field first. If the form has more than one text field, set the focus in the first field. For example, the Address Book Edit form places the focus in the Last Name field (see <a href="UI_Data.html#969550">Figure 6.8</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969550"> </a>Figure 6.8	 Field with focus
+</p>
+<p class="FgFigure">
+  <a name="969559"> </a><div align="left"><img src="images/UI_Data8.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969560"> </a>Decide if Single-Line Fields Should Grow
+</h4>
+<p class="Body">
+  <a name="969562"> </a>Wherever possible, you should make the text field wide enough to display its maximum number of characters. If it's not possible, consider growing the field as needed. For example, the User Name field in the Network Preferences panel grows if the user enters a very long name (see <a href="UI_Data.html#969567">Figure 6.9</a>). All other controls on the form are adjusted downward.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969567"> </a>Figure 6.9	 Field that resizes as text grows
+</p>
+<p class="FgFigure">
+  <a name="969576"> </a><div align="left"><img src="images/UI_Data9.gif" height="177" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969577"> </a>If you absolutely cannot allow the user to enter more than a single line of information, turn on the single line attribute. If this attribute is not set, the user can accidentally enter a carriage return in the field and keep writing. If the field does not resize with the carriage return, the user may not know that they've entered extra information in the field.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969578"> </a>Add a Scroll Bar to Multi-Line Text Fields
+</h4>
+<p class="Body">
+  <a name="969580"> </a>If you have a multi-line text field that accepts a large number of characters, add a scroll bar to support scrolling the text field. See <a href="UI_Scrolling.html#970029">Chapter 7, "Scrolling,"</a> for guidelines on scrolling.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969584"> </a>Limit the Amount of Required Data Entry
+</h4>
+<p class="Body">
+  <a name="969588"> </a>When designing your form, remember that most users only have the Graffiti power writing software and onscreen keyboard available to enter data. For this reason, you should try to limit the amount of data you require users to enter in a text field. Wherever possible, consider helping the user by providing pop-up lists instead of text fields, by auto-completing text the user enters in the field, and so on.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969589"> </a>Support Graffiti Navigation and Tabbing between Fields
+</h4>
+<p class="Body">
+  <a name="969592"> </a>Support the Graffiti navigation characters on forms containing several text fields that the user might fill out in succession. Although most users do not take the time to learn the Graffiti navigation characters, power users know them and appreciate interfaces that allow them. See <a href="UI_Data.html#969602">Table 6.3</a> for a list of the Graffiti navigation characters.
+</p>
+
+<h5 class="TgTable">
+  <a name="969649"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969602"> </a><div class="TableTitle">Table 6.3	 Graffiti navigation keystrokes </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969606"> </a><div class="CellHeading">Action</div></th>
+    <th><a name="969608"> </a><div class="CellHeading">Stroke</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969610"> </a><div class="CellBody">Next field</div></td>
+    <td><a name="969618"> </a><div class="CellBody"><div align="left"><img src="images/UI_Data10.gif" height="35" width="17" border="0" hspace="20" vspace="0">
+</div></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969620"> </a><div class="CellBody">Previous field</div></td>
+    <td><a name="969628"> </a><div class="CellBody"><div align="left"><img src="images/UI_Data11.gif" height="31" width="18" border="0" hspace="20" vspace="0">
+</div></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969630"> </a><div class="CellBody">Move cursor left one character</div></td>
+    <td><a name="969638"> </a><div class="CellBody"><div align="left"><img src="images/UI_Data12.gif" height="18" width="35" border="0" hspace="20" vspace="0">
+</div></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969640"> </a><div class="CellBody">Move cursor right one character</div></td>
+    <td><a name="969648"> </a><div class="CellBody"><div align="left"><img src="images/UI_Data13.gif" height="18" width="35" border="0" hspace="20" vspace="0">
+</div></div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="969651"> </a>Also consider that users may fill out your form using an external or built-in keyboard. These users expect that pressing the tab key will move the cursor to the next field and that pressing the shift and tab keys will move to the previous field. Support this functionality where possible.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969652"> </a>Validate After Text Is Entered
+</h4>
+<p class="Body">
+  <a name="969654"> </a>If your application needs to perform data validation on text entered into a field, provide a Done command button and validate all text fields when the user taps the button. It's tempting to perform validation as soon as the text is entered; however, doing so is a poor design decision for Palm OS.
+</p>
+<p class="Body">
+  <a name="969655"> </a>Suppose the user receives a phone call in the middle of entering data and needs to schedule an appointment with the caller. If the user has made a mistake entering data in the current field and you do not allow the user to exit your form until the mistake is corrected, the user could become extremely frustrated. It's better to preserve the data as the user has entered it and allow the user to exit immediately. When your application is relaunched, display the data entry form with the partially entered data. Validate only when the Done button is tapped.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969657"> </a>Breaking the Rules
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969659"> </a>Text fields normally do not belong in the command button area, but you can place a field in this area if it allows the user to navigate the view. The Address Book application's main form uses such a text field (see <a href="UI_Data.html#969665">Figure 6.10</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969665"> </a>Figure 6.10	 Text field in command button area
+</p>
+<p class="FgFigure">
+  <a name="969674"> </a><div align="left"><img src="images/UI_Data14.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HaHeadA">
+  <a name="969676"> </a>Lists
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969681"> </a>A list (see <a href="UI_Data.html#969688">Figure 6.11</a>) provides a box with a list of choices to the user. The list is scrollable if the choices don't all fit in the box.
+</p>
+<p class="Body">
+  <a name="969682"> </a>In Palm OS, a list element associated with a pop-up trigger is called a pop-up list. This section describes lists that don't pop up. See <a href="UI_Options.html#968537">"Pop-Up Lists"</a> for guidelines for pop-up lists.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969688"> </a>Figure 6.11	 List
+</p>
+<p class="FgFigure">
+  <a name="969699"> </a><div align="left"><img src="images/UI_Data15.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="969738"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969705"> </a><div class="TableTitle">Table 6.4	 List details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969709"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="969711"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969713"> </a><div class="CellBody">Width</div></td>
+    <td><a name="969715"> </a><div class="CellBody">Width of longest item + 5</div><a name="969716"> </a><div class="CellBody">or width of longest item + 12 to allow scrolling</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969718"> </a><div class="CellBody">Height</div></td>
+    <td><a name="969720"> </a><div class="CellBody">11 items tall for a full screen list (modeless form)</div><a name="969721"> </a><div class="CellBody">10 items tall for a full screen list (modal form)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969723"> </a><div class="CellBody">Left</div></td>
+    <td><a name="969725"> </a><div class="CellBody">Varies</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969727"> </a><div class="CellBody">Top</div></td>
+    <td><a name="969729"> </a><div class="CellBody">18 for a full screen list</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969731"> </a><div class="CellBody">Border</div></td>
+    <td><a name="969733"> </a><div class="CellBody">1 pixel solid rectangle</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969735"> </a><div class="CellBody">Label</div></td>
+    <td><a name="969737"> </a><div class="CellBody">Usually not necessary</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="969740"> </a>System Supplied Behavior
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969741"> </a>Palm OS supplies the following behavior for every list.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969742"> </a>Pen Interaction
+</h4>
+<p class="Body">
+  <a name="969743"> </a>Tapping a list item unhighlights the current selection and highlights the item under the pen. Dragging the pen through the list highlights the item under the pen. Dragging the pen above or below the list causes the list to scroll if it contains more choices than are visible. If the pen is otherwise dragged outside the list, the selection is unchanged.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969744"> </a>Scrollable Lists
+</h4>
+<p class="Body">
+  <a name="969746"> </a>If there are more choices than can be displayed, the system draws small arrows (scroll indicators) in the right margin next to the first and last visible choice. When the pen comes down and up on a scroll indicator, the list is scrolled. When the user scrolls down, the last visible item becomes the first visible item if there are enough items to fill the list. If not, the list is scrolled so that the last item of the list appears at the bottom of the list. The reverse is true for scrolling up. The scrolling hard keys on the handheld perform the same behavior. Scrolling doesn't change the current selection.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969747"> </a>Look and Feel
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969748"> </a>Follow these guidelines for the behavior and appearance of lists.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969749"> </a>Always Show Current Selection
+</h4>
+<p class="Body">
+  <a name="969750"> </a>The list should always show the current selection when the form containing it is first opened. Suppose the user opens a form containing a list with twenty items, scrolls the list to the bottom, selects item fifteen, and dismisses the form. The next time the user opens the form, the list should still be scrolled to the bottom and item fifteen should be selected.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969751"> </a>Present Items in a Logical Order
+</h4>
+<p class="Body">
+  <a name="969752"> </a>Position list items so that the most useful items are near the top. For example, if you are presenting a list of times of day, start the list with the most active part of the day, such as 8:00 AM. Do not start with midnight.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969753"> </a>Use a Scroll Bar for Large Lists
+</h4>
+<p class="Body">
+  <a name="969755"> </a>Although lists come with their own scroll indicators and handle scrolling automatically, you can suppress the display of these indicators programmatically and attach a scroll bar to the list instead (see <a href="UI_Data.html#969763">Figure 6.12</a>). You should consider doing so if the list is the main element on your form and it contains a large number of items. The scroll bar is preferred for large lists because the scroll bar provides an indicator of location. See <a href="UI_Scrolling.html#970029">Chapter 7, "Scrolling,"</a> for more information.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969763"> </a>Figure 6.12	 List with scroll bar
+</p>
+<p class="FgFigure">
+  <a name="969772"> </a><div align="left"><img src="images/UI_Data16.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969773"> </a>Breaking the Rules
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969774"> </a>This section points out a few applications that break the list guidelines and tells you if doing so was appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969776"> </a>Choosing Lists Over Tables
+</h4>
+<p class="Body">
+  <a name="969778"> </a>Lists and tables are not interchangeable. A list always displays a box around its contents. This box conveys that the information inside of it is secondary to some other type of data in the application.
+</p>
+<p class="Body">
+  <a name="969780"> </a>Many application developers shy away from using tables because of the degree of programming difficulty involved. Instead, they use a list element because lists are easier to work with programmatically (see <a href="UI_Data.html#969785">Figure 6.13</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="969785"> </a>Figure 6.13	 Improper use of a list
+</p>
+<p class="FgFigure">
+  <a name="969793"> </a><div align="left"><img src="images/UI_Data17.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969798"> </a>The form shown in <a href="UI_Data.html#969785">Figure 6.13</a> is an early design of the main form of the Books application described in <a href="UI_Design.html#964444">Chapter 1, "Palm OS Application Design."</a> This application's primary purpose to catalog the books that a person owns. The book titles displayed in the form are thus the main data of the application and should be displayed in a table.
+</p>
+<p class="Body">
+  <a name="969803"> </a>There are ways to programmatically suppress the drawing of the box around the list. As long as your application suppresses the list's border and scroll buttons so that it looks and feels exactly like a table element would, then you may use a list element instead. Note that you can use lists to simulate multi-column tables as well as single-column tables.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="969804"> </a>Tall Lists
+</h4>
+<p class="Body">
+  <a name="969806"> </a>If you use as much of the data area of a form as possible to display a list, the list can show eleven items maximum. This can be problematic if you have a list with twelve items. You hate to make your users scroll just to reach the last item in the list.
+</p>
+<p class="Body">
+  <a name="969811"> </a>The Set Time dialog shown in <a href="UI_Data.html#969813">Figure 6.14</a> has this problem. The minutes list has exactly twelve items. To show all twelve items, the list has encroached on the command button area of the form. The list containing the hours was resized to match. To make room for these lists, two command buttons were moved from this area to the left side of the form.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969813"> </a>Figure 6.14	 List in command button area
+</p>
+<p class="FgFigure">
+  <a name="969826"> </a><div align="left"><img src="images/UI_Data18.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969827"> </a>Another possible approach to this problem would have been to have each of the two lists show only eight items because it's likely that a user is scheduling appointments during an eight-hour work day. This would have made room for all four buttons at the bottom of the form.
+</p>
+<p class="Body">
+  <a name="969828"> </a>The designers of this form weighed the two possible approaches and decided that it is easier for the user if he or she can see all possible choices for the minutes field at once. This usability factor outweighed any other considerations on control placement guidelines.
+</p>
+<p class="Body">
+  <a name="969829"> </a>You'll probably not run into a similar situation when designing your interface. If you do, avoid mimicking this interface without clearly considering the trade offs involved. Grow the list into the command button area only if you believe the possible user benefits of doing so clearly outweigh any other design considerations.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="969832"> </a>Tables
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969837"> </a>Tables (see <a href="UI_Data.html#969840">Figure 6.15</a>) are a convenient way to display a set of data and organize that data into one or more columns.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969840"> </a>Figure 6.15	 Table
+</p>
+<p class="FgFigure">
+  <a name="969848"> </a><div align="left"><img src="images/UI_Data19.gif" height="180" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="969888"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="969854"> </a><div class="TableTitle">Table 6.5	 Table details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="969858"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="969860"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="969862"> </a><div class="CellBody">Width</div></td>
+    <td><a name="969864"> </a><div class="CellBody">160 (modeless form)</div><a name="969865"> </a><div class="CellBody">148 (modal form)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969867"> </a><div class="CellBody">Height</div></td>
+    <td><a name="969869"> </a><div class="CellBody">120 pixels (modeless form)</div><a name="969870"> </a><div class="CellBody">108 pixels (modal form)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969872"> </a><div class="CellBody">Row height</div></td>
+    <td><a name="969874"> </a><div class="CellBody">12 pixels (single-line rows)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969876"> </a><div class="CellBody">Top</div></td>
+    <td><a name="969878"> </a><div class="CellBody">18</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969880"> </a><div class="CellBody">Left</div></td>
+    <td><a name="969882"> </a><div class="CellBody">0 for modeless form</div><a name="969883"> </a><div class="CellBody">4 for modal form</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="969885"> </a><div class="CellBody">Border</div></td>
+    <td><a name="969887"> </a><div class="CellBody">None. </div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="969889"> </a>System Supplied Behavior
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969891"> </a>Tables are highly configurable objects. The system supplied behavior depends heavily on the type of table you create. Palm OS supports the use of certain user interface elements in the table, namely editable text fields, check boxes, and pop-up lists. Palm OS ensures that these elements work exactly as they do when they appear outside of a table.
+</p>
+<p class="Body">
+  <a name="969892"> </a>If the table displays non-editable text, Palm OS ensures that the text is highlighted when the pen is down in the bounds of the table item and unhighlighted when the pen is released. Note that only a single item is selected. Palm OS does not support the selection of an entire table row.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="969893"> </a>Look and Feel
+<a href="#969235"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="969895"> </a>Tables do not have borders or column headings because the short-term clarity is not worth the long-term loss of space. From a user interface standpoint, there are two types of tables: tables that allow direct editing and tables that don't.
+</p>
+<p class="Body">
+  <a name="969899"> </a>The To Do List main form (see <a href="UI_Data.html#969901">Figure 6.16</a>) is an example of a table that allows direct editing. To create a new item in the list, you tap the New command button. From there, you can directly enter the text of the task, assign its priority and due date, and check the box when the task is done.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969901"> </a>Figure 6.16	 Table with direct editing
+</p>
+<p class="FgFigure">
+  <a name="969909"> </a><div align="left"><img src="images/UI_Data20.gif" height="178" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969915"> </a>The Address Book list view (see <a href="UI_Data.html#969917">Figure 6.17</a>) is an example of a table that doesn't allow direct editing. In such a table, you must decide what happens when the user taps an item. In most cases, the application should display a form that edits the data in that item.
+</p>
+
+<p class="FFigureCaption">
+  <a name="969917"> </a>Figure 6.17	 Table without direct editing
+</p>
+<p class="FgFigure">
+  <a name="969925"> </a><div align="left"><img src="images/UI_Data21.gif" height="177" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="969926"> </a>As stated previously, Palm OS only allows selection of a single table item at a time. Your application must be designed so that each item selection has a different and unique purpose.
+</p>
+<p class="Body">
+  <a name="969929"> </a>Consider the table in the Address Book list view. This table has two columns, but they might not be the columns you think they are. The first column displays both the contact name and phone number or email address. The second column is a very narrow column that displays the note icon if a contact has a note attached to it. Tapping an item in the first column displays more information about the selected contact. Tapping an item in the second column (even if the item is blank) displays the Note form, in which users can enter a free-form note about the contact.
+</p>
+<p class="Body">
+  <a name="969930"> </a>If you have a similar display, you'll probably be tempted to show the contact name in one column, the phone number in a second column, and the note icon in a third column. Such an interface is appropriate only if tapping the phone number performs a different function than tapping the contact name. If tapping either the name or the phone number takes the user to the same form, both the name and the number should highlight at the same time.
+</p>
+<p class="Body">
+  <a name="969932"> </a>
+</p>
+<p class="Body">
+  <a name="968045"> </a>
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

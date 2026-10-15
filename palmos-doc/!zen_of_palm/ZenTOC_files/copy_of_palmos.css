@@ -1,0 +1,123 @@
+A:link {
+	FONT-WEIGHT: bold; COLOR: #369
+}
+A {
+	TEXT-DECORATION: none
+}
+#formbox {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana
+}
+A:unknown {
+	COLOR: #f90; TEXT-DECORATION: underline
+}
+A:unknown {
+	COLOR: #369; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f90; TEXT-DECORATION: underline
+}
+BODY {
+	FONT-SIZE: 11px; BACKGROUND: url(/images/shared/bkgrnd_orb_1600.gif) white no-repeat; FONT-FAMILY: verdana, arial, helvetica
+}
+STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: verdana, arial, helvetica
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #333; FONT-FAMILY: verdana, arial, helvetica
+}
+.subnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #69c; FONT-FAMILY: verdana, arial, helvetica; TEXT-DECORATION: none
+}
+.smalltext {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana, arial, helvetica
+}
+.default {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica; TEXT-ALIGN: left
+}
+.140ldg {
+	LINE-HEIGHT: 140%
+}
+.tablehdg {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #036; FONT-FAMILY: verdana, arial, helvetica
+}
+.tablehdgred {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #900; FONT-FAMILY: verdana, arial, helvetica
+}
+.stdhdg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #036; FONT-FAMILY: verdana, arial, helvetica
+}
+.stdhdglink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: verdana, arial, helvetica
+}
+.stdhdggrey {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: verdana, arial, helvetica
+}
+.stdhdgwhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #fff; FONT-FAMILY: verdana, arial, helvetica
+}
+.stdhdgred {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #900; FONT-FAMILY: verdana, arial, helvetica
+}
+.subhdg {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica
+}
+.subhdglink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, helvetica
+}
+.subhdgblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #036; FONT-FAMILY: verdana, arial, helvetica
+}
+.subhdgred {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #900; FONT-FAMILY: verdana, arial, helvetica
+}
+.largehdg {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: verdana, arial, helvetica
+}
+.largehdglink {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: verdana, arial, helvetica
+}
+.largehdgblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #036; FONT-FAMILY: verdana, arial, helvetica
+}
+.largehdgred {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #900; FONT-FAMILY: verdana, arial, helvetica
+}
+.footer {
+	FONT-SIZE: 10px; LINE-HEIGHT: 175%; FONT-FAMILY: arial, helvetica
+}
+.footerhidden {
+	FONT-SIZE: 10px; COLOR: #fff; LINE-HEIGHT: 175%; FONT-FAMILY: arial, helvetica
+}
+.smallprint {
+	FONT-SIZE: 10px; FONT-FAMILY: arial, helvetica
+}
+.ltblue {
+	COLOR: #69c
+}
+.dkblue {
+	COLOR: #036
+}
+.mdblue {
+	COLOR: #369
+}
+#underline {
+	TEXT-DECORATION: underline
+}
+#noline {
+	TEXT-DECORATION: none
+}
+.white {
+	COLOR: white
+}
+.red {
+	COLOR: #900
+}
+.yellow {
+	COLOR: #f90
+}
+.green {
+	COLOR: #063
+}
+.grey {
+	COLOR: #333
+}

@@ -1,0 +1,1068 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Forms</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:23:40">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="966014"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">3  Forms</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_FittingIn.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_Actions.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Forms.html">3  Forms</a></p>
+
+<p class="SideTOC2">
+<a href="#966043">Choosing between Types of Forms
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966078">Use Modal Forms Sparingly
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966084">Avoid Modal Forms for Lengthy Data Entry
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966094">Modeless Forms
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966159">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966178">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966250">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966321">Modal Forms
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966386">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966389">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966455">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966496">Alert Dialogs
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966560">Types of Alerts
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966635">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#966690">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966708">Progress Dialogs
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966793">About Dialogs
+</a></p>
+
+<p class="SideTOC2">
+<a href="#966862">Tips Dialogs
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="966015"> </a>This chapter describes the different types of forms available. <i>Forms</i> are analogous to windows in a desktop application. They are containers for control and data objects. There are two basic types of forms:
+</p>
+
+  <a name="966019"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966094">Modeless Forms</a> </p>
+
+  <a name="966023"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966321">Modal Forms</a> </p>
+<p class="Body">
+  <a name="966024"> </a>There are also several special cases of modal forms:
+</p>
+
+  <a name="966028"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966496">Alert Dialogs</a></p>
+
+  <a name="966032"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966708">Progress Dialogs</a></p>
+
+  <a name="966036"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966793">About Dialogs</a></p>
+
+  <a name="966040"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966862">Tips Dialogs</a></p>
+<p class="Body">
+  <a name="966041"> </a>This chapter tells you how to choose which type of form to use and then describes behavior and appearance guidelines for each type of form. The form types are covered in order from most commonly used to least commonly used.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="966043"> </a>Choosing between Types of Forms
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966046"> </a>Most applications should use more modeless forms than modal forms. <i>Modeless forms</i> are full-screen forms that are the primary screens in your application. <i>Modal forms</i> are sub-forms used for a specific purpose.
+</p>
+<p class="Body">
+  <a name="966049"> </a>Each application must have at least one modeless form, and most applications have more than one. For example the Address Book offers a main form that shows a list of contacts, an Address View form that shows the details for a single contact, and an Address Edit form that allows you to edit the contact information (see <a href="UI_Forms.html#966054">Figure 3.1</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="966054"> </a>Figure 3.1	 Modeless forms in the Address Book
+</p>
+<p class="FgFigure">
+  <a name="966063"> </a><div align="left"><img src="images/UI_Formsa.gif" height="458" width="480" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967360"> </a>Modal forms (see <a href="UI_Forms.html#967362">Figure 3.2</a>) are often shorter than the screen. They typically display only a few controls.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967362"> </a>Figure 3.2	 Modal form
+</p>
+<p class="FgFigure">
+  <a name="967370"> </a><div align="left"><img src="images/UI_Forms2.gif" height="168" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="966078"> </a>Use Modal Forms Sparingly
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966079"> </a>Reserve the use of modal forms for instances where a user must acknowledge a certain state before they can continue. Some acceptable uses of modal forms are:
+</p>
+
+  <a name="966080"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Setting options, such as application preferences</p>
+
+  <a name="966081"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Editing data that is changed rarely. For example, marking a record as private is an infrequent operation. The built-in applications place the control for this on a modal form. </p>
+
+  <a name="966082"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Editing commonly used parts of a database record if the rest of the record does not consist of discrete fields. </p>
+<p class="Indented1"> <a name="966083"> </a>For example, a Date Book appointment consists mainly of text, the name of the appointment. Setting an alarm for that appointment is common, but the alarm appears in the Details modal form with the uncommon fields because there is no room for it elsewhere. If your data consists of discrete fields similar to Address Book, it's better to edit all commonly used parts of your records in a single modeless form. </p>
+
+<h2 class="HBHeadB">
+  <a name="966084"> </a>Avoid Modal Forms for Lengthy Data Entry
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966086"> </a>Avoid the use of modal forms for lengthy data entry. Sometimes, applications that perform data validation display a series of modal forms, one stacked on top of the other. Avoid creating such a user interface. If, for example, you require a user to create a record by displaying three different modal forms, this requires a minimum of six taps: one tap to display each of the three forms, and one tap to dismiss each of the three forms. It is better to allow users to navigate between data entry forms at will, and it is better to have as few forms as possible.
+</p>
+<p class="Body">
+  <a name="966088"> </a>If your application needs to perform data validation, it is tempting to use a modal form and not allow the user to leave the form until the record is complete and validated. Doing so is a poor design decision that may result in user frustration. The user may be distracted in the middle of entering the data. Suppose the user receives a phone call and needs to schedule an appointment with the caller. If you don't allow the user to leave your application without validating the data, he or she must cancel the data entry operation to schedule the appointment and re-enter all of the data later.
+</p>
+<p class="Body">
+  <a name="966090"> </a>Instead, consider having your application behave in a similar manner as Memo Pad. Define a minimum set of data that must be present. If the user leaves the application in the middle of editing a record, save the record without validating it as long as that minimum data has been entered. When the user returns to your application, restore the edit form and restore the record that was previously being edited. Validate the data only when the user taps the Done button at the bottom of your form. If you have a corresponding desktop application, your conduit will have to check for and handle the case where a data record has not been validated. Your conduit can skip that database record and log the reason why it has not been synchronized.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="966094"> </a>Modeless Forms
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966096"> </a>A modeless form is the main GUI area of your application. Most forms are composed of a title bar at the top of the screen, an area for viewing or entering data, and one or more command buttons at the bottom that navigate to other forms (see <a href="UI_Forms.html#966102">Figure 3.3</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="966102"> </a>Figure 3.3	 Modeless form parts
+</p>
+<p class="FgFigure">
+  <a name="966125"> </a><div align="left"><img src="images/UI_Forms3.gif" height="175" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966158"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966131"> </a><div class="TableTitle">Table 3.1	 Modeless form details  </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966135"> </a><div class="CellHeading">Dimension</div></th>
+    <th><a name="966137"> </a><div class="CellHeading">Value</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966139"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966141"> </a><div class="CellBody">160 </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966143"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966145"> </a><div class="CellBody">160</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966147"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966149"> </a><div class="CellBody">0</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966151"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966153"> </a><div class="CellBody">0</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966155"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966157"> </a><div class="CellBody">None</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="966159"> </a>System Supplied Behavior
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966161"> </a>Palm OS<span style="font-size: 8px; vertical-align: super">®</span> supplies the following behavior for every modal form.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966162"> </a>Always Full Screen
+</h4>
+<p class="Body">
+  <a name="966163"> </a>The currently displayed form takes up the entire screen and remains on the screen at the same location until the user chooses a new form. It's not possible for the user to resize, move, or collapse a form.
+</p>
+<p class="Body">
+  <a name="966165"> </a>Keep in mind that screen sizes of future Palm Powered handhelds may vary. The Sony Clie already has a different screen resolution (320 X 320 pixels) than other Palm Powered handhelds although its screen is still the same size as other handhelds. The HandEra 330 has introduced the ability to rotate the display and the ability to collapse the Graffiti<span style="font-size: 8px; vertical-align: super">®</span> area. If the user collapses the Graffiti area, there is more space available to the application.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966169"> </a>Only Topmost Form Is Active
+</h4>
+<p class="Body">
+  <a name="966171"> </a>Only one form has the input focus at a time. This form is called the <i>active form</i>. If one form is drawn on top of the other (as is the case with modal forms), the topmost form is active until it is closed. Then the previous form becomes active.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966172"> </a>Form Navigation
+</h4>
+<p class="Body">
+  <a name="966174"> </a>To navigate to another form, the user does one of the following:
+</p>
+
+  <a name="966175"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Taps one of the controls in the current form.</p>
+
+  <a name="966176"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Taps an icon in the Graffiti area that displays another application.</p>
+
+  <a name="966177"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Presses a hard key that navigates to another application. </p>
+
+<h2 class="HBHeadB">
+  <a name="966178"> </a>Look and Feel
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966179"> </a>Follow these guidelines for the behavior and appearance of a modeless form.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966180"> </a>Limit Form to a Screenful of Information
+</h4>
+<p class="Body">
+  <a name="966182"> </a>Try to ensure that a form contains only one screenful of information. However, if it does not make sense to break the information into multiple forms, a form can be scrollable. For example, the Launcher form is scrollable so that it can show all of the installed applications. The Address Edit form is scrollable so that you can edit all fields in a contact entry on a single form.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966185"> </a>Use Title Bar to Orient the User
+</h4>
+<p class="Body">
+  <a name="966188"> </a>The title bar shows the title of the form flush left with the screen. If the form displays a database that uses categories, information about the category is flush right with the screen. Forms that display multiple records show a category pop-up list that can be used to filter the display. Forms that allow editing a single record display a selector trigger that allows you to change the category for that record. (See <a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a> for more information about selector triggers.) The Palm OS draws a 2-pixel line on the border between the title bar and the data area. <a href="UI_Forms.html#966196">Figure 3.4</a> shows example title bars.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966196"> </a>Figure 3.4	 Title bars
+</p>
+<p class="FgFigure">
+  <a name="966211"> </a><div align="left"><img src="images/UI_Forms4.gif" height="106" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966213"> </a>The purpose of the title bar is to orient the user. From a quick glance at the handheld, the user should be able to recognize the current application and current form within that application. Applications often look alike, so most should display a title bar that gives the name of the application followed by the name of the form. The Address Book follows this guideline, as shown in <a href="UI_Forms.html#966196">Figure 3.4</a>.
+</p>
+<p class="Body">
+  <a name="966218"> </a>The title bar can also provide extra information. The Mail application shows how many messages there are in the current mailbox. (See <a href="UI_Forms.html#966223">Figure 3.5</a>.) The Address Book shows an icon that indicates when the user's business card is being displayed or edited.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966223"> </a>Figure 3.5	 Extra information on title bar
+</p>
+<p class="FgFigure">
+  <a name="966227"> </a><div align="left"><img src="images/FormTitleMail.gif" height="25" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966228"> </a>Title Bar Controls Are Primarily Informational
+</h4>
+<p class="Body">
+  <a name="966231"> </a>You can place controls in the title bar. The Date Book application shows a control that allows the user to select a day of the week. It is best if controls in the title bar are primarily informational in nature, that is, if they are the type of control that the user seldom changes. Keep in mind that users interact mainly with the Graffiti area of the handheld, which is below the bottom of the form. If your controls are in the title bar, users must move their hands as far away from the Graffiti area as possible. It is better to place the more commonly accessed controls near the bottom of the screen.
+</p>
+<p class="Body">
+  <a name="966233"> </a>If your application does not support categories but your title bar has a pop-up list on the right side of the screen, that pop-up list must display category-like information that filters the display. Do not use this space for a pop-up list that has a purpose other than filtering the display.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966234"> </a>Games Should Have Title Bars
+</h4>
+<p class="Body">
+  <a name="966236"> </a>On Palm Powered<span style="font-size: 8px; vertical-align: super">TM</span> handhelds, even games have title bars (see <a href="UI_Forms.html#966241">Figure 3.6</a>). The title bar makes an excellent location to show the game status: the score, current level, and so on.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966241"> </a>Figure 3.6	 A title bar for a game
+</p>
+<p class="FgFigure">
+  <a name="966249"> </a><div align="left"><img src="images/UI_Forms6.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="966250"> </a>Breaking the Rules
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966251"> </a>This section points out a few of the applications that break modeless form guidelines and tells you if doing so was appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966252"> </a>Nonstandard Title Bars
+</h4>
+<p class="Body">
+  <a name="966254"> </a>If the form's data area is so distinctive that it cannot be mistaken for another application, you may use the title bar to display something other than the application and form name. However, the information in the title bar still should orient the user.
+</p>
+<p class="Body">
+  <a name="966259"> </a>For example, the Date Book main form (see <a href="UI_Forms.html#966261">Figure 3.7</a>) uses its title bar to show the current date, the day of the week, and controls that allow users to navigate to a different date. It can do so because the main form is clearly an appointment calendar for a certain date. The user would gain little if the Date Book showed a title that said "Date Book Day View" and had the current date and the day selection controls below the title bar.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966261"> </a>Figure 3.7	 Other orienting information in title bar
+</p>
+<p class="FgFigure">
+  <a name="966271"> </a><div align="left"><img src="images/UI_Forms7.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966272"> </a>In rare circumstances, the title bar may be skipped altogether, but only if the form cannot possibly be mistaken for some other application and the user could not be confused about its purpose. The Calculator application does not display a title bar (see <a href="UI_Forms.html#966278">Figure 3.8</a>). This provides more room for the numeric display area and the buttons, allowing for buttons large enough to be tapped with fingers instead of the stylus.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966278"> </a>Figure 3.8	 Modeless form with no title bar
+</p>
+<p class="FgFigure">
+  <a name="966286"> </a><div align="left"><img src="images/UI_Forms8.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966288"> </a>Note, however, that if users see a title bar, they expect to see some form of a title, whether it is the current date or time or the title of the form. Resist the temptation to include the title bar but omit the title in favor of adding other controls to your application (see <a href="UI_Forms.html#966293">Figure 3.9</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="966293"> </a>Figure 3.9	 Bad example of title bar
+</p>
+<p class="FgFigure">
+  <a name="966301"> </a><div align="left"><img src="images/UI_Forms9.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966306"> </a>The Note view (see <a href="UI_Forms.html#966308">Figure 3.10</a>) used in Address Book, Date Book, and To Do is another example of a modeless form that breaks the title bar rules. In this case, you should never follow its example. The Note view shows a dark background for the entire length of the title bar and centers its title rather than left-justifying it. This makes the Note view look like a modal form without a border.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966308"> </a>Figure 3.10	 Bad example of title bar
+</p>
+<p class="FgFigure">
+  <a name="966316"> </a><div align="left"><img src="images/UI_Forms10.gif" height="172" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966317"> </a>The Note feature was designed early in the development of the Palm OS and its built-in applications. It uses the name of the appointment, contact, or task as its title. At the time, it was thought that left-justifying the title made the form look strange. In retrospect, there were several better ways to solve this problem without breaking the guidelines. It would be better to make the Note view a modal form to underscore that this form simply changes one field in a database's record, or to use a modeless form whose title began with the word "Note."
+</p>
+
+<h2 class="HaHeadA">
+  <a name="966321"> </a>Modal Forms
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966323"> </a>A <i>modal form</i>, or <i>dialog</i>, is a sub-form that is used for a specific purpose. Modal forms are displayed on top of the current form. Modal forms have a different title bar style than modeless forms, and they have a border (see <a href="UI_Forms.html#966330">Figure 3.11</a>).
+</p>
+<p class="Body">
+  <a name="966327"> </a>Modal forms should be far less common in your application than modeless forms. Their main use is for setting options, such as application preferences.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966330"> </a>Figure 3.11	 Modal form
+</p>
+<p class="FgFigure">
+  <a name="966350"> </a><div align="left"><img src="images/UI_Forms11.gif" height="168" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966385"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966356"> </a><div class="TableTitle">Table 3.2	 Modal form details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966360"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="966362"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966364"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966366"> </a><div class="CellBody">156 (to allow for the border)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966368"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966370"> </a><div class="CellBody">20 to 141 </div><a name="966371"> </a><div class="CellBody">or 156 if it must be &gt; 141</div><a name="966372"> </a><div class="CellBody">Always make as small as possible</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966374"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966376"> </a><div class="CellBody">158 - <i>height</i> </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966378"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966380"> </a><div class="CellBody">2</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966382"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966384"> </a><div class="CellBody">2 pixels on each side</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="966386"> </a>System Supplied Behavior
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966388"> </a>The Palm OS ensures that the topmost modal form is the only form that receives pen down events or keystrokes. The user cannot, for example, click the main form's title bar to dismiss a modal form. Also, the global Find facility is not available while a modal form is displayed.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="966389"> </a>Look and Feel
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966390"> </a>Follow these guidelines for the behavior and appearance of a modal form.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966392"> </a>The User Can Exit at Any Time
+</h4>
+<p class="Body">
+  <a name="966394"> </a>You must allow the user to exit the application by tapping an icon in the Graffiti area or pressing a hard key even while a modal form is displayed. When you create the modal form, you specify a default button. If the user exits the application without tapping a button on the modal form, the application behaves as if this button were tapped. The default button should be the one that results in the least destructive action. Typically, this is the Cancel button, but in some cases the OK button is least destructive.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966395"> </a>Make Modal Forms as Short as Possible
+</h4>
+<p class="Body">
+  <a name="966397"> </a>Although modal forms are always the width of the screen, they are not always the height of the screen. It's best to make the modal form shorter than the screen so that the main form, appearing below the modal form, provides context. Try to make the modal form as short as possible. Allow at least 3 pixels of space between the main form's title bar and the top of the modal form. If the modal form obscures any portion of the main form's title bar, make the modal form the full size of the screen. (See <a href="UI_Forms.html#966402">Figure 3.12</a>.)
+</p>
+
+<p class="FFigureCaption">
+  <a name="966402"> </a>Figure 3.12	 Full screen modal form
+</p>
+<p class="FgFigure">
+  <a name="966410"> </a><div align="left"><img src="images/UI_Forms12.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966412"> </a>Always align the modal form with the bottom of the screen. Modal forms align with the bottom of the screen for two reasons. First, it allows the main form's title to be visible, providing more context for the user. Second, it places the modal form's controls closer to the Graffiti area.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966413"> </a>Buttons on Modal Form
+</h4>
+<p class="Body">
+  <a name="966416"> </a>Most modal forms have an OK button in the bottom left and a Cancel button immediately to its right. They may have other buttons aligned with these buttons as necessary (see <a href="UI_Forms.html#966330">Figure 3.11</a>).
+</p>
+<p class="Body">
+  <a name="966420"> </a>If the modal form performs more than one action, use a Done button to dismiss the form rather than OK and Cancel. For example, you might beam more than one application from the Launcher's Beam form (see <a href="UI_Forms.html#966425">Figure 3.13</a>). In this case, a Cancel button does not make sense because you can't cancel a beam after it has finished. The OK button is renamed Done in this case because users tap the button to indicate that they are done beaming applications.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966425"> </a>Figure 3.13	 Modal form with Done button
+</p>
+<p class="FgFigure">
+  <a name="966433"> </a><div align="left"><img src="images/UI_Forms13.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966435"> </a>Edit Menu Required if Form Has a Text Field
+</h4>
+<p class="Body">
+  <a name="966437"> </a>If the modal form has an editable text field, you must associate a menu bar with it, which should contain the Edit menu at minimum. This allows support for the copy and paste shortcut keys. The menu always displays from the top of the screen (see <a href="UI_Forms.html#966442">Figure 3.14</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="966442"> </a>Figure 3.14	 Menu on modal form
+</p>
+<p class="FgFigure">
+  <a name="966450"> </a><div align="left"><img src="images/UI_Forms14.gif" height="173" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966451"> </a>A Graffiti Shift Indicator is required as well as an Edit menu for forms with editable text fields. See <a href="UI_Data.html#969352">"Fields"</a> for more information.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="966455"> </a>Breaking the Rules
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966456"> </a>This section points out a few of the applications that break modal form guidelines and tells you if doing so was appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966457"> </a>Modal Forms Without OK Button
+</h4>
+<p class="Body">
+  <a name="966459"> </a>Your modal form may exclude the OK button if it helps minimize the number of required taps. Most modal forms have more than one control or have a text field. The OK button is required to let the application know when the user is done entering information. However, consider the Go To Date form in Date Book (see <a href="UI_Forms.html#966465">Figure 3.15</a>). This form is dismissed as soon as the user has tapped one of the dates. Because choosing a date is the only purpose of the form, the OK button has been removed.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966465"> </a>Figure 3.15	 Modal form with no OK button
+</p>
+<p class="FgFigure">
+  <a name="966472"> </a><div align="left"><img src="images/UI_Forms15.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966474"> </a>Modal Forms that Don't Exit
+</h4>
+<p class="Body">
+  <a name="966476"> </a>It's possible for a user to miss a modal form entirely. Suppose the user becomes distracted immediately before the form is displayed, the handheld powers off, and then, to turn it back on again, the user presses one of the hard keys. The hard key dismisses the modal form by simulating a default button tap.
+</p>
+<p class="Body">
+  <a name="966478"> </a>In most cases, the default button should protect the user from any unintended consequences of not seeing the modal form. For example, if the form was a Delete confirmation dialog, the default button would be the Cancel button, so not seeing the modal form is not destructive.
+</p>
+<p class="Body">
+  <a name="966480"> </a>If a default button is not enough protection for the user, you can create the modal form such that it is not dismissed until one of its buttons is explicitly tapped. Usually, this is only the case when the form presents vital information to the user. The low battery alert dialog, for example, must be explicitly dismissed because its intent is to inform the user of impending data loss. The Date Book alarm dialog and the Attention Manager dialog (see <a href="UI_Forms.html#966487">Figure 3.16</a>) also must be explicitly dismissed because they present information that the user has requested to see at a specific time. If the user were to miss this information, it would be more annoying than having a dialog that must be explicitly dismissed.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966487"> </a>Figure 3.16	 Attention Manager dialog
+</p>
+<p class="FgFigure">
+  <a name="966494"> </a><div align="left"><img src="images/UI_Forms16.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HaHeadA">
+  <a name="966496"> </a>Alert Dialogs
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966499"> </a>An alert dialog is a special case of a modal form. Alert dialogs are used in specific instances and have more rigid rules about appearance. Alert dialogs have no other controls on them besides the command buttons used to dismiss the alert (see <a href="UI_Forms.html#966505">Figure 3.17</a>). They display an alert icon and a message.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966505"> </a>Figure 3.17	 Alert dialog
+</p>
+<p class="FgFigure">
+  <a name="966525"> </a><div align="left"><img src="images/UI_Forms17.gif" height="124" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966558"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966531"> </a><div class="TableTitle">Table 3.3	 Alert dialog details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966535"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="966537"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966539"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966541"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966543"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966545"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966547"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966549"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966551"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966553"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966555"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966557"> </a><div class="CellBody">2 pixels on each side</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="966560"> </a>Types of Alerts
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966561"> </a>Use an alert dialog to display an error condition, to prompt the user for a response, to inform the user of an event, or to warn the user of an upcoming event (such as low battery level).
+</p>
+<p class="Body">
+  <a name="966565"> </a><a href="UI_Forms.html#966570">Table 3.4</a> describes the four possible types of alerts, when to use them, the icon to display on each, and an example message.
+</p>
+
+<h5 class="TgTable">
+  <a name="966634"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966570"> </a><div class="TableTitle">Table 3.4	 Alert dialog types</div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966578"> </a><div class="CellHeading">Type</div></th>
+    <th><a name="966580"> </a><div class="CellHeading">Icon</div></th>
+    <th><a name="966582"> </a><div class="CellHeading">Definition</div></th>
+    <th><a name="966584"> </a><div class="CellHeading">Example Message</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966587"> </a><div class="CellBody">Information</div></td>
+    <td><p class="FgFigure">
+  <a name="966592"> </a><div align="left"><img src="images/AlertIconInform.gif" height="18" width="39" border="0" hspace="20" vspace="0">
+</div>
+</p>
+</td>
+    <td><a name="966594"> </a><div class="CellBody">Lowest-level warning. Action shouldn't or can't be completed but doesn't generate an error or risk data loss.</div></td>
+    <td><a name="966596"> </a><div class="CellBody">An alarm setting must be between 1 and 99.</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966599"> </a><div class="CellBody">Confirmation</div></td>
+    <td><p class="FgFigure">
+  <a name="966604"> </a><div align="left"><img src="images/AlertIconQuest.gif" height="18" width="39" border="0" hspace="20" vspace="0">
+</div>
+</p>
+</td>
+    <td><a name="966606"> </a><div class="CellBody">Confirm an action or suggest options.</div></td>
+    <td><a name="966608"> </a><div class="CellBody">Your option to receive beamed data is turned off. Do you want to turn it on now?</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966611"> </a><div class="CellBody">Warning</div></td>
+    <td><p class="FgFigure">
+  <a name="966616"> </a><div align="left"><img src="images/AlertIconWarn.gif" height="18" width="39" border="0" hspace="20" vspace="0">
+</div>
+</p>
+</td>
+    <td><a name="966618"> </a><div class="CellBody">Confirm a serious or potentially dangerous action. </div></td>
+    <td><a name="966620"> </a><div class="CellBody">Are you sure you want to delete this entry?</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966623"> </a><div class="CellBody">Error</div></td>
+    <td><p class="FgFigure">
+  <a name="966629"> </a><div align="left"><img src="images/UI_Forms21.gif" height="18" width="39" border="0" hspace="20" vspace="0">
+</div>
+</p>
+</td>
+    <td><a name="966631"> </a><div class="CellBody">Attempted action generated error and/or cannot be completed.</div></td>
+    <td><a name="966633"> </a><div class="CellBody">The battery is too low for this operation.</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="966635"> </a>Look and Feel
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966636"> </a>Follow these guidelines for the behavior and appearance of an alert dialog.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966638"> </a>The User Still Can Exit at Any Time
+</h4>
+<p class="Body">
+  <a name="966640"> </a>The rules for an alert dialog's behavior are the same as those described in <a href="UI_Forms.html#966321">"Modal Forms."</a> Specifically, you must allow the user to press a hard key or tap an icon in the Graffiti area to exit the application while an alert is displayed. If so, your application behaves as if the default button on the alert were tapped. You specify which button is the default when you create the alert.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966645"> </a>Title Describes Operation That Caused Alert
+</h4>
+<p class="Body">
+  <a name="966647"> </a>The title of the alert dialog should describe the operation that the user was trying to perform. For example, alert dialogs about the beaming operation have "Beam" in the title bar. An alert dialog about deleting an address from the Address Book is titled "Delete Address."
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966648"> </a>Message Is a Complete Jargon-Free Sentence
+</h4>
+<p class="Body">
+  <a name="966650"> </a>The message you display should be a complete sentence. It should describe the problem in plain language and, where possible, describe how to correct the problem. It should not contain computer jargon. "Disk full" is an example of a poor alert message. Palm Powered handhelds do not have disks, and users may not know what a disk is. A better message would be "The storage area is full."
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966652"> </a>Buttons Directly Answer Question
+</h4>
+<p class="Body">
+  <a name="966654"> </a>If the dialog simply displays a message, it should have a single button named "OK". If the dialog asks a question about how to proceed, avoid using generic buttons such as "Yes" and "No" or "OK" and "Cancel" wherever possible. When users are provided a message such as "Save data?" with buttons "Yes," "No," and "Cancel," they are often confused about which button to choose. Instead, it is better to make the affirmative answer to the question more explicit. Repeat the verb of the message (see <a href="UI_Forms.html#966660">Figure 3.18</a>). If the message is "Delete this record?" the buttons should be "Delete" and "Cancel," making it clear that choosing "Delete" deletes the data. Resort to "Yes" or "No" only if the alternative is cumbersome. The confirmation alert "Make this address your business card?" uses "Yes" and "No" buttons for this reason.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966660"> </a>Figure 3.18	 Alert dialog buttons
+</p>
+<p class="FgFigure">
+  <a name="966667"> </a><div align="left"><img src="images/UI_Forms22.gif" height="124" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="966668"> </a>Use Attention Manager for Reminders
+</h4>
+<p class="Body">
+  <a name="966670"> </a>If your application must remind the user of a particular event similar to the way the Date Book reminds users of appointments, use the Attention Manager dialog (see <a href="UI_Forms.html#966675">Figure 3.19</a>) on Palm OS 4.0 and later releases rather than displaying an alert dialog. To use the Attention Manager, you don't create an alert dialog resource. You write code that tells the Attention Manager what text to write in its dialog. The Attention Manager displays all current and past due reminders in a single dialog.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966675"> </a>Figure 3.19	 Attention Manager dialog
+</p>
+<p class="FgFigure">
+  <a name="966682"> </a><div align="left"><img src="images/UI_Forms23.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966683"> </a>In earlier releases, each application that reminded the user displayed a separate alert dialog for each reminder. Most users have run into the situation where they have had their handheld turned off all day, turn it on, and are presented with a series of alert dialogs about appointments that have passed. The Attention Manager displays a single dialog so that the user can dismiss all past reminders at once. It also has the ability to perform non-visual reminders such as playing sounds or vibrating the handheld.
+</p>
+<p class="Body">
+  <a name="966684"> </a>The Attention Manager is only designed for attempts to get attention that can be effectively suspended. It is <b>not</b> suitable for the following:
+</p>
+
+  <a name="966685"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Anything requiring an immediate response, such as the "put away" dialog that is used during beaming or a request to connect to another user </p>
+
+  <a name="966686"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Error messages </p>
+
+  <a name="966689"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> To Do List items or incoming email messages</p>
+
+<h2 class="HBHeadB">
+  <a name="966690"> </a>Breaking the Rules
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966692"> </a>If you want any other control on the alert dialog, you must create a modal form rather than an alert dialog. Use the alert icons on the modal form to make it look more like an alert dialog. <a href="UI_Forms.html#966697">Figure 3.20</a> shows an example of a modal form that behaves as an alert dialog. In this way, the dialog can include a check box that allows the user to archive the deleted record.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966697"> </a>Figure 3.20	 Modal dialog disguised as alert
+</p>
+<p class="FgFigure">
+  <a name="966704"> </a><div align="left"><img src="images/UI_Forms24.gif" height="101" width="321" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="966705"> </a>If your application runs only on Palm OS 3.5 and later, you can create an alert dialog that has a text field on it. You can use this, for example, to have a user enter a password to confirm the operation.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="966708"> </a>Progress Dialogs
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966710"> </a>Despite your best efforts, you may find that some lengthy operations cannot be avoided. For example, if you need to connect to a network or use the serial or infrared ports, there is no way to make a connection happen more quickly. In these cases, use a progress dialog (see <a href="UI_Forms.html#966716">Figure 3.21</a>) to indicate that an action is taking place.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966716"> </a>Figure 3.21	 Progress dialog
+</p>
+<p class="FgFigure">
+  <a name="966733"> </a><div align="left"><img src="images/UI_Forms25.gif" height="97" width="336" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966766"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966739"> </a><div class="TableTitle">Table 3.5	 Progress dialog details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966743"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="966745"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966747"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966749"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966751"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966753"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966755"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966757"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966759"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966761"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966763"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966765"> </a><div class="CellBody">2 pixels on each side</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="966767"> </a>The progress dialog has a bitmap and a message that are updated periodically to indicate that the operation is progressing. For example, when you beam a business card to another Palm Powered handheld, the Beam progress dialog shown in <a href="UI_Forms.html#966716">Figure 3.21</a> toggles between two beaming bitmaps and updates the message in the following order: "Initializing," "Starting," "Searching," "Connected," and "Sending."
+</p>
+<p class="Body">
+  <a name="966772"> </a>Progress dialogs dismiss themselves when the operation completes, so they do not include an OK or Done button. They do have a Cancel button so that the user can cancel the operation.
+</p>
+<p class="Body">
+  <a name="966774"> </a>The purpose of using a progress dialog is to placate the impatient or unknowing user who may believe that the handheld has crashed. The progress dialog informs the user of what the system or application is doing. If your task does not have multiple steps and if it takes more than one second but less than three seconds to complete, you may instead use a simple Please Wait form centered in the screen. The Launcher uses such a form while it gathers database information when you choose the Info menu item (see <a href="UI_Forms.html#966781">Figure 3.22</a>). However, as with progress dialogs, the Please Wait form is to be avoided if at all possible. Use it rarely if at all.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966781"> </a>Figure 3.22	 Please Wait form
+</p>
+<p class="FgFigure">
+  <a name="966789"> </a><div align="left"><img src="images/UI_Forms26.gif" height="172" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<div class="NINoteImportant"><hr>
+  <a name="966790"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">NOTE:  </span> Do not display the Please Wait form for more than a few seconds. If you do, the user will still believe that the handheld has frozen.
+<hr>
+</div>
+
+<h2 class="HaHeadA">
+  <a name="966793"> </a>About Dialogs
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966799"> </a>Use the about dialog (see <a href="UI_Forms.html#966804">Figure 3.23</a>) to display the version number and copyright notice for your application. All applications should have an about dialog. The about dialog must be accessible from the Options menu on the main form. Its title is "About <i>application</i>" where <i>application</i> is the name of your application. It has an OK button centered on the form and no Cancel button.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966804"> </a>Figure 3.23	 About dialog
+</p>
+<p class="FgFigure">
+  <a name="966819"> </a><div align="left"><img src="images/UI_Forms27.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966852"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966825"> </a><div class="TableTitle">Table 3.6	 About dialog details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966829"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="966831"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966833"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966835"> </a><div class="CellBody">156</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966837"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966839"> </a><div class="CellBody">156</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966841"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966843"> </a><div class="CellBody">2</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966845"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966847"> </a><div class="CellBody">2</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966849"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966851"> </a><div class="CellBody">2 pixels on each side</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="966853"> </a>The about dialog should contain the following types of information:
+</p>
+
+  <a name="966855"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Copyright notice</p>
+
+  <a name="966856"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Version number </p>
+
+  <a name="966857"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Terms of usage: Can your program be copied? Is it freeware, shareware, or commercial software? </p>
+
+  <a name="966858"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Registration information, such as the user's license number if they have paid or the amount of time remaining on the demo if they have not paid </p>
+
+  <a name="966860"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> A phone number or web site where they can go for support</p>
+
+<h2 class="HaHeadA">
+  <a name="966862"> </a>Tips Dialogs
+<a href="#966014"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966867"> </a>Tips dialogs (see <a href="UI_Forms.html#966870">Figure 3.24</a>) are displayed by modal forms when the user taps the "i" button in the corner of the modal form.
+</p>
+
+<p class="FFigureCaption">
+  <a name="966870"> </a>Figure 3.24	 Tips dialog
+</p>
+<p class="FgFigure">
+  <a name="966877"> </a><div align="left"><img src="images/UI_Forms28.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="966910"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="966883"> </a><div class="TableTitle">Table 3.7	 Tips dialog details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="966887"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="966889"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="966891"> </a><div class="CellBody">Width</div></td>
+    <td><a name="966893"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966895"> </a><div class="CellBody">Height</div></td>
+    <td><a name="966897"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966899"> </a><div class="CellBody">Top</div></td>
+    <td><a name="966901"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966903"> </a><div class="CellBody">Left</div></td>
+    <td><a name="966905"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="966907"> </a><div class="CellBody">Border</div></td>
+    <td><a name="966909"> </a><div class="CellBody">2 pixels on each side</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="966911"> </a>The tips dialog provides further assistance to a user who is wondering how to use a particular modal form. It is a good idea to associate a tips dialog with most, if not all, modal forms in your application other than progress or about dialogs.
+</p>
+<p class="Body">
+  <a name="966912"> </a>The tips dialog should briefly describe each field on the form, the purpose of each field, and any special symbols on the form. Some tips dialogs also tell the user about shortcuts that are otherwise hidden. For example, in Address Book a user can attach a note to a contact by tapping to the right of the contact's information in the list view. The user learns this if he or she reads the tips in the Address Book Details dialog.
+</p>
+<p class="Body">
+  <a name="966914"> </a>There is little or no formatting to the string that you supply for the tips dialog. You cannot, for example, change fonts or add a graphic to the tips. You also cannot change the dialog's title.
+</p>
+<div class="NINoteImportant"><hr>
+  <a name="966915"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">TIP:  </span> It's common to show a bulleted list in the tips dialog. To type a bullet in Constructor for Palm OS, set the string so that it shows all characters as hexadecimal, type "95", and then deselect the "View as Hex" option.
+<hr>
+</div>
+<p class="Body">
+  <a name="966917"> </a>Tips dialogs should only contain necessary and useful information. Because of the compact nature of the text presented in the dialog, this dialog is not a good venue for providing users with conceptual background material they might need to know to use your application effectively. Such information is best presented in an external user manual, not on the handheld itself. Tips dialogs also are not a place for extra information, such as programmer credits that you might see in an about dialog.
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,169 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Ten Things to Remember</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:24:32">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="917339"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">A  Ten Things to Remember</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_GraphicsColor.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UIGuidelinesIX.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="Top10.html">A  Ten Things to Remember</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="917340"> </a>This appendix summarizes ten design guidelines for Palm OS<span style="font-size: 8px; vertical-align: super">®</span> applications that developers often forget or ignore. It then tells you which sections in the book explain these guidelines in more detail.
+</p>
+  <a name="917341"> </a><p class="N1NumList">1.	  <b>Consider the user.</b></p><p class="Body">
+  <a name="917343"> </a>The most common mistake handheld application designers make is the most common mistake made by all application designers everywhere: they fail to learn about the user before designing the application and thus fail to provide an application that solves the user's problems.
+</p>
+<p class="Body">
+  <a name="917347"> </a><a href="UI_Design.html#964669">"The Design Process"</a> describes a process that helps you to create an application with the user in mind at all times.
+</p>
+  <a name="917348"> </a><p class="N1NumList">2.	  <b>Don't overcrowd the screen.</b></p><p class="Body">
+  <a name="917349"> </a>A user must be able to learn your application quickly and navigate through the display quickly. If you clutter the screen with too many controls, you slow the user down. See <a href="UI_Design.html#964500">"Fast and Simple"</a> for more information.
+</p>
+  <a name="917353"> </a><p class="N1NumList">3.	  Don't provide an Exit command button or an Exit menu item.</p><p class="Body">
+  <a name="917354"> </a>Palm Powered handheld users do not exit applications. They simply move to another application. See <a href="UI_Actions.html#967186">"Don't Provide Save or Exit Commands."</a>
+</p>
+<p class="Body">
+  <a name="917358"> </a>For a description of when breaking this guideline is allowed, see <a href="UI_Actions.html#968006">"Including an Exit Command."</a>
+</p>
+  <a name="917362"> </a><p class="N1NumList">4.	  Let the user leave your application.</p><p class="Body">
+  <a name="917364"> </a>You must allow the user to exit the application at any time. If you're displaying a modal form or an alert dialog, you must provide a default button. When the user exits your form, the system simulates the default button tap. See the following sections:
+</p>
+
+  <a name="917368"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965849">"Exiting the Application"</a></p>
+
+  <a name="917372"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966392">"The User Can Exit at Any Time"</a></p>
+
+  <a name="917376"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Forms.html#966638">"The User Still Can Exit at Any Time"</a></p>
+<p class="Body">
+  <a name="917380"> </a><a href="UI_Forms.html#966474">"Modal Forms that Don't Exit"</a> describes the one allowed exception to the rule.
+</p>
+  <a name="917381"> </a><p class="N1NumList">5.	  Launch quickly. </p><p class="Body">
+  <a name="917383"> </a>Applications should not display a splash screen when launching unless this is the first use of the application. Most applications should return to the last form that was being displayed before the user exited the application rather than always displaying a main screen at launch. See <a href="UI_FittingIn.html#965839">"Launching the Application."</a>
+</p>
+  <a name="917387"> </a><p class="N1NumList">6.	  Use modal forms sparingly.</p><p class="Body">
+  <a name="917389"> </a>In general, modal forms should be used for a single specific task only. Modeless forms are greatly preferred over modal forms. See <a href="UI_Forms.html#966043">"Choosing between Types of Forms"</a> for further discussion of when to use modeless and modal forms.
+</p>
+  <a name="917393"> </a><p class="N1NumList">7.	  Don't duplicate commands.</p><p class="Body">
+  <a name="917395"> </a>There's usually not a good reason to provide both a command button and a menu item for the same command. See <a href="UI_Actions.html#967138">"Don't Duplicate Commands"</a> and <a href="UI_Actions.html#968017">"Duplicating Menu Items"</a>.
+</p>
+  <a name="917402"> </a><p class="N1NumList">8.	  Remember the Graffiti<span style="font-size: 8px; vertical-align: super">®</span> Shift Indicator and Edit menu.</p><p class="Body">
+  <a name="917404"> </a>All forms with editable text fields must include a Graffiti Shift Indicator and an Edit menu. Even modal forms require the Edit menu to be present. See the following for further discussions:
+</p>
+
+  <a name="917408"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969446">"Edit Menu Required"</a></p>
+
+  <a name="917412"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969452">"Graffiti Shift Indicator Required"</a></p>
+
+  <a name="917416"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Data.html#969537">"Enable Auto-Shifting for Most Text Fields"</a></p>
+  <a name="917417"> </a><p class="N1NumList">9.	  Set the field focus.</p><p class="Body">
+  <a name="917419"> </a>In almost all cases if you have an editable field on a form, the field should have the focus when the form is first displayed. This must be set programmatically. See <a href="UI_Data.html#969543">"Set the Focus When the Form Is Displayed."</a>
+</p>
+  <a name="917423"> </a><p class="N1NumList">10.	  Leave room for the border of an object.</p><p class="Body">
+  <a name="917425"> </a>For all user interface elements, the border is drawn outside of the bounds of the object. The guidelines state that all objects should begin at the left edge of the screen. If, for example, you place a command button on the screen, it should actually start at pixel 1 to allow for the 1-pixel button border.
+</p>
+<p class="Body">
+  <a name="917429"> </a>See <a href="UI_Actions.html#967308">"Left-Align Buttons at the Bottom of the Form"</a> for further discussion.
+</p>
+<p class="Body">
+  <a name="483008"> </a>
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

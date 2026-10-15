@@ -1,0 +1,590 @@
+/* Palm HTML Dev Docs CSS */
+
+        a:active  { color: #f90} 
+        a:hover   { color: #f90}    
+        a:link    { color: #3366CC}    
+        a:visited { color: #369}   
+
+        body
+          { background-color: #FFFFFF;
+            color: #333;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+          }
+        table, ul, ol, p, h1, h2, h3, h4, h5, caption, blockquote
+          { color: #333;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px }
+        .Address
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .B1Bullet
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.4in; margin-top: .5em; margin-bottom: .5em;
+            text-align: left; text-indent: -.15in; text-decoration: none;
+            white-space: normal }
+        .B2BulletSub
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.55in; margin-top: .5em; margin-bottom: .5em;
+            text-align: left; text-indent: -.1in; text-decoration: none;
+            white-space: normal }
+        .Body
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: .2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .BodyRelative
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0.25em; margin-bottom: 0.25em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .BookTitle
+          { color: #333;
+            font-size: 18px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: center; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .booksubtitle
+          { color: #333;
+            font-size: 14px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: center; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CCodeCaption
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CellBody
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CellHeading
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CFCodefirst
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .ChChapter_Title
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .ChChapter_TitleTOC
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: .1in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .ChNChapterNumber
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CLCodeLast
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .COCodeoneline
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CodeBlock
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left:  0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: pre }
+        .CodeRule
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left:  0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CRCodeReg
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CWFCodewidefirst
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CWLCodewidelast
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+         .CWOCodewideoneline
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .CWRCodewidereg
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .FFigureCaption
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.2in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .FgFigure
+          { color: #fff;
+            font-size: 2px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .GroupTitlesIX
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HaHeadA
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0.4in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HaHeadATOC
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HBHeadB
+          { color: #333;
+            font-size: 14px; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0.2in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HBNHeadBNew
+          { color: #333;
+            font-size: 14px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.2in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HBNHeadBNewTOC
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: 0.3in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HCHeadC
+          { color: #333;
+            font-size: 13px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HDHeadD
+          { color: #333;
+            font-size: 12px; font-style: italic; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .HeadDocPage
+          { color: #036;
+            font-size: 20px; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Heading1
+          { color: #333;
+            font-size: 18px; font-style: normal; font-weight: bold;
+            margin-left: .75in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Heading2
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: normal;
+            margin-left: 3em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Heading3
+          { color: #333;
+            font-size: 14px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Heading4
+          { color: #333;
+            font-size: 12px; font-style: italic; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Indented1
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.4in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Indented2
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.55in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Indented3
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 13em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Indented4
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 15.5em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Indented5
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 20.1in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .IndentedRelative
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Level1IX
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 2.5em; margin-top: 0.2em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Level2IX
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: .75in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Level3IX
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 7.5em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Level4IX
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 10em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Level5IX
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 12.5em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+         .N1NumList
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.4in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: -0.2in; text-decoration: none;
+            white-space: normal }
+        .N2NumListSub
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.6in; margin-top: .1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: -0.2in; text-decoration: none;
+            white-space: normal }
+        .NewHTMLPage
+          { color: #333;
+            font-size: 18px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .NewHTMLPageTOC
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: .3in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .NINoteImportant
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal; margin-right: 0.5in }
+        .numberbold
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: right; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .number
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: right; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .NWNoteWarning
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal; margin-right: 0.5in }
+        .P1Parameter
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .P1
+          { color: #333;
+            font-size: 11px; font-style: italic; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .P2
+          { color: #333;
+            font-size: 11px; font-style: italic; font-weight: bold;
+            margin-left: 2.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .P2ParameterSub
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Preformatted
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left:  0.38in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: pre }
+        .PreformattedRelative
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: pre }
+         .RefPrototype
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .RefSide
+          { color: #333;
+            font-size: 12px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.2in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .RhnRefHeadFunctionNewTOC
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: 0.4in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .S1RStep
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: -0.2in; text-decoration: none;
+            white-space: normal }
+        .S2SubStep
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0.4in; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: left; text-indent: -0.2in; text-decoration: none;
+            white-space: normal }
+         .SCFStepcodeFirst
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.38in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+         .SCFStepcodeReg
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.38in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+         .SideTitle
+          { color: #333;
+            font-size: 9pt; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0.1in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SideTOC1-PartTab
+          { color: #333;
+            font-size: 9pt; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0em; margin-bottom: 0.25em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SideTOC1
+          { color: #333;
+            font-size: 9pt; font-style: normal; font-weight: bold;
+            margin-left: 0in; margin-top: 0.1in; margin-bottom: 0.25em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SideTOC2
+          { color: #333;
+            font-size: 8pt; font-style: normal; font-weight: normal;
+            margin-left: 0in; margin-top: .75em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SideTOC3
+          { color: #333;
+            font-size: 8pt; font-style: normal; font-weight: normal;
+            margin-left: .1in; margin-top: 0.5em; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SmartList1
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SmartList2
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SmartList3
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SmartList4
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .SmartList
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TableTitle
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TgTable
+          { color: #fff;
+            font-size: 2px; font-style: italic; font-weight: bold;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0.2in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .Title
+          { color: #333;
+            font-size: 18px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.1in; margin-bottom: 0.1in;
+            text-align: center; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TOC1
+          { color: #333;
+            font-size: 16px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0.5em; margin-bottom: 0.25em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TOC2
+          { color: #333;
+            font-size: 14px; font-style: normal; font-weight: normal;
+            margin-left: 2.5em; margin-top: 0.25em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TOC3
+          { color: #333;
+            font-size: 13px; font-style: normal; font-weight: normal;
+            margin-left: .75in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TOC4
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 7.5em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TOC5
+          { color: #333;
+            font-size: 10px; font-style: normal; font-weight: normal;
+            margin-left: 10em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TT11Tabletest11pt
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .TTCTablecompattext
+          { color: #333;
+            font-family: monospace;
+            font-size: 11px; font-style: normal; font-weight: bold;
+            margin-left: 0em; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+
+/* Footnote Marker Style */
+        .Footnote
+          { font-size: 8px; vertical-align: super }
+        .FootnoteNumber
+          { font-size: 11px; margin-left: 0.02in }
+        .FNFootnote
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.2in; margin-top: 0in; margin-bottom: 0in;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal }
+        .FNTFootnoteTable
+          { color: #333;
+            font-size: 11px; font-style: normal; font-weight: normal;
+            margin-left: 0.02in; margin-top: 0em; margin-bottom: 0em;
+            text-align: left; text-indent: 0em; text-decoration: none;
+            white-space: normal; margin-right: 0.5in }

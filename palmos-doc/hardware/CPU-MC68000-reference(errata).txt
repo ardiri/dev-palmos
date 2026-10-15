@@ -1,0 +1,13 @@
+On page 5-35 of the M68000PM/AD, under the heading instruction fields for the
+FDBcc instruction, the displacement field should read:
+
+      Specifies the branch distance (from the address of the instruction plus
+      four) to the destination in bytes.
+
+On page 6-12 of the M68000PM/AD, under the heading BUSY for the FRESTORE
+instruction, the first sentance should read:
+
+      This state frame is 100 ($64) bytes long in the MC68040...
+
+
+

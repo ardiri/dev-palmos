@@ -1,0 +1,493 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Scrolling</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:24:25">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="970029"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">7  Scrolling</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Data.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_GraphicsColor.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Scrolling.html">7  Scrolling</a></p>
+
+<p class="SideTOC2">
+<a href="#970041">Choosing between Scroll Bars and Scroll Buttons
+</a></p>
+
+<p class="SideTOC2">
+<a href="#970124">Scroll Bars
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970185">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970229">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970239">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#970244">Scroll Buttons
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970307">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970316">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#970338">Breaking the Rules
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="970031"> </a>Palm OS<span style="font-size: 8px; vertical-align: super">®</span> provides two controls that can scroll other controls:
+</p>
+
+  <a name="970035"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Scrolling.html#970124">Scroll Bars</a></p>
+
+  <a name="970039"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Scrolling.html#970244">Scroll Buttons</a></p>
+<p class="Body">
+  <a name="970040"> </a>The first section tells you how to choose which of the elements listed above is best for your application. The rest of the chapter describes behavior and appearance guidelines for each element.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="970041"> </a>Choosing between Scroll Bars and Scroll Buttons
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970045"> </a>To scroll form content, such as tables, lists, fields, or bitmaps, you have your choice of scroll bars or scroll buttons. Scroll bars appear on the right side of the screen (see <a href="UI_Scrolling.html#970052">Figure 7.1</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="970052"> </a>Figure 7.1	 Scroll bars
+</p>
+<p class="FgFigure">
+  <a name="970065"> </a><div align="left"><img src="images/UI_Scrollinga.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970066"> </a>Scroll buttons are arrows that appear at the bottom of the form (see <a href="UI_Scrolling.html#970071">Figure 7.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="970071"> </a>Figure 7.2	 Scroll buttons
+</p>
+<p class="FgFigure">
+  <a name="970080"> </a><div align="left"><img src="images/UI_Scrolling2.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970081"> </a>When choosing between scroll bars and scroll buttons, consider the following:
+</p>
+
+  <a name="970082"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Will users want to scroll a line at a time? </p>
+<p class="Indented1"> <a name="970084"> </a>Scroll bars support scrolling both a line at a time and a page at a time. Scroll buttons scroll a page (one screenful of information) at a time. </p>
+<p class="Indented1"> <a name="970085"> </a>For most multi-line editable text fields, most users want both modes of scrolling available, so multi-line text fields should always use a scroll bar. For other user interface elements, either scroll bars or scroll buttons will do if scrolling a page at a time is sufficient. </p>
+
+  <a name="970086"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Do you need an indicator of location? </p>
+<p class="Indented1"> <a name="970088"> </a>Scroll bars provide a good indicator of the location of the data within the database (that is, whether the user is viewing the beginning, end, or middle of the data). Although scroll buttons show when the user is at the beginning or end of the data, they give no indication of how far until the beginning or end when the display is somewhere in the middle. </p>
+<p class="Indented1"> <a name="970090"> </a>Because scroll bars are the better indicator of location, you should use scroll bars as long as you can sacrifice seven horizontal pixels of your data. If there already is a fairly clear indicator of location and you can't sacrifice the space, use scroll buttons. For example, the Address Book list view is sorted alphabetically, so users typically know where they are within their own data. Address Book uses scroll buttons so that it can display more of the contact's phone number or email address (see <a href="UI_Scrolling.html#970096">Figure 7.3</a>).</p>
+
+<p class="FFigureCaption">
+  <a name="970096"> </a>Figure 7.3	 Showing location
+</p>
+<p class="FgFigure">
+  <a name="970110"> </a><div align="left"><img src="images/UI_Scrolling3.gif" height="343" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+  <a name="970111"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Will your target audience be able to navigate using a scroll bar? </p>
+<p class="Indented1"> <a name="970114"> </a>Scroll bars are tiny targets for the pen, making them difficult to use in certain situations. Your target audience may have difficulty using scroll bars if they use your application while in a car, on a train, or if they are older. Because scroll bars are on the right side of the screen, left-handed users often can't see how far they've scrolled. They become annoyed with applications that rely entirely on scroll bars. </p>
+<p class="Indented1"> <a name="970115"> </a>If a significant percentage of your target audience is mobile or older, you may decide that they are better supported by scroll buttons. However, users are often satisfied as long as they can use the scrolling hard keys on the handheld. If you want to use scroll bars, just be sure to support the scrolling hard keys as well. </p>
+
+  <a name="970118"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Do you display any right-justified data? </p>
+<p class="Indented1"> <a name="970119"> </a>If you display any controls on the right edge of the screen, you probably are better off using scroll buttons. Otherwise, a user who aims for the scroll bar and misses might mistakenly tap your control. </p>
+<p class="Indented1"> <a name="970121"> </a>For example, the rightmost column of the Address Book list view is a control. The user can tap this column to enter a note about the current contact. If the Address Book were to have a scroll bar immediately to the right of this column, the user might mistakenly tap the note column when aiming for the scroll bar. </p>
+
+<h2 class="HaHeadA">
+  <a name="970124"> </a>Scroll Bars
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970126"> </a>A scroll bar scrolls the display of another user interface item (see <a href="UI_Scrolling.html#970132">Figure 7.4</a>). Scroll bars can be attached to multi-line text fields, tables, lists, or forms.
+</p>
+
+<p class="FFigureCaption">
+  <a name="970132"> </a>Figure 7.4	 Scroll bar
+</p>
+<p class="FgFigure">
+  <a name="970151"> </a><div align="left"><img src="images/UI_Scrolling4.gif" height="233" width="480" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="970184"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="970157"> </a><div class="TableTitle">Table 7.1	 Scroll bar details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="970161"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="970163"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="970165"> </a><div class="CellBody">Width</div></td>
+    <td><a name="970167"> </a><div class="CellBody">7</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970169"> </a><div class="CellBody">Height</div></td>
+    <td><a name="970171"> </a><div class="CellBody">Height of element that the scroll bar scrolls</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970173"> </a><div class="CellBody">Top</div></td>
+    <td><a name="970175"> </a><div class="CellBody">Align with top of element to be scrolled</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970177"> </a><div class="CellBody">Left</div></td>
+    <td><a name="970179"> </a><div class="CellBody">153</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970181"> </a><div class="CellBody">Border</div></td>
+    <td><a name="970183"> </a><div class="CellBody">None</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="970185"> </a>System Supplied Behavior
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970187"> </a>A scroll bar has four values that determine its behavior:
+</p>
+
+  <a name="970188"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The minimum value, which is typically 0.</p>
+
+  <a name="970189"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The maximum value, which is often not set until run time. This value is the number of lines it should take to scroll to the end of the element, which is computed with the formula: </p>
+<p class="Body">
+  <a name="970190"> </a>	<i>number of lines of text</i> - <i>page size</i> + <i>overlap</i>
+</p>
+<p class="Indented1"> <a name="970191"> </a>where <i>number of lines of text</i> is the total number of lines or rows needed to display the entire object, <i>page size</i> is the number of lines or rows that can be displayed on the screen at one time, and <i>overlap</i> is the number of lines or rows from the bottom of one page to be visible at the top of the next page. </p>
+
+  <a name="970192"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The initial value, which is usually the same as the minimum.</p>
+
+  <a name="970193"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The page jump value, or the amount by which the value is increased or decreased when the user scrolls. This should be at least one less than the number of lines that can be displayed at one time to provide context. That is, if the field can display ten lines of text, the page jump value should be nine. </p>
+<p class="Body">
+  <a name="970194"> </a>Palm OS ensures that the scroll bar does not appear until there is more than a screenful of information to be presented. It also ensures the behavior described in <a href="UI_Scrolling.html#970204">Table 7.2</a>.
+</p>
+
+<h5 class="TgTable">
+  <a name="970227"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="970204"> </a><div class="TableTitle">Table 7.2	 Default behavior of scroll bars </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="970208"> </a><div class="CellHeading">When...</div></th>
+    <th><a name="970210"> </a><div class="CellHeading">Then...</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="970212"> </a><div class="CellBody">User drags scroll car</div></td>
+    <td><a name="970214"> </a><div class="CellBody">Scroll car moves in the direction indicated</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970216"> </a><div class="CellBody">User taps scroll arrow</div></td>
+    <td><a name="970218"> </a><div class="CellBody">Scroll car moves up or down an amount that indicates a single line</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970220"> </a><div class="CellBody">User taps in gray area immediately above or below scroll car</div></td>
+    <td><a name="970222"> </a><div class="CellBody">Scroll car moves up or down by an amount that indicates a page</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970224"> </a><div class="CellBody">User drags in a text field beyond the edge of the text field</div></td>
+    <td><a name="970226"> </a><div class="CellBody">Scroll car moves up or down along with the text</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="970228"> </a>The system does <b>not</b> scroll the user interface element to which the scroll bar is attached. Your application's code must do that.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="970229"> </a>Look and Feel
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970230"> </a>Follow these guidelines for implementing a scroll bar.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="970231"> </a>Vertical Scroll Bars Only
+</h4>
+<p class="Body">
+  <a name="970233"> </a>Palm OS only provides support for scrolling vertically. Horizontal scrolling is not supported.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="970234"> </a>Support Immediate Mode Scrolling
+</h4>
+<p class="Body">
+  <a name="970235"> </a>There are two scrolling modes possible: immediate mode and non- immediate mode. In immediate mode scrolling, the scrolling happens as the user drags the pen. This is preferred because it allows the user to see how far the field is moving. Non-immediate-mode scrolling waits until the user lifts the pen before scrolling the display.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="970236"> </a>Support the Scrolling Hard Keys
+</h4>
+<p class="Body">
+  <a name="970238"> </a>You should always allow the scrolling hard keys on the handheld itself to scroll any user interface element. They should have the same effect as tapping the gray area above and below the scroll car. That is, they should scroll up and down a page at a time.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="970239"> </a>Breaking the Rules
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970241"> </a>Because Palm OS does not support horizontal scrolling, you should avoid creating a user interface that requires it. In most cases, users do not expect to have to scroll a display horizontally. Web browsers, however, often must support horizontal scrolling to support Web pages with large graphics or large tables.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="970244"> </a>Scroll Buttons
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970246"> </a>The scroll buttons are two arrows that appear at the bottom of the screen (see <a href="UI_Scrolling.html#970252">Figure 7.5</a>). If the user taps the arrow with the pen, the form scrolls in the direction indicated. If the user holds the pen down on an arrow, the form repeatedly scrolls in the direction indicated.
+</p>
+
+<p class="FFigureCaption">
+  <a name="970252"> </a>Figure 7.5	 Scroll buttons
+</p>
+<p class="FgFigure">
+  <a name="970263"> </a><div align="left"><img src="images/UI_Scrolling5.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="970306"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="970269"> </a><div class="TableTitle">Table 7.3	 Scroll button details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="970273"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="970275"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="970277"> </a><div class="CellBody">Width</div></td>
+    <td><a name="970279"> </a><div class="CellBody">13 pixels</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970281"> </a><div class="CellBody">Height</div></td>
+    <td><a name="970283"> </a><div class="CellBody">8 pixels per button</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970285"> </a><div class="CellBody">Top</div></td>
+    <td><a name="970287"> </a><div class="CellBody">144 for up button</div><a name="970288"> </a><div class="CellBody">152 for down button</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970290"> </a><div class="CellBody">Left</div></td>
+    <td><a name="970292"> </a><div class="CellBody">147 </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970294"> </a><div class="CellBody">Font</div></td>
+    <td><a name="970296"> </a><div class="CellBody">Symbol 7</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970298"> </a><div class="CellBody">Contents </div></td>
+    <td><a name="970300"> </a><div class="CellBody">0x01 for up button</div><a name="970301"> </a><div class="CellBody">0x02 for down button</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="970303"> </a><div class="CellBody">Border</div></td>
+    <td><a name="970305"> </a><div class="CellBody">None</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="970307"> </a>System Supplied Behavior
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970309"> </a>Palm OS ensures the following:
+</p>
+
+  <a name="970310"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The button highlights while it is being pressed.</p>
+
+  <a name="970311"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The scroll buttons don't appear until there's more than a screenful of information to display. </p>
+
+  <a name="970312"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The up arrow is grayed out when the first screenful is displayed. </p>
+
+  <a name="970313"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The down arrow is grayed out when the last screenful is displayed. </p>
+<p class="Body">
+  <a name="970314"> </a>The system does not know what user interface element is to be scrolled; therefore, your code must inform the system when there is more than a screenful of information to display, when the top of the data is displayed, and when the bottom of the data is displayed. If your application informs the system of these conditions appropriately, you'll see the behavior described above.
+</p>
+<p class="Body">
+  <a name="970315"> </a>Also note that your application's code is responsible for actually scrolling the display.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="970316"> </a>Look and Feel
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970317"> </a>Follow these guidelines when implementing scroll buttons.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="970318"> </a>Always Show a Screenful of Information
+</h4>
+<p class="Body">
+  <a name="970320"> </a>Screen space is so limited that you should always show users as much of their data as you possibly can. For this reason, you should always adjust the scrolling so that a full screenful of information is displayed.
+</p>
+<p class="Body">
+  <a name="970321"> </a>Suppose your form has a table containing ten rows and there are fourteen items to be displayed. If the user taps the down button to scroll down ten items, the next screen only has four items to be displayed (see <a href="UI_Scrolling.html#970326">Figure 7.6</a>). Instead of displaying just those four items, scroll backward enough to display the previous six items as well.
+</p>
+
+<p class="FFigureCaption">
+  <a name="970326"> </a>Figure 7.6	 Form at end of data
+</p>
+<p class="FgFigure">
+  <a name="970334"> </a><div align="left"><img src="images/UI_Scrolling6.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="970335"> </a>Support the Scrolling Hard Keys
+</h4>
+<p class="Body">
+  <a name="970337"> </a>Users expect to be able to use the scrolling hard keys in all applications that support scrolling. The up hard key should perform the same function as the up scroll button, and the down hard key should perform the same function as the down scroll button.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="970338"> </a>Breaking the Rules
+<a href="#970029"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="970340"> </a>Never rely solely on the scrolling hard keys to scroll your interface. Always include either the scroll buttons or a scroll bar to indicate that scrolling is possible.
+</p>
+<p class="Body">
+  <a name="970342"> </a>Some applications omit both the scroll buttons and the scroll bar in favor of another indication that there is more information to display. Often, this takes the form of a label or graphic that specifies the percentage of data that has already been displayed (see <a href="UI_Scrolling.html#970349">Figure 7.7</a>). A percentage is not a clear enough sign that you can scroll to see more information. For this reason, you must always have some form of scrolling user interface element in your display.
+</p>
+
+<p class="FFigureCaption">
+  <a name="970349"> </a>Figure 7.7	 Scrolling with no buttons
+</p>
+<p class="FgFigure">
+  <a name="970358"> </a><div align="left"><img src="images/UI_Scrolling7.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="970359"> </a>
+</p>
+<p class="Body">
+  <a name="968045"> </a>
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

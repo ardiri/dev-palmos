@@ -1,0 +1,925 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Fitting In</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:23:29">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="965159"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">2  Fitting In</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Design.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_Forms.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_FittingIn.html">2  Fitting In</a></p>
+
+<p class="SideTOC2">
+<a href="#965184">User Interaction with Palm Powered Handhelds
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965196">Graffiti Writing
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965212">Onscreen Keyboard
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965235">HotSync Operation
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965238">Hard Keys
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965265">Icons in the Graffiti Area
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965293">External Keyboard
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965298">Application Controls
+</a></p>
+
+<p class="SideTOC2">
+<a href="#965305">Integrating with the Application Launcher
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965314">Application Icons
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965387">Version String
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965407">Default Application Category
+</a></p>
+
+<p class="SideTOC2">
+<a href="#965455">General Application Layout Guidelines
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965457">Main Application Forms
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965489">Controls
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965689">Control Placement
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965695">Labels
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965727">Fonts
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965737">Graphical Controls
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965764">Custom Controls
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965788">Application Categories
+</a></p>
+
+<p class="SideTOC2">
+<a href="#965814">General Application Behavior Guidelines
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965839">Launching the Application
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965849">Exiting the Application
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965878">Supporting Global Find
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965897">Respecting User Preferences
+</a></p>
+
+<p class="SideTOC3">
+<a href="#965911">Allowing System Messages
+</a></p>
+
+<p class="SideTOC2">
+<a href="#965920">Becoming Compatible Worldwide
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="965160"> </a>In the previous chapter, you learned what makes the Palm platform unique, and you learned a process by which you can design a successful user interface for the Palm Powered<span style="font-size: 8px; vertical-align: super">TM</span> handheld. This chapter documents the next step: making sure that your application integrates well with the Palm Powered handheld environment.
+</p>
+<p class="Body">
+  <a name="965161"> </a>When users work with a Palm OS<span style="font-size: 8px; vertical-align: super">®</span> application, they expect to be able to switch to other applications, have access to Graffiti<span style="font-size: 8px; vertical-align: super">®</span> writing and the onscreen keyboard, access information with the global Find, receive alarms, and so on. Your application will integrate well with others if you follow the guidelines in this chapter. This chapter covers:
+</p>
+
+  <a name="965165"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965184">User Interaction with Palm Powered Handhelds</a></p>
+
+  <a name="965169"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965305">Integrating with the Application Launcher</a></p>
+
+  <a name="965173"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965455">General Application Layout Guidelines</a></p>
+
+  <a name="965177"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965814">General Application Behavior Guidelines</a></p>
+
+  <a name="965181"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965920">Becoming Compatible Worldwide</a></p>
+
+<h2 class="HaHeadA">
+  <a name="965184"> </a>User Interaction with Palm Powered Handhelds
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965186"> </a>Before you begin designing an application, you need to understand the different ways that users interact with their Palm Powered handhelds:
+</p>
+
+  <a name="965187"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Graffiti writing </p>
+
+  <a name="965188"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Onscreen keyboard</p>
+
+  <a name="965189"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> HotSync<span style="font-size: 8px; vertical-align: super">®</span> operations</p>
+
+  <a name="965190"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> External keyboards</p>
+
+  <a name="965191"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Hard keys on the handheld</p>
+
+  <a name="965192"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Icons in the Graffiti area</p>
+
+  <a name="965193"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Controls in the application</p>
+<p class="Body">
+  <a name="965194"> </a>This section covers each of these methods in more detail.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965196"> </a>Graffiti Writing
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965198"> </a>Graffiti characters are written in the text area on the digitizer (see <a href="UI_FittingIn.html#965203">Figure 2.1</a>) and appear on the screen at the cursor location. The user specifies the cursor location by tapping directly on the screen with the stylus.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965203"> </a>Figure 2.1	 Graffiti area
+</p>
+<p class="FgFigure">
+  <a name="965211"> </a><div align="left"><img src="images/UI_FittingIna.gif" height="74" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965212"> </a>Onscreen Keyboard
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966387"> </a>When the insertion point is in a text field, the user can open the onscreen keyboard by tapping on the letters "abc" or "123" in the lower corners of the Graffiti area. The keyboard dialog appears (see <a href="UI_FittingIn.html#966392">Figure 2.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="966392"> </a>Figure 2.2	 The keyboard dialog
+</p>
+<p class="FgFigure">
+  <a name="966406"> </a><div align="left"><img src="images/UI_FittingIn2.gif" height="184" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965234"> </a>The dialog displays any text currently in the field that contains the cursor. The user can then add to or modify the text as necessary.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965235"> </a>HotSync Operation
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965237"> </a>To enter data into a Palm OS application, users can enter data into the corresponding application on the desktop computer and then perform a HotSync operation. The data is loaded into the appropriate application on the Palm Powered handheld.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965238"> </a>Hard Keys
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965240"> </a>A Palm Powered handheld contains a minimum of four hardware application buttons (known as <i>hard keys</i>) plus two scroll buttons and a power button (see <a href="UI_FittingIn.html#965246">Figure 2.3</a>). Some handhelds contain other hardware controls, such as a brightness or contrast adjust button or a jog wheel.
+</p>
+<p class="Body">
+  <a name="965244"> </a>The four application buttons launch built-in applications such as Date Book, Address Book, To Do List, and Memo Pad. The exact list of applications launched by hard keys depends on the model.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965246"> </a>Figure 2.3	 Hard keys
+</p>
+<p class="FgFigure">
+  <a name="965263"> </a><div align="left"><img src="images/UI_FittingIn3.gif" height="237" width="480" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965265"> </a>Icons in the Graffiti Area
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965270"> </a>The four icons on either side of the Graffiti area (see <a href="UI_FittingIn.html#965272">Figure 2.4</a>) display the Application Launcher, the current application's menu, the Calculator application, and the global Find facility. Some Palm Powered handhelds, such as handhelds sold in Japan, may have additional icons in this area.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965272"> </a>Figure 2.4	 Icons
+</p>
+<p class="FgFigure">
+  <a name="965292"> </a><div align="left"><img src="images/UI_FittingIn4.gif" height="75" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965293"> </a>External Keyboard
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965295"> </a>Many Palm Powered handheld models can accomodate an external keyboard. The keyboard attaches to the serial port. When it is attached and the appropriate software is installed on the handheld, users can type on the keyboard to enter text in any text field. They can also perform keyboard navigation such as tabbing to the next and previous fields.
+</p>
+<p class="Body">
+  <a name="965296"> </a>Because external keyboards are an optional item priced separately, do not rely on your users having one. Instead, allow all lengthy data entry to be performed on a desktop computer.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965298"> </a>Application Controls
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965299"> </a>The final way that users interact with their Palm Powered handhelds is by tapping the pen on controls in an application. Application controls are introduced in the section <a href="UI_FittingIn.html#965489">"Controls"</a> and described in more detail in the rest of this book.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="965305"> </a>Integrating with the Application Launcher
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965311"> </a>The Application Launcher (see <a href="UI_FittingIn.html#965326">Figure 2.5</a>) is the screen from which most applications are launched. Users navigate to the Launcher by tapping the Applications icon in the Graffiti area. They then launch a specific application by tapping its icon.
+</p>
+<p class="Body">
+  <a name="965312"> </a>To integrate well with the Application Launcher, you must provide application icons and a version string as described in the following sections. In rare cases, you might need to provide a default application category as well.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965314"> </a>Application Icons
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965318"> </a>Provide two icons for the Launcher: a large icon for the icon view (see <a href="UI_FittingIn.html#965326">Figure 2.5</a>) and a small icon for the list view (see <a href="UI_FittingIn.html#965357">Figure 2.6</a>). Choose a short application name and an icon that's easy to recognize.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965326"> </a>Figure 2.5	 Application Launcher icon view
+</p>
+<p class="FgFigure">
+  <a name="965351"> </a><div align="left"><img src="images/UI_FittingIn5.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965352"> </a>Make sure that the large icon has an identifiable center so that the user knows where to tap. It's best, although not required, if the large icon is circular or has a circular background like the ones shown in <a href="UI_FittingIn.html#965326">Figure 2.5</a>. The circular element is usually removed for the small icon.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965357"> </a>Figure 2.6	 Application Launcher list view
+</p>
+<p class="FgFigure">
+  <a name="965380"> </a><div align="left"><img src="images/UI_FittingIn6.gif" height="166" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965381"> </a>Make sure your icons blend well with the icons for the built-in applications in addition to presenting the marketing message your company wants to project. For example, using a 3-D style icon would not blend well with the icons for the built-in applications.
+</p>
+<p class="Body">
+  <a name="965382"> </a>For further guidelines on presenting graphics on Palm Powered handhelds, see <a href="UI_GraphicsColor.html#970424">Chapter 8, "Color and Graphics."</a>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965387"> </a>Version String
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965389"> </a>Provide a short (usually 3 to 7 character) string that gives your application's version number. This version string is contained in the application's resource file. It is <b>not</b> the version you provide to the PalmRez post linker. This string is displayed in the Info dialog (see <a href="UI_FittingIn.html#965394">Figure 2.7</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965394"> </a>Figure 2.7	 Launcher info
+</p>
+<p class="FgFigure">
+  <a name="965402"> </a><div align="left"><img src="images/UI_FittingIn7.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965403"> </a>A version string should have the format:
+</p>
+<p class="Body">
+  <a name="965404"> </a><i>major</i>.<i>minor</i>.[<i>stage</i>.<i>change</i>]
+</p>
+<p class="Body">
+  <a name="965405"> </a>where <i>major</i> is the major version number, <i>minor</i> is a minor version number, <i>stage</i> is a letter denoting the development stage (a for alpha, b for beta, or d for developer release) and <i>change</i> is the build number. Remove the <i>stage</i> and <i>change</i> numbers for the final release.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965407"> </a>Default Application Category
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965409"> </a>Launcher divides applications into categories. If you specify a default application category in the application resource file, the Launcher places your application into that category when it is installed. If no application category is specified, the application is installed into the Unfiled category, and each user chooses where to file the application.
+</p>
+<p class="Body">
+  <a name="965410"> </a>Most applications should <b>not</b> specify a default application category. Only specify one in these instances:
+</p>
+
+  <a name="965411"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Your application is intended for consumers and clearly belongs to one of the Launcher predefined categories (see <a href="UI_FittingIn.html#965424">Table 2.1</a>). </p>
+
+  <a name="965416"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Your application is intended for a vertical market or you've created a suite of custom applications that work together to provide a complete custom solution. </p>
+<p class="Indented1"> <a name="965417"> </a>In this case, you might define a custom category name. Launcher creates the category if it doesn't already exist in the Launcher database. </p>
+
+<h5 class="TgTable">
+  <a name="965451"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="965424"> </a><div class="TableTitle">Table 2.1	 Launcher predefined categories </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="965428"> </a><div class="CellHeading">Default Launcher Category</div></th>
+    <th><a name="965430"> </a><div class="CellHeading">Description</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="965432"> </a><div class="CellBody">Games</div></td>
+    <td><a name="965434"> </a><div class="CellBody">Any game </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965436"> </a><div class="CellBody">Main</div></td>
+    <td><a name="965438"> </a><div class="CellBody">Applications that would be used on a daily basis, such as Date Book or Address Book</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965440"> </a><div class="CellBody">System</div></td>
+    <td><a name="965442"> </a><div class="CellBody">Applications that control how the system behaves, such as the Preferences, HotSync, and Security applications</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965444"> </a><div class="CellBody">Utilities</div></td>
+    <td><a name="965446"> </a><div class="CellBody">Applications that help the user with system management</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965448"> </a><div class="CellBody">Unfiled</div></td>
+    <td><a name="965450"> </a><div class="CellBody">The default category</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="965452"> </a>Do not treat the default application category as something analogous to the Microsoft Windows Start menu category. On a Palm Powered handheld, the user is limited to 16 categories including Unfiled. Obviously, that limit would be quickly reached if each application defined its own category. Besides, placing your application in its own category only makes it harder to find and launch. Only assign a default category where it is a clear benefit to your users.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="965455"> </a>General Application Layout Guidelines
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965456"> </a>This section provides a general outline of what a Palm OS application looks like. The remaining chapters in this book provide more specific guidelines for the look of individual controls.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965457"> </a>Main Application Forms
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965459"> </a>On Palm Powered handhelds, each screen of information is called a <i>form</i>. In general, the first form in your application is a <i>base form</i> that offers an overview of all available information and command buttons for the most frequently used commands. For example, the Address Book shows a list of all contacts (see <a href="UI_FittingIn.html#965464">Figure 2.8</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965464"> </a>Figure 2.8	 First form in Address Book
+</p>
+<p class="FgFigure">
+  <a name="965469"> </a><div align="left"><img src="images/UI_FittingIn8.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965470"> </a>Applications with a base form tend to also need one or more details forms to display more information about a record and to allow the user to edit the record (see <a href="UI_FittingIn.html#965476">Figure 2.9</a>). Many applications use a single form for both purposes. Address Book uses two different forms for display and edit because many of the available fields in the Edit form are often left blank. Using a separate form to display a contact means users are more likely to see the information they need without having to scroll.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965476"> </a>Figure 2.9	 Detail forms in Address Book
+</p>
+<p class="FgFigure">
+  <a name="965483"> </a><div align="left"><img src="images/UI_FittingIn9.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965484"> </a>For more detailed guidelines on creating all types of forms, see <a href="UI_Forms.html#966014">Chapter 3, "Forms."</a>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965489"> </a>Controls
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="966684"> </a>Controls allow the user to perform commands, enter options, and edit data. <a href="UI_FittingIn.html#965502">Table 2.2</a> shows the basic controls you might provide in your application and lists the chapter in this book that provides guidelines for the control.
+</p>
+
+<h5 class="TgTable">
+  <a name="965688"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="965502"> </a><div class="TableTitle">Table 2.2	 Controls </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="965510"> </a><div class="CellHeading">Control</div></th>
+    <th><a name="965512"> </a><div class="CellHeading">Name</div></th>
+    <th><a name="965514"> </a><div class="CellHeading">Main Purpose</div></th>
+    <th><a name="965516"> </a><div class="CellHeading">For More Information</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="965521"> </a><div class="CellBody"><div align="left"><img src="images/CmdButton.gif" height="20" width="61" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965523"> </a><div class="CellBody">Command button</div></td>
+    <td><a name="965525"> </a><div class="CellBody">Perform command</div></td>
+    <td><a name="965529"> </a><div class="CellBody"><a href="UI_Actions.html#967063">Chapter 4, "Executing Commands,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965535"> </a><div class="CellBody"><div align="left"><img src="images/CheckBox.gif" height="27" width="99" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965537"> </a><div class="CellBody">Check boxes</div></td>
+    <td><a name="965539"> </a><div class="CellBody">Toggle state</div><a name="967038"> </a><div class="CellBody"><br></div><a name="965540"> </a><div class="CellBody">Provide list of options that are not mutually exclusive</div></td>
+    <td><a name="965544"> </a><div class="CellBody"><a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965550"> </a><div class="CellBody"><div align="left"><img src="images/Field.gif" height="14" width="67" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965552"> </a><div class="CellBody">Field</div></td>
+    <td><a name="965554"> </a><div class="CellBody">Display or edit text</div></td>
+    <td><a name="965558"> </a><div class="CellBody"><a href="UI_Data.html#969235">Chapter 6, "Displaying Data,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965564"> </a><div class="CellBody"><div align="left"><img src="images/List.gif" height="105" width="151" border="0" hspace="20" vspace="0">
+</div></div><a name="965565"> </a><div class="CellBody"><br></div></td>
+    <td><a name="965567"> </a><div class="CellBody">List</div></td>
+    <td><a name="965569"> </a><div class="CellBody">Display text</div></td>
+    <td><a name="965573"> </a><div class="CellBody"><a href="UI_Data.html#969235">Chapter 6, "Displaying Data,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965579"> </a><div class="CellBody"><div align="left"><img src="images/MenuEdit.gif" height="102" width="106" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965581"> </a><div class="CellBody">Menu</div></td>
+    <td><a name="965583"> </a><div class="CellBody">Perform command</div></td>
+    <td><a name="965587"> </a><div class="CellBody"><a href="UI_Actions.html#967063">Chapter 4, "Executing Commands,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965593"> </a><div class="CellBody"><div align="left"><img src="images/PopUpList.gif" height="13" width="29" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965595"> </a><div class="CellBody">Pop-up list</div></td>
+    <td><a name="965597"> </a><div class="CellBody">Display a list of mutually exclusive options</div></td>
+    <td><a name="965601"> </a><div class="CellBody"><a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965607"> </a><div class="CellBody"><div align="left"><img src="images/PushButtons.gif" height="22" width="51" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965609"> </a><div class="CellBody">Push buttons</div></td>
+    <td><a name="965611"> </a><div class="CellBody">Display a list of mutually exclusive options</div><a name="967042"> </a><div class="CellBody"><br></div><a name="965612"> </a><div class="CellBody">Navigate to new view</div></td>
+    <td><a name="965616"> </a><div class="CellBody"><a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965622"> </a><div class="CellBody"><div align="left"><img src="images/Scrollbar.gif" height="57" width="14" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965624"> </a><div class="CellBody">Scroll bar</div></td>
+    <td><a name="965626"> </a><div class="CellBody">Scroll the display</div></td>
+    <td><a name="965630"> </a><div class="CellBody"><a href="UI_Scrolling.html#970029">Chapter 7, "Scrolling,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965636"> </a><div class="CellBody"><div align="left"><img src="images/RepeatButton.gif" height="18" width="16" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965638"> </a><div class="CellBody">Scroll buttons</div></td>
+    <td><a name="965640"> </a><div class="CellBody">Scroll the display</div></td>
+    <td><a name="965644"> </a><div class="CellBody"><a href="UI_Scrolling.html#970029">Chapter 7, "Scrolling,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965650"> </a><div class="CellBody"><div align="left"><img src="images/Trigger.gif" height="21" width="62" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965652"> </a><div class="CellBody">Selector trigger</div></td>
+    <td><a name="965654"> </a><div class="CellBody">Display setting that user can change from modal form</div></td>
+    <td><a name="965658"> </a><div class="CellBody"><a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965664"> </a><div class="CellBody"><div align="left"><img src="images/Slider.gif" height="18" width="72" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965666"> </a><div class="CellBody">Slider</div></td>
+    <td><a name="965668"> </a><div class="CellBody">Adjust a setting</div></td>
+    <td><a name="965672"> </a><div class="CellBody"><a href="UI_Options.html#968153">Chapter 5, "Presenting Options,"</a></div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="965678"> </a><div class="CellBody"><div align="left"><img src="images/Table.gif" height="47" width="82" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="965680"> </a><div class="CellBody">Table</div></td>
+    <td><a name="965682"> </a><div class="CellBody">Display data</div></td>
+    <td><a name="965686"> </a><div class="CellBody"><a href="UI_Data.html#969235">Chapter 6, "Displaying Data,"</a></div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="965689"> </a>Control Placement
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965691"> </a>Place the most frequently accessed controls near the bottom of the form. The user interacts most often with the Graffiti area, with the icons in the Graffiti area, and with the hard keys on the handheld. Placing controls at the bottom of the form puts them as close as possible to the Graffiti area, making them quicker and easier to access.
+</p>
+<p class="Body">
+  <a name="965692"> </a>People from Western cultures tend to read the screen from top to bottom and left to right. Therefore, anything important for users to read (rather than interact with) should be near the top of the form. Horizontally, you should arrange controls so that the leftmost control is the most important.
+</p>
+<p class="Body">
+  <a name="965693"> </a>Do not clutter the screen. Running out of space is a usually a sign that simplification is needed. Squashing a lot of controls on the form by reducing white space is usually the wrong answer.
+</p>
+<p class="Body">
+  <a name="965694"> </a>In most cases, use spacing instead of lines and boxes to separate user interface elements into logical groups. Lines and boxes add to screen clutter and actually make the small screen harder to read.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965695"> </a>Labels
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965697"> </a>Provide a label for any control or option that requires further explanation. Right justify the labels and left justify the fields (see <a href="UI_FittingIn.html#965702">Figure 2.10</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965702"> </a>Figure 2.10	 Label guidelines
+</p>
+<p class="FgFigure">
+  <a name="965720"> </a><div align="left"><img src="images/UI_FittingIn22.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965721"> </a>Use bold font and title capitalization for labels. That is, capitalize the first letter of each important word in the label in the same way you would capitalize the title of a book. For example, use "Set Date" as a label, not "Set date." Never use all lowercase ("set date") or all uppercase ("SET DATE") for labels.
+</p>
+<div class="NINoteImportant"><hr>
+  <a name="965723"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">NOTE:  </span> This guide uses the term <i>label</i> to refer only to a textual label that appears outside of the user interface element. Sometimes, the text appearing inside the user interface element is also called a label. This guide refers to the text inside the user interface element as its <i>contents</i>. For example, "Daylight Saving:" is the label for the pop-up list in <a href="UI_FittingIn.html#965702">Figure 2.10</a>. The word "Off" is the pop-up list's contents.
+<hr>
+</div>
+
+<h2 class="HBHeadB">
+  <a name="965727"> </a>Fonts
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965729"> </a>Palm OS supports four different fonts: 9 point regular, 9 point bold, 12 point regular, and 12 point bold.
+</p>
+<p class="Body">
+  <a name="965730"> </a>Use 9 point regular for the textual content of most controls, such as the text that appears inside of command buttons, pop-up triggers, and selector triggers.
+</p>
+<p class="Body">
+  <a name="965734"> </a>Labels like those shown in <a href="UI_FittingIn.html#965702">Figure 2.10</a> should be shown in 9 point bold font.
+</p>
+<p class="Body">
+  <a name="965735"> </a>When displaying textual data, consider allowing users to set the font they would like to use. The standard font picker dialog resource included in the system allows the user to choose between 9 point regular, 9 point bold and 12 point bold.
+</p>
+<p class="Body">
+  <a name="965736"> </a>You can also create your own custom font and include it in the system. Use a custom font only for displaying textual data. Don't use a custom font for labels or text inside of controls. For example, a document reader might show the document text in a custom font, but it should still use the system fonts for control contents and labels.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965737"> </a>Graphical Controls
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965739"> </a>The command button and push button controls allow you to substitute a graphic for the button name.
+</p>
+<p class="Body">
+  <a name="965740"> </a>Only use graphics on buttons if there is a common, clear precedent in similar desktop applications that you can leverage. For example:
+</p>
+
+  <a name="965742"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Web browsers use similar arrow buttons for browsing history. </p>
+
+  <a name="965744"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Document readers often use arrows to move to the next page. </p>
+
+  <a name="965745"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Most desktop applications use a a clipboard to denote paste, scissors to denote cut, and so on. </p>
+<p class="Body">
+  <a name="965746"> </a>If there is not a clear precedent, avoid creating your own graphical symbol for a command. It's difficult to make a graphic small enough to be useful while clearly conveying its meaning. Desktop applications often have several graphic buttons, but desktop applications often rely on tool tips to help the user learn what each graphic means. Palm OS does not provide tool tip support (see <a href="UI_FittingIn.html#965752">Figure 2.11</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965752"> </a>Figure 2.11	 Graphic buttons
+</p>
+<p class="FgFigure">
+  <a name="965759"> </a><div align="left"><img src="images/UI_FittingIn23.gif" height="50" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965762"> </a>For more information on creating graphics for Palm OS, see <a href="UI_GraphicsColor.html#970424">Chapter 8, "Color and Graphics."</a>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965764"> </a>Custom Controls
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965766"> </a>Palm OS supports the creation of custom controls, called <i>gadgets</i>. You can create your own gadget if you have a need that the user interface guidelines don't address. Your gadget must support the general design principles outlined in <a href="UI_Design.html#964444">Chapter 1</a>, and your users must be able to intuit how to use it.
+</p>
+<p class="Body">
+  <a name="965770"> </a>Some examples of gadgets include:
+</p>
+
+  <a name="965771"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Launcher uses a gadget to display the current battery level. </p>
+
+  <a name="965772"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Date Book uses a gadget for the main portions of its week view and month view forms (see <a href="UI_FittingIn.html#965778">Figure 2.12</a>). </p>
+
+  <a name="965776"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> A medical application might use a gadget that displays an outline of the human body so that users can tap to record where they are injured. </p>
+
+<p class="FFigureCaption">
+  <a name="965778"> </a>Figure 2.12	 Date Book gadget
+</p>
+<p class="FgFigure">
+  <a name="965786"> </a><div align="left"><img src="images/UI_FittingIn24.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965788"> </a>Application Categories
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965790"> </a>Organize your application's database records into user-defined categories if that makes sense. Categories usually result in more efficient screen use. Users can switch between categories using a pop-up list or can display all records at once.
+</p>
+<p class="Body">
+  <a name="965791"> </a>Categories are application-specific and are stored with the database. An application can have a total of 16 categories, including the Unfiled category. Users are allowed to create categories and are allowed to decide which records belong in which categories.
+</p>
+<p class="Body">
+  <a name="965792"> </a>Your application can provide a set of predefined categories. Limit the number of categories you predefine so that your users are free to create categories that make sense to them. If you do provide predefined categories, allow your users to delete them so that they can add new ones. The Unfiled category must be one of your predefined categories. Do not allow users to delete the Unfiled category.
+</p>
+<p class="Body">
+  <a name="965794"> </a>Provide a category pop-up list in the title bar of the base form to allow the user to change which category of records are displayed (see <a href="UI_FittingIn.html#965799">Figure 2.13</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965799"> </a>Figure 2.13	 Category pop-up list
+</p>
+<p class="FgFigure">
+  <a name="965804"> </a><div align="left"><img src="images/UI_FittingIn25.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965805"> </a>Applications typically have a Details dialog that allows the user to change uncommonly accessed parts of a database record. The Details dialog is typically where you place controls to change the category. If your application has a form that edits a single record, you can also supply a selector trigger on that form that displays a pop-up list from which the user can select a record's new category. See <a href="UI_Options.html#968904">"Selector Triggers"</a> for more information.
+</p>
+<p class="Body">
+  <a name="965811"> </a>If your application does not support categories but you still want to use the right side of a title bar for a pop-up list, that pop-up list must contain category-like information that filters the display. It should not perform some other operation. For example, a spreadsheet application might show a pop-up list in the title bar that allows the user to display a different worksheet if the spreadsheet has multiple worksheets.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="965814"> </a>General Application Behavior Guidelines
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965816"> </a>This section covers general guidelines for how applications should behave:
+</p>
+
+  <a name="965820"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965839">Launching the Application</a></p>
+
+  <a name="965824"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965849">Exiting the Application</a></p>
+
+  <a name="965828"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965878">Supporting Global Find</a></p>
+
+  <a name="965832"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965897">Respecting User Preferences</a></p>
+
+  <a name="965836"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_FittingIn.html#965911">Allowing System Messages</a></p>
+<p class="Body">
+  <a name="965837"> </a>The remaining chapters in this book provide more specific guidelines for the behavior of individual controls.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965839"> </a>Launching the Application
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965841"> </a>Your application must launch quickly. The typical user session with a Palm Powered handheld is one or two minutes long. Users do not want to add an extra several seconds to each session waiting for an application to launch.
+</p>
+<p class="Body">
+  <a name="965843"> </a>During a normal launch, you should not display a splash screen. You might display a splash screen if this is the first time the user launched the application or if the application is running as a demo that will eventually expire and you want to show how much time is left.
+</p>
+<p class="Body">
+  <a name="965845"> </a>You do not necessarily display the base form when users launch your application. Do so only if it makes sense. It's often better to return to the place the user exited last. For example, Memo Pad always returns you to the memo you were last reading.
+</p>
+<p class="Body">
+  <a name="965846"> </a>Displaying the location where the user exited is desired because it creates a seamless interface. If you make your application behave like the user never exited, users can think of all Palm OS applications as running at the same time.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965849"> </a>Exiting the Application
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965852"> </a>Applications do not provide an exit command. On the Palm Powered handheld, users do not think in terms of exiting one application and then launching another. The paradigm is such that they consider all applications to be running at once and they can move between them at will. Users move between applications by pressing one of the four hard keys on the handheld or by tapping the Applications icon.
+</p>
+<p class="Body">
+  <a name="965855"> </a>Allow the user to exit any form, including modal dialogs or alert dialogs, gracefully at any time. If the user has been editing data, save the data before the user exits the form. If the user is in the middle of editing a database record when the form is exited, your application should allow the user to exit the form and perform the least destructive operation on the data.
+</p>
+<p class="Body">
+  <a name="965856"> </a>The built-in applications define a minimum set of data that must be present for the record to be saved. In most cases, it is one character of data. In the Expense application, the expense type must be set.
+</p>
+<p class="Body">
+  <a name="965858"> </a>For example, suppose you are editing a contact in Address Book, and you need to look something up in another application. You can tap the Applications icon and launch another application without losing your data. Address Book saves the changes you have made even though you have not tapped the Done button at the bottom of the screen. When you return to Address Book, you see the main form, and the record you last edited contains your changes (see <a href="UI_FittingIn.html#965863">Figure 2.14</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="965863"> </a>Figure 2.14	 Address Book with partial record
+</p>
+<p class="FgFigure">
+  <a name="965873"> </a><div align="left"><img src="images/UI_FittingIn26.gif" height="217" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="965875"> </a>In certain vertical market applications, it is both possible and acceptable to write your application so that it never exits. This is an acceptable practice only as long as the application is preloaded onto the handheld for each user and the handheld will never be used as a personal digital assistant.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965878"> </a>Supporting Global Find
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965883"> </a>Support the global Find facility (see <a href="UI_FittingIn.html#965887">Figure 2.15</a>) if your application stores textual data in a database. The Find facility should perform a prefix-only case-insensitive search on each word in a database record. A prefix-only search finds matches only if a word begins with the string the user enters. For example, suppose an application contains two records, one with the text "And Then There Were None" and the other one "How To Use a Lathe." If the user enters the word "the," the Find facility will find matches in the words "Then" and "There" in the first record, but not in the word "Lathe" in the second record.
+</p>
+<p class="Body">
+  <a name="965885"> </a>In many applications, a user can mark a record as private. A private record is stored in the database but may not be displayed. If your application supports private records, make sure that the records are unavailable to the global Find facility when the user has them hidden or masked.
+</p>
+
+<p class="FFigureCaption">
+  <a name="965887"> </a>Figure 2.15	 Find
+</p>
+<p class="FgFigure">
+  <a name="965895"> </a><div align="left"><img src="images/UI_FittingIn27.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965897"> </a>Respecting User Preferences
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965899"> </a>Palm OS has system preferences for the display of:
+</p>
+
+  <a name="965901"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Date formats</p>
+
+  <a name="965902"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Time formats</p>
+
+  <a name="965903"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Number formats</p>
+
+  <a name="965904"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> First day of week (Sunday or Monday)</p>
+<p class="Body">
+  <a name="965905"> </a>Be sure your application uses the system preferences for display of this type of information.
+</p>
+<p class="Body">
+  <a name="965906"> </a>Palm OS also provides standard panels that can be used to select a date, a starting and ending time, or just a single point in time. If your application works with dates and times, use these standard panels. Users are familiar with their usage from the Date Book and Preferences applications.
+</p>
+<p class="Body">
+  <a name="965908"> </a>Palm OS preferences also allow users to remap the hard keys and icons in the Graffiti area so that they launch different applications. Respect the user's preference for which application to launch; however, you can help the user override the preference. For example, suppose you provide a replacement for the Date Book application and you would like the Date Book hard key to display your application. You can display an alert dialog upon startup that asks the user if they want to remap the Date Book hard key so that it launches your application. If they tap the OK button, your application can change the preference. If they tap Cancel, you should not ask the question again, but it is acceptable to provide a user preference that allows the user to remap the button at a later time.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="965911"> </a>Allowing System Messages
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965913"> </a>Allow the system to post these messages:
+</p>
+
+  <a name="965914"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Alarms</p>
+
+  <a name="965915"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Low-battery warnings</p>
+
+  <a name="965916"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> System messages during synchronization </p>
+<p class="Body">
+  <a name="965917"> </a>The normal event loop used by virtually all Palm OS applications allows ample time for the system to post messages and handle necessary events. You only need to take special care if your application performs a lengthy computational task. For example, if your application has a large database with greater than 20,000 records and it must search through each of these database records, you might want to check for system events every so often during this loop.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="965920"> </a>Becoming Compatible Worldwide
+<a href="#965159"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="965922"> </a>If you're planning to localize your application, it's best to plan for localization starting from the beginning. Keep in mind the issues listed below:
+</p>
+
+  <a name="965923"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Try to leave extra room for translation. Many languages simply take up more space than English does. German and French words, for example, are on average 25% longer than their English counterparts. Try to allow extra space for strings to display and larger modal forms than the English version requires. </p>
+
+  <a name="965924"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Be aware that items such as colors and symbols also need to be localized. For example, red is a warning color in English, but that is not true in all cultures. Avoid colors and symbols that may be offensive in other cultures. </p>
+
+  <a name="965925"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Dates and numbers are represented differently in other parts of the world. Always respect the user preferences that have been set for date, number, and time displays. </p>
+
+  <a name="965926"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Abbreviations may be the best way to accommodate the particularly scarce screen real estate on the Palm Powered handheld. </p>
+
+  <a name="965927"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Consider using string templates. For example, the Memo Pad application uses the template: Memo # of %. The application can replace # and % to change the text. Use as many parameters as possible to give localizers greater flexibility. Avoid building sentences by concatenating substrings together, as this often causes translation problems. </p>
+
+  <a name="965928"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Remember that user interface elements such as lists, fields, and tips dialogs scroll if you need more space. </p>
+
+  <a name="965929"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Write your code so that the application is easily localizable. For coding guidelines, see the chapter on localization in the <i>Palm OS Programmer's Companion</i>.</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

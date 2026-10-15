@@ -1,0 +1,1124 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Executing Commands</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:23:52">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="967063"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">4  Executing Commands</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Forms.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_Options.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Actions.html">4  Executing Commands</a></p>
+
+<p class="SideTOC2">
+<a href="#967076">Choosing between Buttons and Menus
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967112">Limit the Total Number of Commands
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967118">Use Buttons for Important Tasks
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967128">Use Menus for Destructive Commands
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967138">Don't Duplicate Commands
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967150">Remember the Goal: Minimize Taps
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967179">Use Buttons for Commands Executed by New Users
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967186">Don't Provide Save or Exit Commands
+</a></p>
+
+<p class="SideTOC2">
+<a href="#967196">Command Buttons
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967299">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967302">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967513">Breaking the Rules
+</a></p>
+
+<p class="SideTOC2">
+<a href="#967612">Menus
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967680">System Supplied Behavior
+</a></p>
+
+<p class="SideTOC3">
+<a href="#967727">Look and Feel
+</a></p>
+
+<p class="SideTOC3">
+<a href="#968003">Breaking the Rules
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="967065"> </a>This chapter discusses user interface elements that, when selected, perform an action in your application. In other words, these elements execute commands.
+</p>
+<p class="Body">
+  <a name="967066"> </a>There are two main methods of executing commands on Palm OS<span style="font-size: 8px; vertical-align: super">®</span>:
+</p>
+
+  <a name="967070"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Actions.html#967196">Command Buttons</a></p>
+
+  <a name="967074"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Actions.html#967612">Menus</a></p>
+<p class="Body">
+  <a name="967075"> </a>The first section tells you how to choose which of the elements listed above is best for your application. The rest of the chapter describes behavior and appearance guidelines for each element.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="967076"> </a>Choosing between Buttons and Menus
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967080"> </a>Choosing which application features should have command buttons and which should have menu items is a fine art. Command buttons provide instant access but take up valuable screen space (see <a href="UI_Actions.html#967085">Figure 4.1</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967085"> </a>Figure 4.1	 Command buttons
+</p>
+<p class="FgFigure">
+  <a name="967095"> </a><div align="left"><img src="images/UI_Actionsa.gif" height="167" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967096"> </a>Menu items do not take up screen space, but they are hidden and require more taps to execute (see <a href="UI_Actions.html#967101">Figure 4.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967101"> </a>Figure 4.2	 Menus
+</p>
+<p class="FgFigure">
+  <a name="967110"> </a><div align="left"><img src="images/UI_Actions2.gif" height="171" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967111"> </a>In general, you use command buttons for common commands and menus for uncommon commands. This section provides further guidelines to help you choose.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967112"> </a>Limit the Total Number of Commands
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967113"> </a>Remember that a new user must be able to pick up a Palm Powered<span style="font-size: 8px; vertical-align: super">TM</span> handheld and successfully navigate the system within five minutes. If you have too many buttons, you may overcrowd the screen and ultimately confuse the user. If you have too few buttons, you may end up with an interface that is not instantly understandable or easy to learn. Likewise, providing too many menu commands confuses the user.
+</p>
+<p class="Body">
+  <a name="967115"> </a>Instead of focusing on how many command buttons and menu items you can squeeze in, focus on providing the minimum number required for your application. Running out of space is usually a sign that simplification is needed. Remember that users use 20% of a desktop application's features 80% of the time. You should concentrate on finding the top 20% of the features required by your users and provide commands that implement only those features.
+</p>
+<p class="Body">
+  <a name="967117"> </a>Remember also that you are limited by the size of the screen. Realistically, you can fit only five or six buttons on a form. You can fit three or four menus on each form, and each menu can have at most 13 commands.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967118"> </a>Use Buttons for Important Tasks
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967120"> </a>Use command buttons for important tasks, tasks that are essential to your application and that are frequently performed. Reserve the use of menu items for the less important, less frequently accessed commands.
+</p>
+<p class="Body">
+  <a name="967121"> </a>Using command buttons for essential tasks serves two purposes: They make the commands visible to all users, and they minimize the number of taps required to execute the commands.
+</p>
+<p class="Body">
+  <a name="967124"> </a>For example, all of the built-in applications have a New command button on the main form so that even new users can see how to create a record. Navigating between the main forms of the application is another important task that is nearly always worthy of a command button.
+</p>
+<p class="Body">
+  <a name="967125"> </a>Many users do not even know that menus are available in Palm OS applications. If you place an essential command like the New command in a menu, those people won't find it.
+</p>
+<p class="Body">
+  <a name="967126"> </a>Note that context plays a role in deciding which commands are important and which are not. A command may be important enough to deserve a command button on one form of your application but not on another or a command may be important in one application but not another. For example, most games use a menu item for the New Game operation because it is more important to devote the entire screen to the playing of the game.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967128"> </a>Use Menus for Destructive Commands
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967130"> </a>Just as essential tasks should have a command button so that new users know where to find them, destructive commands should be relatively hidden so that a user does not execute the command by mistake. Menu items are good for this purpose because menus are a somewhat hidden interface.
+</p>
+<p class="Body">
+  <a name="967131"> </a>An alternative is to maximize the number of taps for a destructive operation. For example, deleting a contact from the Address Book is performed by a command button, but it requires three taps to reach the Delete button.
+</p>
+<p class="Body">
+  <a name="967134"> </a>Just as context plays a role in determining which commands are important, it also plays a role in determining how difficult it should be to execute destructive commands. Some applications may want to elevate the importance of the Delete command by placing its button at the same level as, for example, the New or Edit button. Consider an application that loads digital images from a camera into the handheld. In such an application, you may want the Delete button to have the same accessibility as the Edit button so that the user can quickly and easily free up space on the handheld.
+</p>
+<p class="Body">
+  <a name="967136"> </a>All destructive operations should display a confirmation alert before actually performing the task.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967138"> </a>Don't Duplicate Commands
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967140"> </a>Don't provide both a command button and a menu item for the same operation in the same form.
+</p>
+<p class="Body">
+  <a name="967142"> </a>In desktop applications, it's common for there to be both a New menu item and a New command button on the toolbar, for example. On Palm Powered handhelds, screen space is so limited that such an interface is discouraged. Use command buttons for the important, common commands only. Use menu items for infrequent commands only.
+</p>
+<p class="Body">
+  <a name="967144"> </a>Keep in mind, however, that each form in an application can have a different menu. It's acceptable for one form's menu items to duplicate command buttons that appear on a different form. For example, in Memo Pad the main form has a New button to create a new memo. The Memo Edit form has a menu item that performs the same function. This way, the user does not have to return to the main form to create a second memo.
+</p>
+<p class="Body">
+  <a name="967148"> </a>For further discussion on duplicating commands, see <a href="UI_Actions.html#968017">"Duplicating Menu Items"</a>.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967150"> </a>Remember the Goal: Minimize Taps
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967153"> </a>Don't use a command button or a menu when some easier method of performing the task is available.
+</p>
+<p class="Body">
+  <a name="967155"> </a>Each of the built-in applications allows you to edit an existing record and to display a record's details. They use different means for performing these tasks depending on what fits that application best. The Date Book and To Do List applications allow you to edit a single record in the main form simply by tapping it. For viewing the record's details they provide a command button, so this action requires one more tap than editing the record does. Address Book reverses this functionality: viewing the record's details requires a single tap on the record. Editing the record requires the user to tap the record and then tap the Edit button. (See <a href="UI_Actions.html#967160">Figure 4.3</a>.)
+</p>
+
+<p class="FFigureCaption">
+  <a name="967160"> </a>Figure 4.3	 Minimizing taps in built-in applications
+</p>
+<p class="FgFigure">
+  <a name="967177"> </a><div align="left"><img src="images/UI_Actions3.gif" height="339" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967178"> </a>Even though these applications use different means for editing an existing record and displaying a record's details, each uses the best means for its data. In Date Book and To Do List, you rarely need to see more information about a record than is shown in the main form. Therefore, editing the record is more common than viewing the details. In Address Book, viewing the details is more common than editing because Address Book's main form cannot display all relevant information about a contact (such as the contact's address). Each of these applications minimizes the number of taps for the most frequently performed operation.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967179"> </a>Use Buttons for Commands Executed by New Users
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967181"> </a>Provide command buttons for tasks commonly executed by novice users if they are otherwise hidden.
+</p>
+<p class="Body">
+  <a name="967183"> </a>In Address Book, tapping anywhere in the View form takes you to the Edit form. This is a power user feature; two quick taps on a contact listed in the main form takes you to the Edit form. Newcomers may not discover this feature right away, so Address Book still provides an Edit command button on the View form.
+</p>
+<p class="Body">
+  <a name="967184"> </a>You do not have to provide a command button if the functionality is easily discovered, however. Tapping a contact name in the main form of Address Book has no command button counterpart. Newcomers can easily figure out this interface.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967186"> </a>Don't Provide Save or Exit Commands
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967189"> </a>Most desktop applications have menu commands to save changes and to exit the application. These commands are so ubiquitous on desktop applications, novice Palm OS application designers try to fit them into their handheld applications. This is almost never a good thing to do.
+</p>
+<p class="Body">
+  <a name="967191"> </a>You find no Save command in the built-in applications. Palm users are not used to saving changes before they switch to another application. Changes are always saved as they are made. Undo is available if the user makes a mistake in an editable text field, and destructive operations have a confirmation.
+</p>
+<p class="Body">
+  <a name="967192"> </a>Palm Powered handheld users are also not used to exiting applications. On the Palm Powered handheld, users do not think in terms of exiting one application and then launching another. The paradigm is such that they consider all applications to be running at once and they can move between them at will. (In reality, the system only runs one application at a time, and the applications are written in a way that moving between them looks seamless. This is an implementation detail that the end user does not know about.)
+</p>
+
+<h2 class="HaHeadA">
+  <a name="967196"> </a>Command Buttons
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967201"> </a>A command button (see <a href="UI_Actions.html#967204">Figure 4.4</a>) is a button that has a rounded rectangular border and that performs a command. Place a single a row of command buttons at the bottom of the form.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967204"> </a>Figure 4.4	 Command button dimensions
+</p>
+<p class="FgFigure">
+  <a name="967241"> </a><div align="left"><img src="images/UI_Actions4.gif" height="113" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="967298"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967248"> </a><div class="TableTitle">Table 4.1	 Command button details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967252"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="967254"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967256"> </a><div class="CellBody">Width</div></td>
+    <td><a name="967258"> </a><div class="CellBody">36 </div><a name="967259"> </a><div class="CellBody">or <i>content width</i> + 10 </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967261"> </a><div class="CellBody">Height</div></td>
+    <td><a name="967263"> </a><div class="CellBody">12 </div><a name="967264"> </a><div class="CellBody">or <i>font height</i> + 3 if not using standard font</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967266"> </a><div class="CellBody">Top </div></td>
+    <td><a name="967268"> </a><div class="CellBody">147 (modeless forms)</div><a name="967269"> </a><div class="CellBody">or 160 - <i>button height</i> - 1 </div><a name="967270"> </a><div class="CellBody"><i>form height</i> - <i>button height</i> - 5 (modal forms)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967272"> </a><div class="CellBody">First Button Left<a href="#967279"><span class="Footnote">1</span></a></div></td>
+    <td><a name="967281"> </a><div class="CellBody">1 (modeless forms)</div><a name="967282"> </a><div class="CellBody">5 (modal forms)</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967284"> </a><div class="CellBody">Button(<i>n</i>) Left<a href="UI_Actions.html#967279"><span style="font-size: 8px; vertical-align: super">1</span></a> </div></td>
+    <td><a name="967289"> </a><div class="CellBody"><i>button</i>(<i>n</i>-1) <i>left</i> + <i>button</i>(<i>n</i>-1) <i>width</i> + 6 </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967291"> </a><div class="CellBody">Border</div></td>
+    <td><a name="967293"> </a><div class="CellBody">1 pixel rounded rectangle</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967295"> </a><div class="CellBody">Content</div></td>
+    <td><a name="967297"> </a><div class="CellBody">Text or graphic that succinctly describes command</div></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><a name="967279"> </a><div class="FNTFootnoteTable"><a href="#967272"><span class="FootnoteNumber">1. </span></a><a name="967279"> </a><div class="FNTFootnoteTable">See <a href="UI_Actions.html#967308">"Left-Align Buttons at the Bottom of the Form"</a>.</div></div></td>
+  </tr>
+</table>
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="967299"> </a>System Supplied Behavior
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967301"> </a>The user executes the button's command by tapping the button once with the pen or with a finger. When the user does so, Palm OS highlights the button while it is being pressed. Palm OS ensures that the command is not executed if the user drags the pen or finger outside of the bounds of the button before releasing it.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967302"> </a>Look and Feel
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967303"> </a>Follow these guidelines for the behavior and appearance of a command button.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967304"> </a>Never Require a Double Tap
+</h4>
+<p class="Body">
+  <a name="967306"> </a>Never require a double tap on a command button, even as a power user feature. Reserve double taps for text fields.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967308"> </a>Left-Align Buttons at the Bottom of the Form
+</h4>
+<p class="Body">
+  <a name="967310"> </a>Command buttons belong at the bottom of the form. Remember that the user is working most often in the Graffiti<span style="font-size: 8px; vertical-align: super">®</span> area. Because the user will tap these command buttons often, it is best to place them at the bottom so that they are nearest the user's pen.
+</p>
+<p class="Body">
+  <a name="967311"> </a>On a modeless form, buttons and all other user interface controls begin at the left edge of the screen (see <a href="UI_Actions.html#967316">Figure 4.5</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967316"> </a>Figure 4.5	 Command buttons on modeless form
+</p>
+<p class="FgFigure">
+  <a name="967336"> </a><div align="left"><img src="images/UI_Actions5.gif" height="58" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967337"> </a>On a modal form, you must leave space between the edges of the form and the buttons to make sure that the button borders don't blend with the form borders (see <a href="UI_Actions.html#967342">Figure 4.6</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967342"> </a>Figure 4.6	 Command buttons on modal form
+</p>
+<p class="FgFigure">
+  <a name="967368"> </a><div align="left"><img src="images/UI_Actions6.gif" height="60" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967370"> </a>Borders are drawn outside of an object's boundaries. That means to align the button with the left edge of the form, the button must begin at pixel 1. Its border is then drawn at pixel 0. Similarly, to place 4 pixels between buttons, you must actually add 6 to the width and left origin of the button on the left. Adding 6 allows for the left button's 1-pixel border on the right and the right button's 1-pixel border on the left. See <a href="UI_Actions.html#967248">Table 4.1</a>.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967375"> </a>Use Succinct Names
+</h4>
+<p class="Body">
+  <a name="967377"> </a>The names of command buttons should be succinct and should clearly convey what the command button does. Remember, the user should be able to learn your basic interface in five minutes. That does not leave much time for learning by experimentation. It is best to use standard command names wherever possible so that the user can instantly recognize the button and know its purpose. <a href="UI_Actions.html#967387">Table 4.2</a> lists some of the command buttons found in the built-in applications.
+</p>
+
+<h5 class="TgTable">
+  <a name="967455"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967387"> </a><div class="TableTitle">Table 4.2	 Common command button names </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967393"> </a><div class="CellHeading">Name</div></th>
+    <th><a name="967395"> </a><div class="CellHeading">Minimum <br>Width</div></th>
+    <th><a name="967397"> </a><div class="CellHeading">Description</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967400"> </a><div class="CellBody">OK</div></td>
+    <td><a name="967402"> </a><div class="CellBody">23</div></td>
+    <td><a name="967404"> </a><div class="CellBody">Confirm action and return to previous form </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967407"> </a><div class="CellBody">Cancel</div></td>
+    <td><a name="967409"> </a><div class="CellBody">36</div></td>
+    <td><a name="967411"> </a><div class="CellBody">Revert the current form to the previous settings and return to the previous form</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967414"> </a><div class="CellBody">Delete</div></td>
+    <td><a name="967416"> </a><div class="CellBody">37</div></td>
+    <td><a name="967418"> </a><div class="CellBody">Remove record</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967421"> </a><div class="CellBody">Details...</div></td>
+    <td><a name="967423"> </a><div class="CellBody">44</div></td>
+    <td><a name="967426"> </a><div class="CellBody">Display Details dialog</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967429"> </a><div class="CellBody">Done</div></td>
+    <td><a name="967431"> </a><div class="CellBody">31</div></td>
+    <td><a name="967433"> </a><div class="CellBody">Return to previous form</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967436"> </a><div class="CellBody">Edit</div></td>
+    <td><a name="967438"> </a><div class="CellBody">25</div></td>
+    <td><a name="967440"> </a><div class="CellBody">Edit an existing record</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967443"> </a><div class="CellBody">New</div></td>
+    <td><a name="967445"> </a><div class="CellBody">27</div></td>
+    <td><a name="967447"> </a><div class="CellBody">Create a new record</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967450"> </a><div class="CellBody">Note</div></td>
+    <td><a name="967452"> </a><div class="CellBody">30</div></td>
+    <td><a name="967454"> </a><div class="CellBody">Add a note to a record</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="967457"> </a>Use an ellipsis (...) in the button name if the user must provide more information before the operation is complete. In general, if the button displays a dialog other than an alert, about, or progress dialog, its name should have an ellipsis. The ellipsis can be omitted if you need more space.
+</p>
+<div class="NINoteImportant"><hr>
+  <a name="967458"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">TIP:  </span> Type three periods instead of using an actual ellipsis character. The character is not available in all fonts.
+<hr>
+</div>
+<p class="Body">
+  <a name="967464"> </a>You can use graphics in the button instead of text (see <a href="UI_Actions.html#967466">Figure 4.7</a>). If you keep the graphics small, you can generally fit more graphic buttons on the screen than you can text buttons. However, as with text, the graphic must instantly convey what the button does. On a desktop, application designers often rely on the tool tips feature to teach users what the buttons do. (The user can hover the cursor over the button, and a text box pops up that describes the button.) No such feature exists in Palm OS, so users will have to learn your icons by trial and error.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967466"> </a>Figure 4.7	 Graphic buttons
+</p>
+<p class="FgFigure">
+  <a name="967473"> </a><div align="left"><img src="images/UI_Actions7.gif" height="47" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967474"> </a>Never Dim a Disabled Button
+</h4>
+<p class="Body">
+  <a name="967476"> </a>Never dim or gray out a button to show that it does not apply to the current situation. If the button depends on a certain user context, display an alert dialog that explains why the button does not apply. For example, To Do List has buttons at the bottom of the main form that apply to the currently selected task. If the user has not selected an item, tapping one of the buttons results in an alert dialog explaining how to select an item (see <a href="UI_Actions.html#967482">Figure 4.8</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967482"> </a>Figure 4.8	 Alert dialog when button does not apply
+</p>
+<p class="FgFigure">
+  <a name="967490"> </a><div align="left"><img src="images/UI_Actions8.gif" height="173" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967491"> </a>If the button depends on certain hardware capabilities, such as the ability to connect to a network, you can test for those capabilities before the form opens and hide the button if it does not apply.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967492"> </a>Repeating Buttons
+</h4>
+<p class="Body">
+  <a name="967494"> </a>If you want a button to repeatedly perform an action while the user holds down the pen on it, use a repeating button instead of a command button. Use of repeating buttons is relatively uncommon. Two of the more common uses of repeating buttons are:
+</p>
+
+  <a name="967497"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> As scroll buttons that scroll the display (see <a href="UI_Scrolling.html#970244">"Scroll Buttons"</a>)</p>
+
+  <a name="967502"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> To increment or decrement a value (see <a href="UI_Actions.html#967504">Figure 4.9</a>) </p>
+
+<p class="FFigureCaption">
+  <a name="967504"> </a>Figure 4.9	 Repeating buttons
+</p>
+<p class="FgFigure">
+  <a name="967511"> </a><div align="left"><img src="images/UI_Actions9.gif" height="54" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967512"> </a>Repeating buttons may look exactly like command buttons, but usually the border is removed from a repeating button.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967513"> </a>Breaking the Rules
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967514"> </a>This section points out a few of the applications that break command button guidelines and tells you if doing so was appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967515"> </a>Placing Command Buttons Elsewhere on the Form
+</h4>
+<p class="Body">
+  <a name="967517"> </a>If a command button applies only to a particular field on a form, you can place that button next to the field instead of at the bottom of the form. <a href="UI_Actions.html#967523">Figure 4.10</a> shows a form in the SMS Messenger application. In this form, the To command button looks up a phone number in the Address Book. Placing this button next to the field it modifies helps the user understand what the button does. If this button were placed at the bottom of the form, the word "To" would not be a descriptive name for the button. Instead, it would have to be named "Phone Lookup," which still is not as clear as naming the button "To" and placing it next to the field.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967523"> </a>Figure 4.10	 Command button elsewhere on form
+</p>
+<p class="FgFigure">
+  <a name="967532"> </a><div align="left"><img src="images/UI_Actions10.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967533"> </a>Before breaking the command button guidelines in this manner, consider using a selector trigger in combination with a modal form. The selector trigger could replace the command button and text field. It could display a modal form containing a text field and a list of contacts. Users could either choose a phone number from the list of contacts or write the phone number directly in the text field.
+</p>
+<p class="Body">
+  <a name="967535"> </a>For the SMS Messenger application, a selector trigger is less desirable because it would force people to always use the phone lookup feature. Many people might want to bypass the phone lookup feature if they know a phone number by heart. A selector trigger would not allow for this behavior.
+</p>
+<p class="Body">
+  <a name="967539"> </a>See <a href="UI_Options.html#968374">"Implementing a Combo Box"</a> for further discussion of this style of interface.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967540"> </a>Centering Command Buttons
+</h4>
+<p class="Body">
+  <a name="967543"> </a>You may notice that every form in Palm OS and its built-in applications has left-aligned command buttons with the exception of about dialogs and progress dialogs (see <a href="UI_Actions.html#967548">Figure 4.11</a>). About and progress dialogs each have a single button that is centered on the screen. Do not model any other form after about or progress dialogs. Consistently left justifying buttons is best for the user; the user expects all buttons to appear in a certain location. Note that single-button alert dialogs always left justify the button.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967548"> </a>Figure 4.11	 Bad example of button placement
+</p>
+<p class="FgFigure">
+  <a name="967556"> </a><div align="left"><img src="images/UI_Actions11.gif" height="97" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967557"> </a>Omitting the Ellipsis
+</h4>
+<p class="Body">
+  <a name="967559"> </a>The ellipsis character is used inconsistently within the built-in applications. Don't follow what the built-in applications do. Try to follow the ellipsis guideline as it is presented in this chapter: Any button that displays a modal dialog other than an alert, about, or progress dialog should have an ellipsis in its name. The ellipsis should only be omitted if you need to make space.
+</p>
+<p class="Body">
+  <a name="967560"> </a>You may notice that in the built-in applications sometimes omit the ellipsis even when there is room for it (see <a href="UI_Actions.html#967566">Figure 4.12</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967566"> </a>Figure 4.12	 Button that requires ellipsis
+</p>
+<p class="FgFigure">
+  <a name="967575"> </a><div align="left"><img src="images/UI_Actions12.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967577"> </a>The use of an ellipsis on the Delete button also can confuse newcomers to the platform. In general, a Delete command would not have an ellipsis because it displays only a confirmation dialog in response. Many of the Palm built-in applications, however, correctly use the ellipsis on Delete because they do require extra information to complete the operation (see <a href="UI_Actions.html#967583">Figure 4.13</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967583"> </a>Figure 4.13	 Delete confirmation with extra information
+</p>
+<p class="FgFigure">
+  <a name="967591"> </a><div align="left"><img src="images/UI_Actions13.gif" height="92" width="359" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967592"> </a>Buttons with Nonstandard Height
+</h4>
+<p class="Body">
+  <a name="967594"> </a>The Date Book alarm dialog uses buttons that are taller than normal so that users can dismiss the dialog as quickly as possible (see <a href="UI_Actions.html#967599">Figure 4.14</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="967599"> </a>Figure 4.14	 Date Book alarm buttons
+</p>
+<p class="FgFigure">
+  <a name="967606"> </a><div align="left"><img src="images/UI_Actions14.gif" height="169" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967608"> </a>It's quite common for this dialog to appear and the alarm to sound when the user has the handheld turned off. Users want to dismiss the dialog as quickly as possible and finish what they were doing. The large buttons allow for "finger navigation," enabling virtually all users (not just those with small fingers) to dismiss the dialog without having to get out the stylus.
+</p>
+<p class="Body">
+  <a name="967609"> </a>Use large buttons such as these only if your application has a dialog that is likely to display when the user does not have the stylus out. Once the user has the stylus in his or her hand for some other task, the advantage of the large buttons is lost.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="967612"> </a>Menus
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967614"> </a>A menu displays a set of commands that the user can perform (see <a href="UI_Actions.html#967620">Figure 4.15</a>). The user either taps the form's title or the Menu icon to display the menu bar, then chooses an item from one of the menus. That command is executed.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967620"> </a>Figure 4.15	 Menu bar and menu
+</p>
+<p class="FgFigure">
+  <a name="967642"> </a><div align="left"><img src="images/UI_Actions15.gif" height="99" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h5 class="TgTable">
+  <a name="967679"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967648"> </a><div class="TableTitle">Table 4.3	 Menu details </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967652"> </a><div class="CellHeading">Dimension </div></th>
+    <th><a name="967654"> </a><div class="CellHeading">Value </div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967656"> </a><div class="CellBody">Width</div></td>
+    <td><a name="967658"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967660"> </a><div class="CellBody">Height</div></td>
+    <td><a name="967662"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967664"> </a><div class="CellBody">Top</div></td>
+    <td><a name="967666"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967668"> </a><div class="CellBody">Left</div></td>
+    <td><a name="967670"> </a><div class="CellBody">System determined</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967672"> </a><div class="CellBody">Border</div></td>
+    <td><a name="967674"> </a><div class="CellBody">Bold rectangle</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967676"> </a><div class="CellBody">Content</div></td>
+    <td><a name="967678"> </a><div class="CellBody">Adjective or verb that succinctly describes command</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="967680"> </a>System Supplied Behavior
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967682"> </a>The menu bar is displayed when the user taps either the menu icon or the form's title.
+</p>
+<p class="Body">
+  <a name="967686"> </a>Palm OS ensures the behavior of menus as outlined in <a href="UI_Actions.html#967693">Table 4.4</a>.
+</p>
+
+<h5 class="TgTable">
+  <a name="967720"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967693"> </a><div class="TableTitle">Table 4.4	 Default behavior of menus </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967697"> </a><div class="CellHeading">When...</div></th>
+    <th><a name="967699"> </a><div class="CellHeading">Then...</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967701"> </a><div class="CellBody">User drags the pen through the menu</div></td>
+    <td><a name="967703"> </a><div class="CellBody">Command under the pen is highlighted</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967705"> </a><div class="CellBody">Pen is released over a menu item</div></td>
+    <td><a name="967707"> </a><div class="CellBody">That item is selected and the menu bar and menu disappear </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967709"> </a><div class="CellBody">Pen is released outside both the menu bar and the menu</div></td>
+    <td><a name="967711"> </a><div class="CellBody">Both menu and menu bar disappear and no selection is made </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967713"> </a><div class="CellBody">Pen is released in a menu title (Palm OS 3.5 and later only)</div></td>
+    <td><a name="967715"> </a><div class="CellBody">Menu bar and menu remain displayed until a selection is made from the menu </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967717"> </a><div class="CellBody">Pen is tapped outside menu and menu bar</div></td>
+    <td><a name="967719"> </a><div class="CellBody">Both menu and menu bar are dismissed but no event is posted</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="967722"> </a>Menus are fairly simple. Palm OS provides no concept of having a submenu because of the limited screen space. Menus also are not scrollable.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967723"> </a>System Displays Last Command Executed
+</h4>
+<p class="Body">
+  <a name="967725"> </a>To make it easier for users to perform commonly used commands, the system remembers the last menu item that the user selected (Graffiti shortcuts do not count). The next time the user displays the menu bar, the menu for the previously selected item is displayed and that item is highlighted.
+</p>
+<p class="Body">
+  <a name="967726"> </a>The system only remembers the last menu item as long as the current form is displayed. If a new form is displayed, the current form's menu memory is erased. This means that if the result of the menu item is to display a new form, such as an about dialog, the command is not remembered.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="967727"> </a>Look and Feel
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="967728"> </a>Follow these guidelines for the behavior and appearance of a menu.
+</p>
+<p class="Body">
+  <a name="967730"> </a>Note that you have no control over the height and width of a menu. The system always determines a menu's boundaries at run time.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967731"> </a>Each Form Can Have a Different Menu
+</h4>
+<p class="Body">
+  <a name="967733"> </a>Each form can have a menu bar associated with it. (The menu bar is optional; a form does not have to provide menus.) You can provide a different menu bar with a different set of menus for each form in the application.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967734"> </a>Provide Options Menu with About Command
+</h4>
+<p class="Body">
+  <a name="967736"> </a>Provide an Options menu with an About menu item to display your about dialog. This menu must at least be present on the main form.
+</p>
+<p class="Body">
+  <a name="967738"> </a>If your application has a Preferences dialog, the Preferences command also belongs on the Options menu.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967740"> </a>Edit Menu Required for Text Fields
+</h4>
+<p class="Body">
+  <a name="967743"> </a>Provide the standard system Edit menu if the form has an editable text field. The Edit menu must look as shown in <a href="UI_Actions.html#967748">Figure 4.16</a>. You can add your own items below the last item.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967748"> </a>Figure 4.16	 Standard Edit menu
+</p>
+<p class="FgFigure">
+  <a name="967756"> </a><div align="left"><img src="images/UI_Actions16.gif" height="109" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967757"> </a>Menus Are Static
+</h4>
+<p class="Body">
+  <a name="967759"> </a>Keep menus and menu items static. Menu items should not gray or dim when inapplicable. Never remove a menu item nor change its name based on user context. If a menu presents commands that are dependent on certain hardware capabilities and the handheld does not contain those capabilities, hide the menu items before the menu bar is displayed the first time.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967760"> </a>Naming Menus and Menu Items
+</h4>
+<p class="Body">
+  <a name="967761"> </a>The rules for naming menus and items within menus are similar to those used in desktop applications.
+</p>
+<p class="Body">
+  <a name="967763"> </a>For the menu name, choose a single word that describes the type of items in that menu. Some common menu names:
+</p>
+
+  <a name="967765"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Record-The items are actions performed on the selected database record and can also create and delete records.</p>
+
+  <a name="967767"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Edit-The items change the text displayed on the form.</p>
+
+  <a name="967769"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Options-The items allow the user to control how the application behaves. </p>
+<p class="Body">
+  <a name="967770"> </a>For the menu item name, use either verbs or adjectives. If the item performs an action, use a verb. If the item changes an attribute of an object on the screen, use an adjective. In some cases, it's appropriate to use a noun. Typically, nouns display a dialog with the same name, such as "Preferences." It is particularly important on Palm OS to keep the menu names short. You can manage around 20 characters per item name, but try to keep them much shorter than that. Twenty characters takes up the entire width of the screen, obscuring the entire form.
+</p>
+<p class="Body">
+  <a name="967772"> </a>Use title capitalization in menu items and in all user interface items. That is, capitalize all important words in the item just as you would the title of a book. The menu item for attaching a note, for example, is "Attach Note," not "Attach note."
+</p>
+<p class="Body">
+  <a name="967774"> </a>Use an ellipsis (...) in the menu item if the user must provide more information before the operation is complete. In general, if the item displays a dialog other than an alert, about, or progress dialog, it should have an ellipsis. As with command buttons, type three periods instead of using an actual ellipsis character.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967775"> </a>Divider Lines Group Menu Items
+</h4>
+<p class="Body">
+  <a name="967777"> </a>If your menu contains a long series of commands (greater than five as a rule of thumb), try to group related commands together with a divider line. In <a href="UI_Actions.html#967748">Figure 4.16</a>, you can see the Edit menu uses a divider to separate the usual cut, copy, paste, and undo operations from the menu commands that display the keyboard dialog and that display the Graffiti Help dialog. By providing dividers to group related menu items, you help the user learn and understand the interface. See <a href="UI_Actions.html#967785">Figure 4.17</a>.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967785"> </a>Figure 4.17	 Menu with dividers and without
+</p>
+<p class="FgFigure">
+  <a name="967793"> </a><div align="left"><img src="images/UI_Actions17.gif" height="147" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="967794"> </a>Menu Shortcuts
+</h4>
+<p class="Body">
+  <a name="967797"> </a>A menu shortcut is an alternative to selecting a menu item. Users enter the Graffiti command stroke (a diagonal line drawn upward from left to right) followed by a single character.
+</p>
+<p class="Body">
+  <a name="967800"> </a>This support is present in all versions of Palm OS. In Palm OS 3.5 and later, a command toolbar is displayed. (On earlier releases, just the word "Command" was displayed.) The shortcut toolbar (see <a href="UI_Actions.html#967805">Figure 4.18</a>) displays a status message on the left and buttons on the right. After entering the command character, the user has the choice of entering a Graffiti character or of tapping one of the buttons on the shortcut toolbar. Both of these actions cause the status message to be displayed briefly and then cause the corresponding menu item to be executed.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967805"> </a>Figure 4.18	 Menu shortcut toolbar
+</p>
+<p class="FgFigure">
+  <a name="967809"> </a><div align="left"><img src="images/MenuShortcutBar.gif" height="28" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967810"> </a>There is no requirement to give every menu item a shortcut. Writing Graffiti characters is difficult for many users, and mistakes are common. If the command is destructive (such as Delete), it is better not to provide a shortcut to avoid having the user inadvertently select it. If the destructive command is followed by a confirmation alert, you can assign a shortcut to it.
+</p>
+<div class="NINoteImportant"><hr>
+  <a name="967811"> </a> <span style="color: #333;  font-style: normal; font-weight: bold; text-decoration: none; text-transform: none; vertical-align: baseline">NOTE:  </span> If you assign a shortcut, it must be unique through the entire application, not just the current menu system.
+<hr>
+</div>
+<p class="Body">
+  <a name="967812"> </a>Avoid assigning letters with similar strokes to two different menu items. For example, the Graffiti shortcut for Paste is P rather than the V used on most systems. One reason for this is that the Graffiti stroke for V is similar to the Graffiti stroke for U, which is the shortcut for Undo. It could be detrimental to the users intending to Paste if they instead performed Undo by mistake. Another reason is that most Palm Powered handheld users do not use keyboards with their handhelds, and many may not even know how to type. For keyboard users, the V shortcut for Paste is easy to remember because the V key is right next to the C key. The V shortcut for Paste would not make sense to users who do not know how to type.
+</p>
+<p class="Body">
+  <a name="967814"> </a>Consider Graffiti shortcuts already assigned by other applications when assigning your own Graffiti shortcuts. Make sure that you use the same shortcut if you include the same menu item. This makes the entire system easier for users to learn. <a href="UI_Actions.html#967825">Table 4.5</a> shows the common Graffiti shortcuts used by the built-in applications.
+</p>
+
+<h5 class="TgTable">
+  <a name="967876"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967825"> </a><div class="TableTitle">Table 4.5	 Common Graffiti shortcuts </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967829"> </a><div class="CellHeading">Command</div></th>
+    <th><a name="967831"> </a><div class="CellHeading">Shortcut</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967833"> </a><div class="CellBody">New Record</div></td>
+    <td><a name="967835"> </a><div class="CellBody">N</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967837"> </a><div class="CellBody">Delete Record</div></td>
+    <td><a name="967839"> </a><div class="CellBody">D</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967841"> </a><div class="CellBody">Beam</div></td>
+    <td><a name="967843"> </a><div class="CellBody">B</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967845"> </a><div class="CellBody">Undo</div></td>
+    <td><a name="967847"> </a><div class="CellBody">U</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967849"> </a><div class="CellBody">Cut</div></td>
+    <td><a name="967851"> </a><div class="CellBody">X</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967853"> </a><div class="CellBody">Copy</div></td>
+    <td><a name="967855"> </a><div class="CellBody">C</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967857"> </a><div class="CellBody">Paste</div></td>
+    <td><a name="967859"> </a><div class="CellBody">P</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967861"> </a><div class="CellBody">Select All</div></td>
+    <td><a name="967863"> </a><div class="CellBody">S</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967865"> </a><div class="CellBody">Keyboard </div></td>
+    <td><a name="967867"> </a><div class="CellBody">K</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967869"> </a><div class="CellBody">Graffiti</div></td>
+    <td><a name="967871"> </a><div class="CellBody">G</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967873"> </a><div class="CellBody">Preferences</div></td>
+    <td><a name="967875"> </a><div class="CellBody">R</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h4 class="HCHeadC">
+  <a name="967877"> </a>Buttons on the Shortcut Toolbar
+</h4>
+<p class="Body">
+  <a name="967879"> </a>You can include your own buttons on the toolbar for the more commonly executed Graffiti shortcuts (see <a href="UI_Actions.html#967884">Figure 4.19</a>). The buttons displayed on the toolbar depend on the user context. If the focus is in an editable field, Palm OS displays buttons for cut, copy, and paste on the shortcut toolbar. If there is an action to undo, the system also displays a button for undo.
+</p>
+
+<p class="FFigureCaption">
+  <a name="967884"> </a>Figure 4.19	 Toolbar buttons
+</p>
+<p class="FgFigure">
+  <a name="967892"> </a><div align="left"><img src="images/UI_Actions19.gif" height="40" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="967893"> </a>Only add a button to the toolbar if you define a Graffiti shortcut for that command. Don't arbitrarily add extra buttons to the toolbar.
+</p>
+<p class="Body">
+  <a name="967894"> </a>Limit the buttons displayed on the shortcut toolbar to four or five. There are two reasons to limit the number of buttons. First, you must leave room for the status message to be displayed before the action is performed. Second, consider that the toolbar is displayed only briefly. Users must be able to instantly understand the meaning of each of the buttons on the toolbar. If there are too many buttons, it reduces the chance that users can find what they need.
+</p>
+<p class="Body">
+  <a name="967895"> </a>As described previously, the system already potentially displays four buttons by itself (for cut, copy, paste, and undo). You can suppress this behavior if you feel your users would benefit from seeing other buttons instead.
+</p>
+<p class="Body">
+  <a name="967896"> </a>The system contains bitmaps that represent such commands as beaming and deleting records. If your application performs any of these actions, it should use the system bitmap. <a href="UI_Actions.html#967909">Table 4.6</a> shows the system bitmaps and the commands they represent. If you use any of these, you should use them in the order in which they are listed in <a href="UI_Actions.html#967909">Table 4.6</a>, from right to left. That is, <span style="font-family: monospace">BarDeleteBitmap</span> should always be the rightmost of these bitmaps, and <span style="font-family: monospace">BarInfoBitmap</span> should always be the leftmost.
+</p>
+
+<h5 class="TgTable">
+  <a name="968002"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="967909"> </a><div class="TableTitle">Table 4.6	 System shortcut toolbar bitmaps </div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="967915"> </a><div class="CellHeading">Name</div></th>
+    <th><a name="967917"> </a><div class="CellHeading">Bitmap</div></th>
+    <th><a name="967919"> </a><div class="CellHeading">Command</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="967922"> </a><div class="CellBody"><span style="font-family: monospace">BarDeleteBitmap</span> </div></td>
+    <td><a name="967927"> </a><div class="CellBody"><div align="left"><img src="images/BarDeleteBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967929"> </a><div class="CellBody">Delete record</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967932"> </a><div class="CellBody"><span style="font-family: monospace">BarPasteBitmap</span> </div></td>
+    <td><a name="967937"> </a><div class="CellBody"><div align="left"><img src="images/BarPasteBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967939"> </a><div class="CellBody">Paste clipboard contents at insertion point </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967942"> </a><div class="CellBody"><span style="font-family: monospace">BarCopyBitmap</span> </div></td>
+    <td><a name="967947"> </a><div class="CellBody"><div align="left"><img src="images/BarCopyBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967949"> </a><div class="CellBody">Copy selection </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967952"> </a><div class="CellBody"><span style="font-family: monospace">BarCutBitmap</span> </div></td>
+    <td><a name="967957"> </a><div class="CellBody"><div align="left"><img src="images/BarCutBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967959"> </a><div class="CellBody">Cut selection </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967962"> </a><div class="CellBody"><span style="font-family: monospace">BarUndoBitmap</span> </div></td>
+    <td><a name="967967"> </a><div class="CellBody"><div align="left"><img src="images/BarUndoBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967969"> </a><div class="CellBody">Undo previous action </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967972"> </a><div class="CellBody"><span style="font-family: monospace">BarSecureBitmap</span> </div></td>
+    <td><a name="967977"> </a><div class="CellBody"><div align="left"><img src="images/BarSecureBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967979"> </a><div class="CellBody">Show Security dialog </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967982"> </a><div class="CellBody"><span style="font-family: monospace">BarBeamBitmap</span> </div></td>
+    <td><a name="967987"> </a><div class="CellBody"><div align="left"><img src="images/BarBeamBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="967989"> </a><div class="CellBody">Beam current record </div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="967992"> </a><div class="CellBody"><span style="font-family: monospace">BarInfoBitmap</span> </div></td>
+    <td><a name="967997"> </a><div class="CellBody"><div align="left"><img src="images/BarInfoBitmap.gif" height="19" width="19" border="0" hspace="20" vspace="0">
+</div></div></td>
+    <td><a name="968001"> </a><div class="CellBody">Show Info dialog (Launcher) </div></td>
+  </tr>
+</table>
+
+
+
+
+</h5>
+<h2 class="HBHeadB">
+  <a name="968003"> </a>Breaking the Rules
+<a href="#967063"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="968004"> </a>This section points out a few applications that break the menu guidelines and tells you if doing so was appropriate.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968006"> </a>Including an Exit Command
+</h4>
+<p class="Body">
+  <a name="968008"> </a>If you are writing an enterprise application to be used only within a particular company, your users may insist on having an Exit command. These users are used to their desktops, and they feel uncertain about moving from application to application on a Palm Powered handheld.
+</p>
+<p class="Body">
+  <a name="968009"> </a>In this case, it may be best to give your users either an Exit menu command or an Exit command button. Before you do so, make sure they know that when an application is exited (that is, when the system receives an application exit event), the system returns to the last screen displayed before the user launched that application. For most applications, the previous screen is the Launcher because it is used to launch most applications. If your application is launched by one of the hard keys on the handheld, then exiting the application would not always take the user to the Launcher.
+</p>
+<p class="Body">
+  <a name="968010"> </a>Even if your users insist on an Exit command, you should always design your application so that it can be exited in the normal means for a Palm OS application-by pressing one of the hard keys or by tapping the Applications icon-at any time. Consider this a power feature for your users. Your users may use the Exit command at first but will eventually become used to using the other buttons.
+</p>
+<p class="Body">
+  <a name="968011"> </a>Never include an Exit command on an application intended for broad third party distribution.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968012"> </a>Nonstandard Menu Names
+</h4>
+<p class="Body">
+  <a name="968014"> </a>You do not have to name the first menu "Record" even if it contains items that manipulate a single record in your database. Instead, it is probably better to name it something more familiar to your users. Users are typically not expected to know the terms "record" or "database" as they are used in the Palm OS paradigm. For example, it would probably be better for the "Record" menu in Date Book to be named "Event" and for it to be named "Contact" in Address Book.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="968017"> </a>Duplicating Menu Items
+</h4>
+<p class="Body">
+  <a name="968020"> </a>You may have noticed that the Date Book application violates the rule of not duplicating a command button with a menu item (see <a href="UI_Actions.html#968025">Figure 4.20</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="968025"> </a>Figure 4.20	 Menu item duplication
+</p>
+<p class="FgFigure">
+  <a name="968035"> </a><div align="left"><img src="images/UI_Actions28.gif" height="173" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="968036"> </a>This gives the user several ways to create a new appointment:
+</p>
+
+  <a name="968037"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Tapping the field next to a time and entering the name of the appointment</p>
+
+  <a name="968038"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Writing in the Graffiti area (creates an appointment at the specified time if a number is written first or an untimed appointment if a letter is entered first) </p>
+
+  <a name="968039"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Tapping the New button, selecting the time, and then entering the name of the appointment</p>
+
+  <a name="968040"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Tapping the title bar, choosing the New Event menu item from the Record menu, choosing the time, and then entering the name</p>
+
+  <a name="968041"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Entering the Graffiti shortcut for the New Event menu item, choosing the time, and then entering the name</p>
+<p class="Body">
+  <a name="968042"> </a>The first two methods of creating a new appointment are somewhat hidden interfaces. Most users catch on that they can simply start writing to create an appointment, but not all users discover this right away. Therefore, some duplication is necessary. Because novice users are the ones most likely to not understand how to enter a new appointment, the New command button (rather than a menu item) is necessary. You cannot provide a menu item and expect novice users to find it because many novice users don't know about the menu. Therefore, the New Event menu item and shortcut are simply redundancies that are probably never used.
+</p>
+<p class="Body">
+  <a name="968044"> </a>Some application designers duplicate commands in the menu so that they can provide a Graffiti shortcut for the command. This is a common practice in desktop applications; however, it is unnecessary for most users of the Palm Powered handheld. Command buttons are placed at the bottom of the form immediately above the Graffiti area. If a command has a button, it is actually more convenient and quicker to tap the button than it is to enter the Graffiti shortcut stroke followed by a letter. Plus, the more shortcuts you provide, the more you risk duplication of shortcut letters.
+</p>
+<p class="Body">
+  <a name="968045"> </a>Do keep in mind, however, that external keyboards have a key that simulates the Graffiti shortcut stroke. This means that users with external keyboards will find a shortcut more convenient than a command button. Therefore, if you have room in your menu, you may want to duplicate a command if it is not one of the standard commands. The external keyboards usually have preassigned keys that simulate taps on the common command buttons, such as New, Delete, Details, OK, and Done, which makes providing a shortcut for these commands unnecessary.
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>

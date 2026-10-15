@@ -1,0 +1,734 @@
+<HTML>
+
+<HEAD>
+<SMALLSCREENIGNORE>
+<LINK HREF="copy_of_palmos.css" REL="stylesheet" TYPE="text/css">
+<LINK HREF="document.css" REL="StyleSheet" TYPE="text/css" media="screen">
+<!-- SCRIPT_START -->
+<!-- SCRIPT_END -->
+</SMALLSCREENIGNORE>
+<TITLE>Palm OS Application Design</TITLE>
+<META NAME="TEMPLATE" CONTENT="palmos-dev-docs-NORMAL-html.html">
+<META NAME="GENERATOR" CONTENT="Quadralay WebWorks Publisher Professional Edition 6.0.7">
+<META NAME="TEMPLATEBASE" CONTENT="Palm HTML 20010625">
+<META NAME="LASTUPDATED" CONTENT="01/11/02 11:23:26">
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=ISO-8859-1">
+</HEAD>
+
+<BODY LEFTMARGIN="0" MARGINWIDTH="0" TOPMARGIN="0" MARGINHEIGHT="0">
+<SMALLSCREENIGNORE>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a name="964444"></a>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr height="35">
+          <td height="35" colspan="2" bgcolor="#6699CC">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+          <td width="160" align="left"><a href="http://www.palm.com"><img src="images/bigorb.gif" width="160" height="110" border="0"></a></td>
+          <td align="left" width="100%">
+            </SMALLSCREENIGNORE>
+            <!-- CONTENTCELL_START -->
+            <img border="0" height="45" src="images/orb_bkgrnd_600.gif" width="600"><br>
+            <!--PAGENAV_START-->
+            <SPAN CLASS="subnav">&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/index.html">Home</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/">Developers</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support">Development Support</a>
+              &nbsp;&nbsp;&lt;&nbsp;<A HREF="http://www.palmos.com/dev/support/docs">Documentation</a></span><BR>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             <h2 class="HeadDocPage">1  Palm OS Application Design</h2>
+             <img src="images/pixel_ltblue.gif" width="600" height="1" border="0" vspace="2"><br>
+             &nbsp;<span class="subnav"><a href="UIGuidelinesTOC.html">Table of Contents</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UI_Intro.html">&lt;&nbsp;Previous</a>&nbsp;&nbsp;| &nbsp;<a href="UI_FittingIn.html">Next&nbsp;&gt;</a>&nbsp;&nbsp;|
+             &nbsp;<a href="UIGuidelinesIX.html">Index</a></span>
+            <!--PAGENAV_END-->
+          </td>
+        </tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+							<td>&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+        <tr>
+		<td valign="top" width="10">&nbsp;&nbsp;&nbsp;</td>
+		<td valign="top" width="175">
+			<p class="SideTitle">Title - <br><a href="UIGuide_Front.html">Palm OS® User Interface Guidelines</a></p>
+			<p class="SideTOC1"><a href="UI_Design.html">1  Palm OS Application Design</a></p>
+
+<p class="SideTOC2">
+<a href="#964447">Palm OS Design Principles
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964470">Pocket Size
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964500">Fast and Simple
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964636">Low Cost, Long Battery Life, and High Value
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964658">Seamless Connection with Desktops
+</a></p>
+
+<p class="SideTOC2">
+<a href="#964669">The Design Process
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964674">The Usual Approach
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964704">The Recommended Approach
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964732">Decide on Design Goals
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964744">Know Your Users
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964764">Develop User Scenarios
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964796">Propose an Implementation
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964816">Develop the Initial Design Concept
+</a></p>
+
+<p class="SideTOC3">
+<a href="#964864">Complete the Design
+</a></p>
+
+		</td>
+
+		<td width="5">&nbsp;&nbsp;</td>
+		<td width="1" bgcolor="#6699cc">&nbsp;</td>
+		<td width="5">&nbsp;&nbsp;</td>
+		<td>
+
+				<!-- CONTENT_START -->
+
+<p class="Body">
+  <a name="964445"> </a>This chapter provides some principles that you should follow when designing your Palm OS<span style="font-size: 8px; vertical-align: super">®</span> application. It begins by describing how a Palm Powered<span style="font-size: 8px; vertical-align: super">TM</span> handheld differs from other types of computers and how these differences affect your user interface design. Then it outlines a design process that helps you to create a successful user interface.
+</p>
+<p class="Body">
+  <a name="964446"> </a>This chapter supplies only very general design principles. Read it to give yourself a grounding in Palm OS design. Specific guidelines are given in the remaining chapters of this book.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="964447"> </a>Palm OS Design Principles
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964449"> </a>A Palm OS application should provide information that users will want to access when they are away from their desks. Its user interface should allow the user to get to the most relevant information as quickly as possible.
+</p>
+<p class="Body">
+  <a name="964450"> </a>It's common for beginning Palm OS programmers and designers to believe that a Palm Powered handheld is simply a very small laptop. These designers try to port their existing desktop application's look and feel directly over to the handheld, resulting in a very complex and often unusable interface.
+</p>
+<p class="Body">
+  <a name="964451"> </a>Instead of duplicating a desktop application's look and feel, it is better to provide only the features that your users will want on the handheld. Handhelds are designed and used for different purposes than laptop computers. Good UI design for any platform begins by considering what the user needs to accomplish, and the Palm platform is no different in this regard. If you simply try to duplicate your desktop user interface on the handheld, your users may become frustrated and give up on your application.
+</p>
+<p class="Body">
+  <a name="964452"> </a>This section describes some of the handheld's key characteristics and how they should influence the design of your user interface.
+</p>
+
+  <a name="964456"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964470">Pocket Size</a></p>
+
+  <a name="964460"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964500">Fast and Simple</a></p>
+
+  <a name="964464"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964636">Low Cost, Long Battery Life, and High Value</a></p>
+
+  <a name="964468"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964658">Seamless Connection with Desktops</a></p>
+
+<h2 class="HBHeadB">
+  <a name="964470"> </a>Pocket Size
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964471"> </a>A Palm<span style="font-size: 8px; vertical-align: super">TM</span> handheld has a small screen and no keyboard-it is designed to fit in a shirt pocket. The small device size has the following effects on application design.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964472"> </a>Applications Must Limit Data Entry
+</h4>
+<p class="Body">
+  <a name="964474"> </a>Do not require users to enter a lot of data on the device itself. Because there is no keyboard, users mainly enter characters using Graffiti<span style="font-size: 8px; vertical-align: super">®</span> writing or a keyboard dialog. While these are useful ways of entering data, they are not as convenient as using the full-sized desktop computer with its keyboard and mouse. External keyboards exist and there are some Palm Powered handhelds with small built-in keyboards, but neither of these should be considered a requirement.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964475"> </a>Menus Are Hidden
+</h4>
+<p class="Body">
+  <a name="964477"> </a>To allow more room for data, the menu bar is not displayed by default. Instead, the menu bar is displayed by tapping an icon on the handheld. Because menus are hidden, many users do not realize that they are available. You'll need to limit your use of menus to power commands not necessary for the basic use of the application.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964478"> </a>No Button Toolbars
+</h4>
+<p class="Body">
+  <a name="964480"> </a>It's common to see a long strip of buttons at the top of a desktop application. These button toolbars are not ideal for the Palm platform because the buttons are too small to tell apart (see <a href="UI_Design.html#964485">Figure 1.1</a>). Instead, you must provide buttons only for the essential commands.
+</p>
+
+<p class="FFigureCaption">
+  <a name="964485"> </a>Figure 1.1	 Applications should not have toolbars
+</p>
+<p class="FgFigure">
+  <a name="964494"> </a><div align="left"><img src="images/UI_Designa.gif" height="175" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964495"> </a>Less Is More
+</h4>
+<p class="Body">
+  <a name="964497"> </a>To save space, sacrifice features that don't belong on a handheld. On a desktop system, users use 20% of an application's features 80% of the time. Your application should provide only that top 20% of features. Save any other functionality for the desktop application.
+</p>
+<p class="Body">
+  <a name="964498"> </a>On a desktop system, it's easy to just add another button to the button toolbar or add another menu. For a Palm OS application, you'll have to resist that temptation. Otherwise, your screen becomes too cluttered, and your application becomes too complicated to use.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964500"> </a>Fast and Simple
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964501"> </a>The Palm handheld is fast to use and easy to learn. Because the handheld's main purpose is to make it easy to organize and manage your life, it requires a minimal learning curve. Users must be able to pick up a Palm Powered handheld and, with no training or instruction, navigate between applications (without getting stuck) and execute basic commands within five minutes.
+</p>
+<p class="Body">
+  <a name="964502"> </a>This contrasts with desktop systems. Although desktop systems are also designed to be easy to use, there is a desktop paradigm that new users must spend a day or two learning.
+</p>
+<p class="Body">
+  <a name="964503"> </a>Because the Palm Powered handheld must be fast and easy to use, it has the following effects on application design.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964504"> </a>Perceived Speed Is Important
+</h4>
+<p class="Body">
+  <a name="964506"> </a>On a desktop, users don't mind waiting a few seconds while an application loads because they plan to use the application for an extended amount of time. On a handheld, users want to quickly look something up and then go on about their lives, and they do this several times a day (see <a href="UI_Design.html#964511">Figure 1.2</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="964511"> </a>Figure 1.2	 Opposite usage patterns
+</p>
+<p class="FgFigure">
+  <a name="964542"> </a><div align="left"><img src="images/UI_Design2.gif" height="227" width="480" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="964543"> </a>Optimize your application to these short bursts of user activity. Remember that requiring a user to spend an extra 30 seconds to find necessary information is excusable when they are sitting down for 3 hours at a desktop computer but cumbersome on a handheld when that is the only thing they are going to do before they turn it off.
+</p>
+<p class="Body">
+  <a name="964544"> </a>As a rule of thumb, the user should be able to keep up with someone on the telephone when setting up appointments, looking up phone numbers, and so on. Priorities include the ability to:
+</p>
+
+  <a name="964545"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Execute key commands quickly</p>
+
+  <a name="964546"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Navigate to key screens quickly</p>
+
+  <a name="964547"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Find key data quickly (for example, phone numbers)</p>
+
+<h4 class="HCHeadC">
+  <a name="964548"> </a>Minimize Required Steps
+</h4>
+<p class="Body">
+  <a name="964549"> </a>Minimize the number of steps a user must perform to see vital information. Display the most essential information on the first screen of the application. For example, Date Book always displays today's calendar or agenda when it starts up. It does so because most users access the Date Book to see their current schedule or agenda 80% of the time.
+</p>
+<p class="Body">
+  <a name="964551"> </a>Reduce clutter so that users will find the information they need quickly. Strive for a balance between providing enough information and overcrowding the screen.
+</p>
+<p class="Body">
+  <a name="964552"> </a>Place command buttons on the first screen that perform the tasks the user will want to perform most often. Accomplishing common tasks should be fast and easy.
+</p>
+<p class="Body">
+  <a name="964553"> </a>Choose the number of buttons on the screen carefully:
+</p>
+
+  <a name="964554"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The fewer buttons on the screen, the less time it takes to learn how to use the product. If there are too many buttons, users are forced to hunt and peck to find what they need until they eventually learn the placement of each button. </p>
+
+  <a name="964555"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> On the other hand, keeping a few frequently used buttons on screen helps reduce the time spent learning basic functionality.</p>
+<p class="Body">
+  <a name="964560"> </a><a href="UI_Actions.html#967063">Chapter 4, "Executing Commands,"</a> covers the topic of choosing the number of command buttons in more detail.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964561"> </a>Minimize Taps
+</h4>
+<p class="Body">
+  <a name="964563"> </a>Most information about that data should be accessible in a minimal number of taps of the stylus - one or two.
+</p>
+<p class="Body">
+  <a name="964564"> </a>Desktop user interfaces are typically designed to display commands as if they were used equally. In reality, some commands are used very frequently while most are used only rarely. Similarly, some settings are more likely to be used than others. On Palm Powered handhelds, more frequently used commands and settings should be easier to find and faster to execute.
+</p>
+
+  <a name="964565"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Frequently executed software commands should be accessible by one tap.</p>
+
+  <a name="964566"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Infrequently used or dangerous commands may require more user action.</p>
+<p class="Body">
+  <a name="964571"> </a><a href="UI_Design.html#964575">Table 1.1</a> shows how the frequency of an action maps to its accessibility in the Date Book application.
+</p>
+
+<h5 class="TgTable">
+  <a name="964604"> </a>
+
+<table  width="300" border="1" cellpadding="5" cellspacing="0">
+  <caption><a name="964575"> </a><div class="TableTitle">Table 1.1	 Frequency of actions</div></caption>
+  <tr bgcolor="#CCCCCC" valign="top">
+    <th><a name="964581"> </a><div class="CellHeading">Frequency </div></th>
+    <th><a name="964583"> </a><div class="CellHeading">Example </div></th>
+    <th><a name="964585"> </a><div class="CellHeading">Accessibility</div></th>
+  </tr>
+  <tr valign="top">
+    <td><a name="964587"> </a><div class="CellBody">Several times per day</div></td>
+    <td><a name="964589"> </a><div class="CellBody">Checking today's schedule or to-do items</div></td>
+    <td><a name="964591"> </a><div class="CellBody">One tap</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="964593"> </a><div class="CellBody">Several times per week</div></td>
+    <td><a name="964595"> </a><div class="CellBody">Scheduling a one hour meeting starting at the top of the hour</div></td>
+    <td><a name="964597"> </a><div class="CellBody">One tap, write in place</div></td>
+  </tr>
+  <tr valign="top">
+    <td><a name="964599"> </a><div class="CellBody">A few times a month</div></td>
+    <td><a name="964601"> </a><div class="CellBody">Setting a weekly meeting (repeating event)</div></td>
+    <td><a name="964603"> </a><div class="CellBody">Several taps, second dialog box</div></td>
+  </tr>
+</table>
+
+
+
+
+</h5><p class="Body">
+  <a name="964605"> </a>This goal of minimizing taps can be taken too far. It must be balanced with other guidelines. For example, using a command button generally minimizes the taps to perform a command, but if you have too many buttons, you overcrowd the screen and introduce confusion into the interface.
+</p>
+<p class="Body">
+  <a name="964606"> </a>Some designers break the behavior guidelines for a particular element for the sole purpose of minimizing taps. User interface elements should behave the way users expect them to behave unless there is good reason for them not to. Minimizing taps is not always a good enough reason to break guidelines.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964607"> </a>Be Consistent
+</h4>
+<p class="Body">
+  <a name="964609"> </a>Consistency reduces the time needed to learn an application by limiting the number of things that people need to keep in their heads at once. The user should not have to memorize an entire set of rules to use the handheld easily. For example, the up arrow key should not do different things on different screens.
+</p>
+<p class="Body">
+  <a name="964611"> </a>If possible, make your application consistent with the handheld's built-in applications; users know how to interact with them and will quickly learn your application if the user interface is similar to applications they already know.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964612"> </a>Optimize Frequent Tasks
+</h4>
+<p class="Body">
+  <a name="964614"> </a>Most users launch Date Book to see today's schedule most of the time. Date Book helps with this task. Not only does it open to today's schedule, it also always tries to show you all of today's appointments, even if it means some of the hour blocks disappear. For example, if you have appointments at 8:00 AM, 3:00 PM, and 8:00 PM, the Date Book shows you all three appointments without forcing you to scroll to see that last appointment. To do so, it hides the unused hour blocks between 4:00 PM and 8:00 PM. (See <a href="UI_Design.html#964619">Figure 1.3</a>.)
+</p>
+
+<p class="FFigureCaption">
+  <a name="964619"> </a>Figure 1.3	 Datebook calendar optimization
+</p>
+<p class="FgFigure">
+  <a name="964628"> </a><div align="left"><img src="images/UI_Design3.gif" height="174" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="964630"> </a>Similarly, the Address Book is optimized to display a large number of contacts because most users will have long lists of contacts. It allows the user to divide contacts into different categories and display only the contacts in the selected category. It also has a look-up field on the main screen that allows the user to easily navigate to the contact he or she wants by entering a Graffiti character.
+</p>
+<p class="Body">
+  <a name="964632"> </a>Consider providing power user features for people who use your application often. These advanced features should be easily accessible but not get in the way. For example:
+</p>
+
+  <a name="964633"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> If you start to write a Graffiti character or number while in Date Book, Date Book assumes you are trying to schedule a new appointment and helps you do so. However, the Date Book still shows a New command button so that novice users will know how to create an appointment. </p>
+
+  <a name="964634"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The Address Book beams your business card if you hold down the hard key. This is also a power user feature that newcomers can discover eventually.</p>
+
+<h2 class="HBHeadB">
+  <a name="964636"> </a>Low Cost, Long Battery Life, and High Value
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964638"> </a>Previous handheld products failed in part because they cost too much and devoured batteries. For this reason, two key design goals of Palm handhelds have been to have the handheld fall into a specific price range and have readily available batteries that last a long time. Many Palm Powered handhelds run on readily available, cheap AAA batteries, and a battery life of one month is not uncommon.
+</p>
+<p class="Body">
+  <a name="964639"> </a>Keeping costs down and battery life high are key factors in determining which hardware components are selected. Those component choices, in turn, affect the decisions you make when designing your applications.
+</p>
+
+  <a name="964641"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Some Palm Powered handhelds have lower quality screens than competing handhelds because the low quality screen uses less power, requiring the user to replace the batteries less frequently. </p>
+
+  <a name="964643"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The processor was also chosen for its low power usage rather than for its speed. All existing Palm Powered handhelds have processors with clock speeds ranging from 16 MHz to 33 MHz, with faster processor support planned for the future. </p>
+<p class="Indented1"> <a name="964644"> </a>The Palm designers felt that "perceived speed" was more important than actual processing speed, therefore a relatively low speed processor could be used to maximize battery life. Perceived speed is the speed of the overall user experience. If a user can start up the Palm Powered handheld and see a list of today's appointments faster than he or she can on a competitor's handheld, then processing speed does not matter. </p>
+
+  <a name="964646"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Graffiti power writing software was another design decision affected by the battery selection. During the design of the first Palm handhelds, users were clamoring for natural handwriting recognition. However, natural handwriting recognition would require a more powerful processor and more memory, which together required bigger batteries. Adding all these things to a handheld would have weighed it down and made it cost too much for the market. Instead, the Palm designers bet that users would settle for good-enough handwriting recognition if the result was long battery life. </p>
+<p class="Body">
+  <a name="964648"> </a>As the handheld evolves, some of these decisions made by the designers of the initial Palm handheld are no longer as relevant as they once were. For example, some handhelds come with lithium ion rechargeable batteries built in rather than using the AAA batteries. Users do not worry about battery life as much if they can simply place the handheld in the recharger at the end of the day. Because maximizing battery life is not as important on these handhelds, they can use high resolution screens and faster processors.
+</p>
+
+<h4 class="HCHeadC">
+  <a name="964649"> </a>Keep User Costs Down
+</h4>
+<p class="Body">
+  <a name="964651"> </a>Your application should help keep user costs down by maximizing battery life. To maximize battery life, consider your actions carefully before performing tasks that consume a lot of power. Serial communications, IR communications, playing sounds, disabling the auto-off feature, and extended animation are among the tasks that consume a lot of power. When your application must perform these tasks, it should do so in a way that consumes as little power as possible. If you open the serial port, for example, you should close it immediately after you are done using it.
+</p>
+<p class="Body">
+  <a name="964652"> </a>Don't make the mistake of deciding that battery life is not ever important to users of handhelds with rechargeable batteries. The lithium ion batteries often do not last as long as two AAA batteries. Many users appreciate the convenience of being able to go for several days without charging. Others often travel on business and may be away from their chargers for days at a time. You should respect the experience of those users.
+</p>
+<p class="Body">
+  <a name="964653"> </a>You affect battery life more with your programming choices than you do with your user interface design choices. See the <i>Palm OS Programmer's Companion</i> for programming tips on reducing the amount of power consumption.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964658"> </a>Seamless Connection with Desktops
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964660"> </a>Desktop connectivity is an integral component of the Palm OS platform. The handheld comes with a cradle that connects to a desktop computer and with software for the desktop that provides "one-button" backup and synchronization of all data on the device with the user's desktop.
+</p>
+<p class="Body">
+  <a name="964661"> </a>Many Palm OS applications have a corresponding application on the desktop. To share data between the handheld's application and the desktop's application, you must write a <i>conduit</i>. A conduit is a plug-in to the HotSync technology that runs when you press the HotSync button. A conduit synchronizes data between the application on the desktop and the application on the handheld. The conduit that you write must handle several different environments:
+</p>
+
+  <a name="964663"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> One handheld may synchronize with several desktop computers.</p>
+
+  <a name="964664"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Several handhelds may synchronize with different users on a single desktop computer. </p>
+
+  <a name="964665"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Data can be entered either on a desktop or on the handheld. </p>
+<p class="Body">
+  <a name="964666"> </a>The conduit must run without user intervention. The user is not required to watch the desktop screen or be anywhere near the desktop screen while the device synchronizes. The conduit must determine which data records are the most relevant, considering all factors involved, and then decide on its own which records are copied between the desktop computer and the handheld.
+</p>
+
+<h2 class="HaHeadA">
+  <a name="964669"> </a>The Design Process
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964671"> </a>In the previous section, you learned the key characteristics of the Palm handheld and how these characteristics should affect your application's user interface. The handheld's characteristics were determined by a design process that focused on the user: the user wanted a fast, easy-to-use, inexpensive device with a long battery life. All design decisions were made to give users just that.
+</p>
+<p class="Body">
+  <a name="964672"> </a>This section introduces a user-centered design process used by successful designers both inside of and outside of Palm, Inc. You can ensure that your application is successful if you follow this process. A design process that focuses on the user is nothing particularly new or unique; successful interface designers for any platform follow a similar process.
+</p>
+<p class="Body">
+  <a name="964673"> </a>Even though there's nothing earth-shattering here, all too often the user-centered design process is not followed. The results are poor user interfaces. For this reason, this section begins by describing the wrong approach to interface design, an approach all too commonly followed. Then it describes the recommended approach.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964674"> </a>The Usual Approach
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964675"> </a>As soon as you know what application you're working on, it is very tempting to jump right in and start coding features, thinking you'll fix any design problems later in the development cycle. However, this is almost always the wrong way to design an application, particularly a Palm OS application.
+</p>
+<p class="Body">
+  <a name="964676"> </a>To an extent, you can get away with a poor user interface when you have a large, colorful screen on a computer with almost unlimited processing power. Design flaws on a Palm Powered handheld are more visible.
+</p>
+<p class="Body">
+  <a name="964677"> </a>Because application developers are comfortable with technology, their first instinct often is to focus on technological solutions. The actual user problem that they are trying to solve gets lost in the rush to add cool features.
+</p>
+<p class="Body">
+  <a name="964679"> </a>Suppose you have been assigned to design an application for book collectors. These users want to keep track of the books they own, to whom they have lent the books out, and when they are due back. A typical technology-focused approach to this problem goes something like this:
+</p>
+<p class="Indented1"> <a name="964680"> </a>"This application needs at least two screens. The main screen lists the books, and the second screen is a detail screen showing if the book is lent and to whom. We need a New button to create a book, so we might as well add an Edit button and a Delete button just in case. We can sort the books by title and author. For data entry, we'll allow users to scan in the ISBN number for newly acquired books in case they have a Symbol bar code scanner. That's much faster than Graffiti writing. We can allow the users to beam books back and forth to each other. We'll also link the application to Web Clipping applications in case they have a Palm VII series handheld and want to buy a book online with it..." and so on. </p>
+<p class="Body">
+  <a name="964681"> </a>Shortly after this initial thought process, the initial sketches are drawn (see <a href="UI_Design.html#964686">Figure 1.4</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="964686"> </a>Figure 1.4	 Initial design sketches
+</p>
+<p class="FgFigure">
+  <a name="964696"> </a><div align="left"><img src="images/UI_Design4.gif" height="225" width="360" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="964697"> </a>As you can see, this method of application design more closely resembles a brainstorming session than a reliable process.
+</p>
+<p class="Body">
+  <a name="964698"> </a>Such a process may or may not lead you to an acceptable application. Some problems with this initial design:
+</p>
+
+  <a name="964699"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Scanning the ISBN number might be nice, but that only gives you the ISBN number. The user must then translate that into a book title by looking up the number on the web. What if the user does not have a bar code scanner on the device or owns a lot of old books that do not have an ISBN number? </p>
+
+  <a name="964701"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Beaming the book title has little utility and requires a lot of processing power for the little utility it provides. What would it mean to beam a book title to someone else? </p>
+
+  <a name="964703"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Forcing the user to navigate to a detail screen to show who has borrowed the book might become tedious if what the user really wants is to scan through his or her list of books and know at a glance which books have been loaned out. </p>
+
+<h2 class="HBHeadB">
+  <a name="964704"> </a>The Recommended Approach
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964705"> </a>Now that we've learned a little bit about the usual approach to interface design, let's discuss a better approach. The better approach is a multi-step process that is more likely to give you the desired results: lots of happy users willing to part with their money. The steps to the right approach are:
+</p>
+
+  <a name="964709"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964732">Decide on Design Goals</a></p>
+
+  <a name="964713"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964744">Know Your Users</a></p>
+
+  <a name="964717"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964764">Develop User Scenarios</a></p>
+
+  <a name="964721"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964796">Propose an Implementation</a></p>
+
+  <a name="964725"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964816">Develop the Initial Design Concept</a></p>
+
+  <a name="964729"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> <a href="UI_Design.html#964864">Complete the Design</a></p>
+<p class="Body">
+  <a name="964730"> </a>You might not follow all of this design process exactly as it is described here, particularly if you work in a small company or by yourself. Creating software is a complicated task affected by a lot of variables. Every project is unique. Still, it's useful to know about this recommended user interface design process and to try to follow it as closely as possible.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964732"> </a>Decide on Design Goals
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964734"> </a>The Palm designers made decisions to achieve these design goals: a device that fits in a shirt pocket, is fast and simple to use, requires no learning curve, is low cost, and has a worry-free battery life. Just as the Palm designers started with their design goals, you should start with a design goal for your application. A generic set of design goals for all Palm OS applications is the following:
+</p>
+
+  <a name="964735"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Easy to learn and use</p>
+
+  <a name="964736"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Convenient</p>
+
+  <a name="964737"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Provides access to what most people want and need most of the time</p>
+
+  <a name="964738"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Helps users quickly achieve their goals </p>
+<p class="Body">
+  <a name="964739"> </a>Your application may have additional goals, but to be successful on the Palm platform, it should achieve the design goals listed above.
+</p>
+<p class="Body">
+  <a name="964741"> </a>In a small company, you'll no doubt come up with the application idea and its design goals on your own. In a large company, the design goals should come from the Marketing department. Consider the Books application example from the previous section. The statement of what the application should do may have come from the Marketing department of a large company or it may have been an independent idea. "Create an application that allows book collectors to keep track of their books, to whom they have loaned them out, and when." To this, the traditional Palm design goals simply adds adverbs: "Create an application that allows book lovers to <b>quickly and easily</b> keep track of their books and to whom they have loaned them."
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964744"> </a>Know Your Users
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964747"> </a>Users come in all shapes and sizes. If you are like most computer professionals, then you are <b>not</b> the typical user of a Palm Powered handheld or of your future product.
+</p>
+<p class="Body">
+  <a name="964748"> </a>Handhelds attract many people outside the computer industry due to their ease of use. Because you work in the computer industry, you are comfortable with the differences between "hardware," "software," and "applications." Typical users outside of the industry see the handheld as one integrated device. They have no notion of what indicates a hardware problem, a software problem, or an application bug. They only know that they have a task to perform, and they want their Palm Powered handhelds to help them with that task.
+</p>
+<p class="Body">
+  <a name="964749"> </a>Examine the user base your application is likely to attract. If possible, set up a focus group to learn more about your target users and why they want to use your application. A wine database application is likely to attract a wide non-technical audience. A utility to examine internal memory is going to have a mostly technical audience. A computer game might attract both the technical and non-technical members of the Palm community.
+</p>
+<p class="Body">
+  <a name="964750"> </a>For broad audiences, you'll want to follow the built-in applications as much as possible. Users already know how to use those, so they will implicitly know how to use your application as well. Don't "improve" the features, such as supporting the ability to search on suffixes as well as prefixes in the global Find facility.
+</p>
+<p class="Body">
+  <a name="964751"> </a>If you have a narrow, highly technical audience, you can probably get away with a lot more in your user interface design; however, it never hurts to have an excellent interface. Your users will appreciate your application more if you do.
+</p>
+<p class="Body">
+  <a name="964753"> </a>Like the design goals from the previous section, a description of the typical user is another piece of information that often comes from a Marketing department. A small company may not have the luxury of a large Marketing department with expertise in market research; however, you can still identify target users among your friends and family and talk to them about their needs.
+</p>
+<p class="Body">
+  <a name="964754"> </a>For our Books application, we have discovered that people who are likely to buy our application have the following characteristics:
+</p>
+
+  <a name="964755"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> They love to read. </p>
+
+  <a name="964756"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> They typically own hundreds of books. </p>
+
+  <a name="964757"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> They spend much free time browsing book stores. </p>
+
+  <a name="964758"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> They often can't remember which books they own, which they don't, and which they own but still haven't read. </p>
+
+  <a name="964759"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Many freely loan books to friends, which becomes a problem when trying to determine which books they own. </p>
+
+  <a name="964760"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Many are not very comfortable with technology.</p>
+<p class="Body">
+  <a name="964761"> </a>Because a large part of our target audience is uncomfortable with technology, we'll need to make our application as easy to use as possible, and we'll need to focus on making it work like the built-in Palm OS applications with which our user base is already familiar.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964764"> </a>Develop User Scenarios
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964766"> </a>After gathering a picture of your typical user, begin your design by considering that user. What problem is the user trying to solve by using your application? Under what circumstances will they be using the application? Will they be at the office, the airport, at home, or in the car?
+</p>
+<p class="Body">
+  <a name="964767"> </a>Develop some user scenarios. <i>User scenarios</i> are statements of what the user will do with the application and when. "The user needs to access email five times a day while riding on the subway" is a good scenario statement. It describes what the user is doing, where he or she is doing it, and how often. The best way to develop user scenarios is, of course, to talk to potential users, whether in focus groups or through other means.
+</p>
+<p class="Body">
+  <a name="964768"> </a>To determine user scenarios, you must know these things:
+</p>
+
+  <a name="964769"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The likelihood that the user will perform a task</p>
+
+  <a name="964770"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The frequency with which the user will perform the task </p>
+<p class="Body">
+  <a name="964772"> </a>For example, starting up the Date Book to access today's schedule is both likely and frequent-it is often done several times throughout the day. Tasks that are likely and frequent should be the easiest to perform.
+</p>
+<p class="Body">
+  <a name="964773"> </a>Scheduling an appointment is another task that is both likely and frequent; however, scheduling a appointment that begins at other than a half hour or hour (for example, at 3:05) is unlikely and infrequent. We might allow people to schedule such appointments, but we can require more taps to do so because we know it is infrequently done.
+</p>
+<p class="Body">
+  <a name="964775"> </a>A task may be likely but infrequent. For example, users are likely to run the Welcome application because it is always the first application run when they start up a new Palm Powered handheld. However, it usually is only run that one time, so its use is infrequent.
+</p>
+<p class="Body">
+  <a name="964776"> </a>Develop as many scenarios as possible, including those you imagine to be unlikely and infrequent. This is a tricky stage in the design process. It's easy to come up with only scenarios that support preconceived notions of the application development team. If you focus only on those scenarios, you'll end up with an application that meets the needs of your team but not necessarily the needs of your users. An exhaustive user scenario effort keeps you focused on the needs of the users.
+</p>
+<p class="Body">
+  <a name="964778"> </a>Remember our discussion of the wrong approach to designing the Books application? We came up with a design that involved bar code scanning, beaming, and buying books using a Palm VII wireless Internet connection. These were not bad ideas, but we've since learned that our user base is likely to include many people uncomfortable with technology. Such people are typically attracted to the lower-end handhelds such as m100s. A few may even own Palm Professionals. Our users are not likely to have Palm VII handhelds, and they most certainly don't have Symbol bar code scanners. So we'll have to abandon our ideas of scanning ISBN numbers and buying books from the Internet. Beaming may also be discarded if we discover that there are, in fact, a large number of Palm Professional users out there. Any reliance on color in our application is most certainly not a good idea. Color handhelds tend to be more expensive. We can't guarantee that people have them.
+</p>
+<p class="Body">
+  <a name="964781"> </a>Since the technology-focused design has led us down the wrong path, let's consider doing some user scenarios for the application:
+</p>
+
+  <a name="964783"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users want to see a list of all of the books they own, which may number in the hundreds. (likely, frequent)</p>
+
+  <a name="964784"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users are at a bookstore and want to see if they own a particular book. (likely, frequent)</p>
+
+  <a name="964785"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users are at a bookstore and want to add a newly purchased book to the list. (likely, frequent)</p>
+
+  <a name="964786"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users are away from their desktop computers and want to buy a book on the Internet (unlikely, infrequent)</p>
+
+  <a name="964787"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users want to lend a book to a friend (likely, infrequent). </p>
+
+  <a name="964788"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users are at home, looking for a particular book, and want to see if it is loaned out. (likely, frequent)</p>
+
+  <a name="964789"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users want to see all books they have loaned out. (likely, infrequent)</p>
+
+  <a name="964790"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users want to see all books they own by a particular author or about a particular subject. (likely, infrequent)</p>
+
+  <a name="964791"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users want to see all books they have loaned to a given person and when they are due back. (unlikely, infrequent)</p>
+
+  <a name="964792"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Users have a bar code scanner and want to scan in the ISBN number of a new book. (unlikely, infrequent)</p>
+<p class="Body">
+  <a name="964793"> </a>Notice that we have not yet focused on <b>how</b> to solve the users problems in these first three design steps (decide on design goals, know the user, and develop user scenarios). Instead, we have focused on <b>understanding</b> our users so that we can solve their problems.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964796"> </a>Propose an Implementation
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964798"> </a>Now that we have an idea of who the user is and how the user will use our application, the next step is to describe the proposed implementation of the application. This description should focus on the <b>feel</b> of the application rather than its look. In this way, the proposed implementation flows naturally from the user scenarios.
+</p>
+<p class="Body">
+  <a name="964799"> </a>The idea behind this step is twofold. First, once everybody involved in designing and developing the application agree upon the proposed implementation, engineers can begin to architect the features at the same time that human interface designers are designing the look. Second, by focusing on the feel of the application, you postpone the traditional arguments about the application look, which may unnecessarily delay software development at this point.
+</p>
+<p class="Body">
+  <a name="964800"> </a>If you are working alone, of course, these two reasons for proposing an implementation before developing the look are not relevant. You may find it helpful to write the software without focusing much on the look until a little later, or you may not. Either way, you still should develop an implementation that flows from the user scenarios and the description of the typical users you created in the previous steps.
+</p>
+<p class="Body">
+  <a name="964802"> </a>The proposed implementation for our Books application is:
+</p>
+
+  <a name="964804"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The initial screen will look very similar to the Address Book application. It will be a list of all owned books, sorted alphabetically by title. We've decided to mimic Address Book's main screen so that users will instantly feel familiar with our application. </p>
+
+  <a name="964806"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> Because users may own hundreds of books, we will allow them to enter Graffiti characters to quickly navigate through this list of books in the same way they navigate through the Address Book. </p>
+
+  <a name="964807"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> To allow the user to quickly determine whether he or she owns a particular book, we will provide filters that allow special displays: All books by a particular author, all books on a particular subject, all books currently on loan. </p>
+
+  <a name="964808"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The initial screen will provide ways to enter a new book or to see more details about a book. </p>
+
+  <a name="964809"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The Details screen will have fields for title, author, and category and will have a way to loan a book to a friend. </p>
+
+  <a name="964810"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> The main screen will have a way to indicate which books are out on loan so that the user can quickly scroll through the list and see which books are out on loan. </p>
+
+  <a name="964811"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> To ease data entry, we'll provide a conduit that integrates with a desktop application so users can enter most of their books on the desktop and synchronize them down to the handheld. People often buy several books by the same author, so we'll provide name completion for the author name based on existing authors in the database. </p>
+
+  <a name="964812"> </a><p class="B1Bullet"> <img src="images/blackbullet.gif" width="10" height="10" border="0"> We'll also integrate with other built-in applications. Loaning a book to a friend is linked to the Address Book as the friend's name and contact information is likely to be included there. We might integrate with Date Book by entering an event on the date that a friend is to return a book; however, because many people do not assign due dates when they lend to friends, we would make this an optional feature enabled by a user preference rather than a feature that is always available.</p>
+<p class="Body">
+  <a name="964813"> </a>Recall that in our technology-focused design approach, we immediately came up with an Edit and Delete button in addition to the New button (plus scanning, beaming, and buying books through the wireless Internet-ideas we all but eliminated in the previous steps). In focusing on what tasks the user will perform most often, the Edit and Delete buttons did not come up in the conversation. Information about a book does not change, so the Edit button isn't as important as it is in, say, the Address Book. Book lovers rarely throw away books either. However, we should provide some way for users to correct mistakes in data entry, so we might provide Edit and Delete menu items or command buttons on a subscreen.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964816"> </a>Develop the Initial Design Concept
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964818"> </a>After you have described the feel of the application, it is time to develop the look. Begin by focusing on the initial design concept. The initial design focuses on the main screens. At this point, selection of user interface elements comes into play. However, the exact details of the user interface may not be pinned down and subscreens, such as alerts, may be ignored until later on.
+</p>
+<p class="Body">
+  <a name="964819"> </a>It's important to consider the usage frequency and likelihood of your user scenarios. More frequently used commands and settings should be easier to find and faster to execute.
+</p>
+<p class="Body">
+  <a name="964820"> </a>To make your application's important features easily accessible, choose the appropriate user interface element. Element selection is covered in detail in the remaining chapters of this book.
+</p>
+<p class="Body">
+  <a name="964824"> </a><a href="UI_Design.html#964831">Figure 1.5</a> shows the initial design concept for the Books application. Notice how it differs from the initial design shown for the wrong approach (<a href="UI_Design.html#964686">Figure 1.4</a>).
+</p>
+
+<p class="FFigureCaption">
+  <a name="964831"> </a>Figure 1.5	 Initial design concept
+</p>
+<p class="FgFigure">
+  <a name="964857"> </a><div align="left"><img src="images/UI_Design5.gif" height="357" width="469" border="0" hspace="20" vspace="0">
+</div>
+</p>
+<p class="Body">
+  <a name="964858"> </a>Because we took the time to study our users' wants and needs, we know that the major problem they are having is managing the hundreds of books in their collections. The likely and frequent tasks from our user scenarios involve the user wanting to see what books they own and where those books are. Because the list of books can grow to be lengthy, we've decided that the most important tasks are the presentation of the list of books and the ability to enter new books. The main screen helps the user navigate the list of books by allowing them to filter the display according to categories of the user's own choosing and by entering Graffiti characters in the Look Up field to navigate to a particular book. It uses the note icon so that the user can easily scroll through the list of books and see which ones are out on loan. Tapping the note icon shows more information about the loan. The loan information shows to whom the book is loaned, when it was loaned, when it is due back, and provides a Lookup button so that the user can quickly go to the contact information for this person in Address Book if the person needs reminding that the book is due.
+</p>
+<p class="Body">
+  <a name="964859"> </a>We will also provide other screens: a Preferences dialog that allows the user to sort by author name instead of title and a Search screen that allows them to search for all books loaned to a particular person. Because these tasks were described as likely but infrequent in our user scenarios, they are accessed through menu items instead of through command buttons.
+</p>
+<p class="Body">
+  <a name="964861"> </a>You may only have sketches at this point, but it is appropriate to begin usability testing your interface at this stage to ensure that what you've designed meets the user's needs. You can mock up a user interface using technology as simple as note cards and have the user walk through common tasks. After you've performed a set of usability tests, refine your design concept and retest as you complete the next stage.
+</p>
+
+<h2 class="HBHeadB">
+  <a name="964864"> </a>Complete the Design
+<a href="#964444"><img src="images/top.gif" border="0"></a></h2>
+
+<p class="Body">
+  <a name="964866"> </a>After the main concepts have been agreed upon by everyone involved in the project (which might include human interface designers, marketing, and engineering), the design can be solidified. At this point, you should design every screen for the application, know how to get to every screen, have all user interface elements properly aligned and spaced on the screen, and design the menus. All error states are also defined.
+</p>
+<p class="Body">
+  <a name="964867"> </a>This phase should coincide with the alpha build of your software. Thus, after the alpha release, you can have more user testing and feedback, which will refine your design for the beta build and then for the final build.
+</p>
+<p class="Body">
+  <a name="964869"> </a>Notice that we complete the design during alpha development. Many developers are tempted to leave user interface design until much later in the product development cycle, but doing so is a mistake. If you wait until the end, you have solidified your initial design in the code you have written. The longer you wait to change the design, the harder it becomes to do so, and the easier it becomes to rationalize leaving the interface as-is.
+</p>
+&nbsp;<br>
+				<!-- CONTENT_END -->
+
+		</td>
+		<td width="5">&nbsp;&nbsp;</td>
+	</tr>
+      </table>
+    </td>
+			</tr>
+  <tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="760">
+        <!-- CONTENTCELL_END -->
+        <tr valign="top">
+          <td width="10">&nbsp;<!-- FOOTER_START --></td>
+          <td width="72">&nbsp;</td>
+          <td width="25" bgcolor="white" background="images/bkgrnd.gif">&nbsp;</td>
+          <td width="600">
+            <table border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td><img src="images/rule_10-1-5_ltblue.gif" width="600" height="16" border="0"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p align="center" class="footer"> ©2001 Palm, Inc. All rights
+                    reserved. <a href="http://www.palmos.com/dev/support/classes/">Training</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/dev/tech/kb/">Knowledge Base</a>&nbsp;|&nbsp;<a href="http://www.palmos.com/">Palm&nbsp;OS&nbsp;Platform</a>&nbsp;|&nbsp;<a href="UIGuide_Front.html" target="_blank">Legal Notices</a>&nbsp;<br>
+												<!-- FOOTER_END --><br>
+											</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+</table>
+</BODY>
+</HTML>
