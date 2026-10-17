@@ -1,0 +1,6 @@
+base referer
+rect $hxuitypes_8h.html 414,109 502,135
+rect $hxwindow_8h.html 140,109 230,135
+rect $hxdialog_8h.html 281,58 364,85
+rect $hxmenu_8h.html 145,159 225,186
+rect $hximage_8h.html 281,159 364,186

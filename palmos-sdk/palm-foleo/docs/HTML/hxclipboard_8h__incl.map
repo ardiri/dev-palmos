@@ -1,0 +1,6 @@
+base referer
+rect $hxmessage_8h.html 157,185 258,212
+rect $hxmime_8h.html 168,261 248,288
+rect $hxtypes_8h.html 520,210 600,237
+rect $hxmessagedomain_8h.html 314,160 458,186
+rect $hxapplication_8h.html 306,312 466,338

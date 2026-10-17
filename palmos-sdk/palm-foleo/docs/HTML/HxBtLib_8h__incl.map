@@ -1,0 +1,4 @@
+base referer
+rect $HxBtTypes_8h.html 285,58 384,85
+rect $HxBtMsg_8h.html 142,58 230,85
+rect $HxBtDebug_8h.html 136,109 237,136

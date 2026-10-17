@@ -1,0 +1,6 @@
+base referer
+rect $structConnSetupInfo.html 8,370 120,397
+rect $structBtConnSetup__t.html 8,280 120,306
+rect $structBtProfOpts__t.html 14,189 113,216
+rect $structHxRfcomm__t.html 14,98 113,125
+rect $structBookKeeping__t.html 8,8 120,34

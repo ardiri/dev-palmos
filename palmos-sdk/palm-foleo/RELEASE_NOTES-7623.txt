@@ -1,0 +1,23 @@
+Falcon Release Notes 
+Build 7428
+
+Major fixes since last accepted 7426 build and this build (changelist 483297 through 484243)
+
+o Fixed Bugs 177636
+Description: openssl hard-codes date strings in English. So switch the locale to english, parse the string, put the locale back and format into that locale.
+
+o Changed the file system which is checked to display available memory in the system panel of preferences.
+
+o FIXED BUG 187817
+made sure that the list are scrolled correctly even if the HxListExtendedSelectItem
+
+o Description: Move logs to nonvolatile storage by creating /log and symlinking /var/log to it
+
+o Integrated Mikhail's powerd change from Spin branch (482820)
+POWERD: Somehow brodcasting kHxModeSleepAll message got 'lost in translation'. Add the code that sends it again.
+
+o Description: Fixed bug 182406: File list in File manager corrupts after swapping the SD card during the system sleep
+The problem is that we can't detect the card removal once the device is in sleep state, so we will unmount all the cards just before the system goes to sleep. Then we will mount all the cards back when the system wakes up.
+
+o PhotoViewer: When a SD Card is inserted, check if there is a &#34;/DCIM/Palm/&#34; folder. If not then check for just &#34;/DCIM/&#34;. If neither are found, go to the root of the SD Card.
+

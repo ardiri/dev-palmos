@@ -1,0 +1,54 @@
+BODY, DIV, TD { font-size: 10pt; color: #333333; font-family: Verdana, Arial, Helvetica }
+BODY { background-color: #FFFFFF; }
+H1 { text-align: center; }
+CAPTION { font-weight: bold }
+A { text-decoration: none; }
+A:active { color: #e65f00 }
+A:link { color: #e65f00 }
+A:visited { color: #e65f00 }
+A:hover { color: #000000 }
+
+A.el { text-decoration: none; font-weight: bold }
+A.elRef { font-weight: bold }
+A.code { text-decoration: none; font-weight: normal; }
+A.codeRef { font-weight: normal; }
+
+DL.el { margin-left: -1cm }
+DIV.fragment { width: 100%; border: none; background-color: #B4B4B4 }
+DIV.ah { background-color: black; font-weight: bold; color: #ffffff; margin-bottom: 3px; margin-top: 3px }
+TD.md { background-color: #B4B4B4; font-weight: bold; }
+TD.mdname1 { background-color: #B4B4B4; font-weight: bold; color: #602020; }
+TD.mdname { background-color: #B4B4B4; font-weight: bold; color: #602020; }
+DIV.groupHeader { margin-left: 16px; margin-top: 12px; margin-bottom: 6px; font-weight: bold }
+DIV.groupText { margin-left: 16px; font-style: italic; font-size: 10PT }
+TD.indexkey { 
+   background-color: #B4B4B4; 
+   font-weight: bold; 
+   padding-right  : 10px; 
+   padding-top    : 2px; 
+   padding-left   : 10px; 
+   padding-bottom : 2px; 
+   margin-left    : 0px; 
+   margin-right   : 0px; 
+   margin-top     : 2px; 
+   margin-bottom  : 2px  
+}
+TD.indexvalue { 
+   background-color: #B4B4B4; 
+   font-style: italic; 
+   padding-right  : 10px; 
+   padding-top    : 2px; 
+   padding-left   : 10px; 
+   padding-bottom : 2px; 
+   margin-left    : 0px; 
+   margin-right   : 0px; 
+   margin-top     : 2px; 
+   margin-bottom  : 2px  
+}
+span.keyword       { color: #008000 }
+span.keywordtype   { color: #604020 }
+span.keywordflow   { color: #e08000 }
+span.comment       { color: #008000 }
+span.preprocessor  { color: #806020 }
+span.stringliteral { color: #002080 }
+span.charliteral   { color: #008080 }

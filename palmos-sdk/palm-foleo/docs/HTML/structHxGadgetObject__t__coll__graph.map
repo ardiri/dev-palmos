@@ -1,0 +1,7 @@
+base referer
+rect $structHxImageObject__t.html 8,114 133,141
+rect $structHxImageButtonObject__t.html 157,114 320,141
+rect $structHxUserObject__t.html 344,114 461,141
+rect $structHxUserRawObject__t.html 485,114 629,141
+rect $structHxTextObject__t.html 653,114 768,141
+rect $structHxColor__t.html 670,8 750,34

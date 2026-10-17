@@ -1,0 +1,5 @@
+base referer
+rect $hxuitypes_8h.html 438,84 526,110
+rect $hxgraphics_8h.html 158,84 254,110
+rect $hxfont_8h.html 312,109 381,136
+rect $hximage_8h.html 305,160 388,186

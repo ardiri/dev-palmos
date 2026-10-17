@@ -1,0 +1,31 @@
+SYSROOTI=/opt/holly/sysroot/i386-linux
+SYSROOTA=/opt/holly/sysroot/arm-linux
+TOOLROOT=/opt/holly/toolroot
+PATH=$TOOLROOT/bin:$PATH
+
+function dohxtek()
+{
+     if [ "$1" = "-o" ] ; then
+         LD_LIBRARY_PATH=/opt/holly/sysroot/i386-linux/usr/lib \
+         /opt/holly/sysroot/i386-linux/usr/bin/hxtek -o
+     else
+         LD_LIBRARY_PATH=/opt/holly/sysroot/i386-linux/usr/lib \
+         /opt/holly/sysroot/i386-linux/usr/bin/hxtek
+     fi
+}
+
+function exe
+{
+    echo ""
+    HX_APP_PATH=/opt/holly/sysroot/i386-linux/Applications/com.palmsdk/${1} \
+    LD_LIBRARY_PATH=/opt/holly/sysroot/i386-linux/usr/lib  \
+       /opt/holly/sysroot/i386-linux/Applications/com.palmsdk/${1}/${1} 
+}
+
+function gexe
+{
+    HX_APP_PATH=/opt/holly/sysroot/i386-linux/Applications/com.palmsdk/${1} \
+    LD_LIBRARY_PATH=/opt/holly/sysroot/i386-linux/usr/lib  \
+    gdb /opt/holly/sysroot/i386-linux/Applications/com.palmsdk/${1}/${1} 
+}
+
